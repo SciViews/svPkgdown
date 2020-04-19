@@ -4,10 +4,28 @@ language: R
 sudo: false
 cache: packages
 
-before_deploy:
-- R CMD INSTALL .
+warnings_are_errors: true
 
-deploy:
-  provider: script
-  script: Rscript -e 'pkgdown::deploy_site_github()'
-  skip_cleanup: true
+# Email notifications
+notifications:
+  email:
+    on_success: change
+    on_failure: change
+
+
+#before_deploy:
+#- R CMD INSTALL .
+
+#deploy:
+#  provider: script
+#  script: Rscript -e 'pkgdown::deploy_site_github()'
+#  skip_cleanup: true
+
+# covr is not a dependency for the package. So, install it explicitly
+# RUnit required for Rd xref checking. Also force its install
+#r_binary_packages:
+#  - covr
+#  - RUnit
+
+#after_success:
+#  - Rscript -e 'covr::codecov()'
