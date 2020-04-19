@@ -122,9 +122,18 @@ pander(head(iris))
 
 ## Tables using 'flextable'
 
-The 'flextable' R package allows for fine customization of the formatted table using a pipeline-compatible approach:
+The 'flextable' R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in Github Action):
 
-```{r}
+```
+Error : package or namespace load failed for 'flextable' in dyn.load(file, DLLpath = DLLpath, ...):
+90
+*  unable to load shared object '/Users/runner/runners/2.169.0/work/_temp/Library/systemfonts/libs/systemfonts.so':
+91
+*   dlopen(/Users/runner/runners/2.169.0/work/_temp/Library/systemfonts/libs/systemfonts.so, 6): Library not loaded: /opt/X11/lib/libfreetype.6.dylib
+```
+
+
+```{r, eval=FALSE}
 library(flextable)
 library(dplyr)
 mtcars %>%
