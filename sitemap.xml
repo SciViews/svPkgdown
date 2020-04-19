@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/index.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/reference/svPkgdown-package.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/reference/test.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/svPkgdown.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/test/bibliography.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/test/chunks.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/test/markdown.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/test/presentations/presentation_github.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/test/rendering.html</loc>
+  </url>
+  <url>
+    <loc>https://www.sciviews.org/svPkgdown/articles/test/tables.html</loc>
+  </url>
+</urlset>
