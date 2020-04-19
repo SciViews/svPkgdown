@@ -1,0 +1,315 @@
+---
+title: "Markdown formattings"
+author: "Philippe Grosjean( phgrosjean@sciviews.org)"
+date: "2020-04-16"
+output: html_document
+---
+
+This is an illustration of the basic (R) Markdown formattings, as they are rendered in a 'pkgdown' site using the 'svPkgdown' style.
+
+### Headers {-}
+
+* Header with 6 levels, either with `#`, or with underline:
+
+# Header 1
+
+Some text...
+
+## Header 2
+
+Some text...
+
+### Header 3
+
+Some text...
+
+#### Header 4
+
+Some text...
+
+##### Header 5
+
+Some text...
+
+###### Header 6
+
+Some text...
+
+An alternate syntax for headers:
+
+Header 1
+========
+
+Header 2
+--------
+
+## Headers can _contain_ forma^tting^ and [links](http://www.sciviews.org)
+
+**Take care that a blank line is _required_ before headers as
+#22 this could too easily be interpretted as a header otherwise.**
+
+* One can put identifiers after header, to allow [linking to them](#myheader) elsewhere. Otherwise, headers are autoidentified by a special kind of reformatting of the string. Note also that references to headers can also be implicit. That is, `[linking to a header]`, or `[linking to a header][]` should work too: this is a link to the [abstract][].
+
+#### An identified header {#myheader}
+
+* One can force unnumbered titles using `{-}` or `{.unnumbered}` (providing, of course, that the other headers are numbered).
+
+### Basic text formatting
+
+* Bold using __bold__ or **bold**
+
+* Italic using _italic_ or *italic*, but intra_word_underscore is not interpreted (use stars for that like in this w*or*d)
+
+* Super^script^, or sub~script~. No space can occur inside super- or subscript. If you need it, backslash-escape the space like P~a\ cat~.
+
+* Strikethrough with ~~this formatting~~.
+
+* Formattings can be combined of course, like **_bold italic with super^script^_**.
+
+* Inline code like `x <- 1`, and if you need backquote inside it `` `@var` <- 2 ``.
+
+* Links are automatically detected like http://example.com, or can be explicitly indicated (with a different text) like [some example](http://example.com). _Note that Markdown uses also [reference links](#reflinks)_. You can also put your links between angle brackets <http://example.com>.
+
+* You can use any UTF-8 character (at least for HTML documents (examples: µm, Ω, Æ, ∫√)...
+
+* You need to backslash-escape punctuation you don't want to be interpreted ad formatting code, like \*foo\*.
+
+* A non-breaking space is simply an escaped space, like between "Fig." and "3" here: Fig.\ 3.
+
+* A few sequences of characters produce special characters. Use of --dashes-- and ---em-dashes---. Three dots is ellipsis... and I can use any unicode, too, for special characters, like 😌.
+
+### Special paragraphs and other items
+
+* Quoted text (need blank line before it to avoid misinterpretation of
+> inside a paragraph)
+
+> Some quoted text
+
+> With two paragraph...
+
+> More quoted
+> <br/>with a second paragraph within the same quote block.
+
+> > And double quotation
+
+> > with two paragraphs...
+
+* Line blocks
+
+| This is line block
+| It respect text position
+|   Like here
+  and you can go to the line
+| And a new line here
+
+* Preformatted text:
+
+    Some preformatted text
+    using indentation
+
+* Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (`~`) or backticks (`` ` ``) and they must be separated from the surrounding using blank lines. You can use identifiers too like in [this block](#mycode):
+
+```
+Some preformatted text (like for code blocks)
+using a fenced block with backticks
+```
+
+It is very easy to indicate a language, and syntax highlighting will be used for it:
+
+```r
+# Idem, but with R syntax highlighting
+for (i in 1:100) {
+  if (i > 1) stop("Got it!")
+}
+```
+
+It can also be specified in a more complex way, and with marks allowing to link to it:
+
+~~~~ {#mycode .python}
+name = raw_input('What is your name?\n')
+print 'Hi, %s.' % name
+~~~~
+
+Then you can link to it [like here](#mycode).
+
+* Horizontal rule or page break using four or more `*`, `-` or `_` optionally separated by spaces
+
+****
+
+----
+
+_ _ _ _ _
+
+* Line breaks when ending with two or more spaces  
+like this paragraph. However, this is not very visible, nor usable in table. So you can also use a backslash followed by a newline\
+and this approach is the only way to do it in tables!
+
+* You can escape special characters except in code block or inline code if you don't want them to be interpreted as formatting marks like \_here\_.
+
+* Non-breaking space is entered as a backslash-escaped space (`\ `).
+
+* Comment that do not appear in the final document are similar to HTML comments (`<!-- comment-->`), but can also be entered using the `[//]:` syntax.
+<!-- this is a comment and should not be present in the final document -->
+
+[//]: A comment...
+
+* Smart punctuation is used and converts straight quotes into curly ones like 'here' or "here". It will also interpret `--` as en-dash --, `---` as em-dash ---, and `...` as ellipses ... Moreover, non- breaking spaces are automatically used after certain items like Mr. Schmidt.
+
+* Note that raw HTML (with or without interpretation of markdown inside it) can be included too.
+
+* Footnotes[^myfootnote] are easy to insert. Another example[^longnote]. And here, I use an inline footnote^[Inline footnotes are easier to write right in your text, but they can only span on a single paragraph.].
+
+[^myfootnote]: This is my simple footnote.
+
+[^longnote]: Footnotes can span on multiple paragraphs, providing you indent them with four spaces:
+  
+    * A list item
+  
+    Another paragraph belonging to the note.
+  
+Text after the long note...
+
+
+### Lists
+
+* Unordered list (using `*`, `+` or `-`)
+    * Second level
+    
+* Compact
+* list
+* of items
+
+* Loose
+
+* list
+
+* of items
+  
+1. Ordered list
+    a. Second level
+    a. Second level, second item
+2. Back to first level
+1. There is a mechanism to include paragraphs inside the list using indentation (don't forget the empty line in between to start a new paragraph):
+
+    ```
+    Some preformatted inside a list item
+    ```
+4. Fourth item
+
+* The fancy list extension allow for using `#.` for ordered lists, as well as something like `1)`, or `(I)` for instance:
+
+1) First item
+2) Second item
+
+(I) First item
+(II) Second item
+(III) Third item
+(IV) Fourth item
+
+* Definition lists are also supported (definitions must start with `:` or `~`) and blank lines are optional between the term and its definition (loose _vs_ compact form), but not before the term. Finally, several definitions are allowed for the same term.
+
+Term 1
+
+:   Definition 1
+
+Term 2 with _inline markup_
+
+:   Definition 2
+
+        { some code, part of Definition 2 }
+
+    Third paragraph of definition 2.
+
+or
+
+Term 1
+  ~ Definition 1
+
+Term 2
+  ~ Definition 2a
+  ~ Definition 2b
+
+* Numbered example lists use a sequential numbering throughout the whole document and use the `@.` syntax:
+
+@. First item
+@. Second item
+
+Some text
+
+@. Third item
+
+You can give them labels (alphanumeric + character + hyphen) and refer to them later on. You can also enclose it into parentheses, but it does not change how it is displayed:
+
+(@good) <a name="good"></a>This is a good example
+
+As [example](#good)\ @good illustrates^[Note that you **cannot** include the number inside the link, unfortunately.], ...
+
+And what if I refer to it before the label like @notgood? Yes! It works! But unfortunately, there is no link to [example](#notgood) @notgood.
+
+@notgood. A bad example
+
+Finally, to force ending a list, just add a comment where you want to end it (same trick applies for restarting another numbered list):
+
+1. list item
+2. another item
+
+    Formatted block with spaces does not work inside lists
+
+3. third list item
+
+<!-- end of list -->
+
+    Formatted block with spaces work now
+
+1. New list item #1
+
+Indent paragraphs or blocks or chunks (see hereunder) following a list item to include it in the list:
+
+1. The area of a circle with a given radius is:
+    ```{r radius}
+    radius <- 3.5
+    pi * radius ^ 2
+    ```
+2. As you can see, the R chunk and its associated results are included in the list element!
+
+Image from the Internet:
+
+![The official R logo.](https://www.r-project.org/logo/Rlogo.png)
+
+## Reference links {#reflinks}
+
+* Reference links are done this way [a linked part][id1], or for images:
+[![alt text][id2]](http://www.sciviews.org)
+
+[id1]: https://www.sciviews.org     "Title"
+[id2]: figures/svbox.png            "Figure title"
+
+## Equations
+
+* Inline equations like $\frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta$, or $f(\alpha, \beta) \propto x^{\alpha-1}(1-x)^{\beta-1}$.
+
+* Display equation
+
+$$ \frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta $$
+
+Here is a more complex example spanning on several lines: 
+  
+$$ \begin{aligned}
+\dot{x} & = \sigma(y-x) \\
+\dot{y} & = \rho x - y - xz \\
+\dot{z} & = -\beta z + xy
+\end{aligned}$$
+
+With 'pkgdown' and standard Pandoc, it is not easy to get numbered display equations and cross-references to these equations. . Here is an example:
+
+$$x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \label{my-equation} \tag{1}$$
+
+... and you can reference Eq.\ $\ref{my-equation}$ like this.
+
+The 'svSweave' eases writing and referencing numbered display equations from any R Markdown documents, see[svSweave](https://www.sciviews.org/svSweave/).
+
+If you feel difficult to write LaTeX equations, there are inline LateX equation editors like [this one](http://www.sciweavers.org/free-online-latex-equation-editor), and you don't need to install anything on your computer to used them. Also, there is a R Studio addin provided with the `bookdown` R package to ease entering LaTeX equations in your R Markdown document.
+
+## Icons
+
+You have both the [font awesome](https://fontawesome.com/icons?d=gallery&m=free), and the [themify](https://themify.me/themify-icons) icons. You need to create an object of class "fa fa-xxxx", or "ti-xxxx", where "xxxx" is an icon in the collection. Here is an example from font awesome []{class="fa fa-chart-bar"}, and here is one from themify: []{class="ti-package"}. You can use these icons everywhere!

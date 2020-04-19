@@ -1,0 +1,99 @@
+---
+title: 'Git and Github in a few slides'
+author: "Philippe Grosjean & Guyliann Engels"
+date: ''
+output:
+  html_document:
+    df_print: paged
+institute: University of Mons, Belgium\break Numerical Ecology Unit\break \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/EcoNum-logo.pdf}
+  \break \url{http://biodatascience-course.sciviews.org} \break \url{sdd@sciviews.org}
+fontsize: 9pt
+subtitle: \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/biodatascience.png}
+  \includegraphics[width=.08\textwidth,height=.1\textheight]{../../template/SciViews-logo.pdf}
+  \vfill A quick introduction
+fontfamily: mathpazo
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+SciViews::R
+```
+
+# Git and Github
+
+## What is Git?
+
+### Rendered as HTML page in 'pkgdown'
+
+This Beamer presentation is rendered as a HTML document unless you specify (which is done in a copy of this file):
+
+```yaml
+pkgdown:
+  as_is: true
+  extension: pdf
+```
+
+**And specify also `resource_files` if you use custom templates!**
+
+### Why a version-control system?
+
+\centering
+
+![](../figures/endless-cycle.jpg)
+
+### Why a version-control system?
+
+\centering
+
+![](../figures/final-revisions.png)
+
+### What is Git?
+
+**Git is a version-control system**
+
+- We "see" only one version in the folders it manages
+
+- But *all* versions are recorded
+
+- It is possible to return to any version at any time
+
+- It is possible to navigate through the history and to display *"diffs"* between versions for text files
+
+- A new version is registered by **a commit** in Git parlance
+
+### Git history management in Github Desktop
+
+![](../figures/git-history.png)
+
+### How to do in RStudio?
+
+- Create a new **project** in RStudio and **activate Git** for this project
+
+- A **Git** tab appears. You can do almost everything related to Git from there
+
+- Select modified files and commit them
+
+- Each time a commit is done, you have to provide an explicit message and it will be useful later on to navigate in the history
+
+## What is Github?
+
+### Save and share Git projects on the cloud
+
+\columnsbegin
+\columnsmall
+
+- Many solutions exist to store files on the cloud: Google Drive/Docs, One Drive, iCloud, Dropbox, ...
+
+- Github, Gitlab, or Bitbucket (among others) allow to store your files in a Git-versioned way
+
+\columnlarge
+
+![](../figures/github-example.png)
+
+\columnsend
+
+### Fork a Github repository and clone it to use it locally
+
+\centering
+
+![](../figures/git_flow.png)

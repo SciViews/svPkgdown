@@ -1,0 +1,35 @@
+Package: svPkgdown
+Type: Package
+Version: 0.1.0
+Date: 2020-04-18
+Title: 'pkgdown' Template for SciViews Packages
+Description: This is a private template to style pkgdown sub-sites in
+  https://www.sciviews.org. Please don't use it for another purpose.
+Authors@R: c(person("Philippe", "Grosjean", role = c("aut", "cre"),
+  email = "phgrosjean@sciviews.org",
+  comment = c(ORCID = "0000-0002-2694-9471")))
+Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
+Suggests: 
+    knitr,
+    rmarkdown,
+    MASS,
+    leaflet,
+    ggplot2,
+    xtable,
+    pander,
+    flextable,
+    dplyr,
+    Rcpp,
+    knitcitations,
+    svSweave,
+    rticles,
+    spelling
+License: MIT + file LICENSE
+URL: https://github.com/SciViews/svPkgdown, https://www.sciviews.org/svPkgdown/
+BugReports: https://github.com/SciViews/svPkgdown/issues
+LazyData: yes
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+VignetteBuilder: knitr
+Encoding: UTF-8
+Language: en-US

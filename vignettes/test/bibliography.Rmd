@@ -1,0 +1,100 @@
+---
+title: "Bibliography citations"
+author: "Philippe Grosjean (phgrosjean@sciviews.org)"
+date: "2020-04-16"
+output: html_document
+resource_files:
+  - "bibliography/ecology.csl"
+  - "bibliography/marine-biology.csl"
+---
+
+Thanks to Pandoc, it is rather easy to insert citations in your text. First, you need to specify a bibliography file in a YAML section. A number of formats are supported, but to remain compatible with LaTeX, use BibTeX (`.bibtex`) or BibLaTeX (`.bib`) format only. Note that the `bibliography` folder is best placed as a subfolder of the directory where the .Rmd file resides (`bibliography/<my-file.bib>`). However, if you share the same bibliography with different .Rmd files located in different folders, you can place the `bibliography` folder at the same level and refer to it through a relative path: `../bibliography/<my-file.bib>`.
+
+## Standard Pandoc
+
+The file we use here is named `bibliography.bib`. It is enough to refer to it in a YAML section. However, we will also add more reference to the bibliography later on using 'knitcitations'. So, we first copy this file into `bibliography-full.bib` and then, we refer to the later file instead.
+
+```{r include=FALSE}
+file.copy("bibliography/bibliography.bib", "bibliography/bibliography-full.bib", overwrite = TRUE)
+```
+
+---
+bibliography: "bibliography/bibliography-full.bib"
+---
+
+A `references` field can also be included in a YAML section for self-contained bibliography (and you can use both at the same time!).
+
+---
+references:
+- id: fenner2012a
+  title: One-click science marketing
+  author:
+  - family: Fenner
+    given: Martin
+  container-title: Nature Materials
+  volume: 11
+  URL: 'http://dx.doi.org/10.1038/nmat3283'
+  DOI: 10.1038/nmat3283
+  issue: 4
+  publisher: Nature Publishing Group
+  page: 261-263
+  type: article-journal
+  issued:
+    year: 2012
+    month: 3
+---
+
+Also, if you want you citations to be clickable links that sends you to the **References** section at the end of the document, you must add `link-citations: true` in a YAML section. Obviously, there is no link-back in the references, because a paper may be cited several times and it is not possible to determine at the compilation of the HTML or PDF document which link will be clicked by the user later on!
+
+---
+link-citations: true
+---
+
+You can use references citations contained in your bibliography inside square brackets, separated by semicolons and each citation must be composed using `@` + citation identifier. For instance [@greenwade93; @fenner2012a], or [see @fenner2012a, pp. 12-17; also @greenwade93, ch. 2]. Use a minus sign before the reference to suppress mention of the author: as Greenwade [-@greenwade93] indicated, "bla bla". You can also write the inline citation this way: @fenner2012a [p. 10] says "bla".
+
+Finally, you can include citations in the references without citing them by using a `nocite` entry in a YAML block:
+
+```
+---
+nocite:
+ | @item1, @item2
+---
+```
+
+By default, the Chicago author-date format is used by Pandoc, but you can use a different style by specifying a CSL 1.0 style in a `csl` metadata entry in a YAML block. The RStudio [rmarkdown](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html) site indicates two interesting pages to get CSL files: [CSL official repository](https://github.com/citation-style-language/styles) and [Zotero styles page](http://zotero.org/styles) that allows easy browsing.
+
+> Take care: using the `csl` entry alone works in .Rmd rendering, but **not** in 'pkgdown' that uses a different mechanisms to determine required resource files. Consequently, the `.csl` file is not copied at the right pace and `pandoc-citeproc` fails. You have also to add a `resource_files` entry in the YAML header (not a YAML chunk inside the document) that points to the `csl` you want to use to get this working with 'pkgdown'!
+
+Here, we use the **Marine Biology** style (but you can also try the **Ecology** style).
+
+---
+csl: "bibliography/marine-biology.csl"
+---
+<!-- Try also switching from marine-biology.csl to ecology.cls -->
+
+## Extensions with 'knitcitations'
+
+The R package 'knitcitations' uses pandoc citations, but enhances its mechanisms by allowing to add citations by DOIs or URL and by linking to cited papers directly. You need to start loading the package and clean up citations.
+
+```{r knitcitations_init, echo=FALSE}
+library(knitcitations)
+cleanbib()
+cite_options(citation_format = "pandoc", style = "markdown", # text, markdown or html
+  hyperlink = "to.bib", # Try to.doc, to.bib, or FALSE
+  cite.style = "authoryear", # Try "authoryear", "numeric" or "authortitle"
+  max.names = 3)
+```
+
+In addition to standard Pandoc citation tags, 'knitcitations' allows also to build citations from DOIs, URLs, or it can use `greycite()` (see http://greycite.knowledgeblog.org) to correctly format URLs in citations and bibliographical references. All these entries are transformed into Pandoc-compatible citations. The question of independent `.bib` file, and/or need for an Internet link to compile the document is discussed here <http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/>.
+
+Now for 'knitcitations' citations... We can add a citation by DOI `r citep("10.1890/11-0011.1")`, or `r citet("10.1098/rspb.2013.1372")`. Since a citation like `name_year` is automatically created, one do not need to recite the same items by DOI, but one can cite like this `r citep("Abrams_2012")`, which should be the same as `r citep("10.1890/11-0011.1")`. Finally, one can also cite R bibentry objects directly with the 'knitcitations' tags, like `r citep(citation("knitr"))`. All these approaches are combinable with traditional Pandoc citations, providing the citations are already included in the `.bib` file, of course.
+
+Finally, don't forget to generate the complete `.bib` file by appending the following last R chunk into your document in order to add the 'knitcitations' entries in your `.bib` document (this is useful to be fully compatible with the Pandoc citeproc process):
+
+```{r knitcitations_generate, message=FALSE}
+write.bibtex(file = "bibliography/bibliography-full.bib", append = TRUE)
+```
+
+You can look at `bibliography/bibliography-full.bib`. Note how the new references generated by 'knitcitations' are included automatically at the end of the document. Do not forget to put an adequate header by yourself at the end of the .Rmd file for the references section that will be generated automatically by Pandoc!
+
+## References {-}
