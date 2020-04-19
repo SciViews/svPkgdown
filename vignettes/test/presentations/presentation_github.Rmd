@@ -16,7 +16,7 @@ fontfamily: mathpazo
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-SciViews::R
+#TODO: add this package to suggests! SciViews::R
 ```
 
 # Git and Github
