@@ -10,7 +10,7 @@ articles:
   presentation_github: test/presentations/presentation_github.html
   rendering: test/rendering.html
   tables: test/tables.html
-last_built: 2020-04-20T10:17Z
+last_built: 2020-04-20T10:23Z
 urls:
   reference: https://www.sciviews.org/svPkgdown/reference
   article: https://www.sciviews.org/svPkgdown/articles
