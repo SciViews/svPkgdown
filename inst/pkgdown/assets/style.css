@@ -2858,7 +2858,13 @@ a > code {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Increase the top margin of row to avoid being covered by the top bar*/
-.row {
-  padding-top: 75px;
+/* Increase the top padding of contents and pkgdown-sidebar
+to avoid being covered by the top bar*/
+.contents {
+  margin-top: 75px;
+}
+
+/* Was 30px */
+#pkgdown-sidebar {
+  margin-top: 105px;
 }
