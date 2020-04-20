@@ -2861,10 +2861,10 @@ a > code {
 /* Increase the top padding of contents and pkgdown-sidebar
 to avoid being covered by the top bar*/
 .contents {
-  margin-top: 75px;
+  margin-top: 80px;
 }
 
 /* Was 30px */
 #pkgdown-sidebar {
-  margin-top: 105px;
+  margin-top: 110px;
 }
