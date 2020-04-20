@@ -46,6 +46,8 @@ Further explanations on how to customize the 'pkgdown' site [here](https://githu
   - [`svGUI`](https://www.SciViews.org/svGUI/)
 
   - [`svMisc`](https://www.SciViews.org/svMisc/)
+  
+  - [`svSweave`](https://www.SciViews.org/svSweave/)
 
 ## Installation
 
