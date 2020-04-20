@@ -2860,5 +2860,5 @@ a > code {
 
 /* Increase the top margin of row to avoid being covered by the top bar*/
 .row {
-  padding-top: 70px;
+  padding-top: 75px;
 }
