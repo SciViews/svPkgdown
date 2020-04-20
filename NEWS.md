@@ -1,3 +1,7 @@
+# svPkgdown 0.1.2
+
+- Still more margins at the top: 80 pixels.
+
 # svPkgdown 0.1.1
 
 - A new preloader allows to see the page after 1.5s but leaves a small visual cue that the page is still loading at the top left. This way, if badges take a long time to load, one does not have to wait indefinitely!
