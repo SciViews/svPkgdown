@@ -20,6 +20,7 @@ Suggests:
     flextable,
     dplyr,
     Rcpp,
+    bibtex,
     knitcitations,
     svSweave,
     rticles,
