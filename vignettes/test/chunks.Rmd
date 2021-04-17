@@ -79,9 +79,11 @@ library(knitr)
 knit('R Markdown V2 Syntax.Rmd')
 ```
 
+<!-- Note: this now fails in GitHub Actions => commented out
 * A Python chunk:
 
-```{python}
+`{python}
 import sys
 print(sys.version)
-```
+`
+-->
