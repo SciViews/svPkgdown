@@ -23,6 +23,7 @@
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Bibliography citations">
 <meta property="og:description" content="svPkgdown">
+<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
@@ -34,6 +35,8 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
   <img src="../../preloader.gif" alt="loading...">
@@ -51,7 +54,7 @@
       </button>
       <div class="navbar-brand-container">
        <div class="navbar-brand-logo">
-         <a class="navbar-brand" href="https://www.sciviews.org">
+         <a class="external-link navbar-brand" href="https://www.sciviews.org">
           <img src="../../logo_full.png" alt="SciViews"></a>
        </div>
        <div class="navbar-brand-package">
@@ -69,12 +72,6 @@
       </form>
       <!-- end svPkgdown global site search with Google -->
       <ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="../../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../../articles/svPkgdown.html">Get started</a>
 </li>
@@ -112,8 +109,8 @@
   <a href="../../news/index.html">Changelog</a>
 </li>
         <li>
-  <a href="https://github.com/SciViews/svPkgdown/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -132,15 +129,15 @@
 
       
 
-      </header><div class="row">
+      </header><script src="bibliography_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Bibliography citations</h1>
-                        <h4 class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
+                        <h4 data-toc-skip class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
             
-            <h4 class="date">2020-04-16</h4>
+            <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/bibliography.Rmd"><code>vignettes/test/bibliography.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/bibliography.Rmd" class="external-link"><code>vignettes/test/bibliography.Rmd</code></a></small>
       <div class="hidden name"><code>bibliography.Rmd</code></div>
 
     </div>
@@ -151,16 +148,16 @@
 <div id="standard-pandoc" class="section level2">
 <h2 class="hasAnchor">
 <a href="#standard-pandoc" class="anchor"></a>Standard Pandoc</h2>
-<p>The file we use here is named <code>bibliography.bib</code>. It is enough to refer to it in a YAML section. However, we will also add more reference to the bibliography later on using ‘knitcitations’. So, we first copy this file into <code>bibliography-full.bib</code> and then, we refer to the later file instead.</p>
+<p>The file we use here is named <code>bibliography.bib</code>. It is enough to refer to it in a YAML section. However, we will also add more reference to the bibliography later on using {knitcitations}. So, we first copy this file into <code>bibliography-full.bib</code> and then, we refer to the later file instead.</p>
 <p>A <code>references</code> field can also be included in a YAML section for self-contained bibliography (and you can use both at the same time!).</p>
 <p>Also, if you want you citations to be clickable links that sends you to the <strong>References</strong> section at the end of the document, you must add <code>link-citations: true</code> in a YAML section. Obviously, there is no link-back in the references, because a paper may be cited several times and it is not possible to determine at the compilation of the HTML or PDF document which link will be clicked by the user later on!</p>
-<p>You can use references citations contained in your bibliography inside square brackets, separated by semicolons and each citation must be composed using <code>@</code> + citation identifier. For instance <span class="citation">(Greenwade <a href="#ref-greenwade93" role="doc-biblioref">1993</a>; Fenner <a href="#ref-fenner2012a" role="doc-biblioref">2012</a>)</span>, or <span class="citation">(see Fenner <a href="#ref-fenner2012a" role="doc-biblioref">2012</a>, pp. 12–17; also Greenwade <a href="#ref-greenwade93" role="doc-biblioref">1993</a>, ch. 2)</span>. Use a minus sign before the reference to suppress mention of the author: as Greenwade <span class="citation">(<a href="#ref-greenwade93" role="doc-biblioref">1993</a>)</span> indicated, “bla bla”. You can also write the inline citation this way: <span class="citation">Fenner (<a href="#ref-fenner2012a" role="doc-biblioref">2012</a>, p. 10)</span> says “bla”.</p>
+<p>You can use references citations contained in your bibliography inside square brackets, separated by semicolons and each citation must be composed using <code><a href="https://rdrr.io/r/base/slotOp.html" class="external-link">@</a></code> + citation identifier. For instance <span class="citation">(Greenwade <a href="#ref-greenwade93" role="doc-biblioref">1993</a>; Fenner <a href="#ref-fenner2012a" role="doc-biblioref">2012</a>)</span>, or <span class="citation">(see Fenner <a href="#ref-fenner2012a" role="doc-biblioref">2012</a>, pp. 12–17; also Greenwade <a href="#ref-greenwade93" role="doc-biblioref">1993</a>, ch. 2)</span>. Use a minus sign before the reference to suppress mention of the author: as Greenwade <span class="citation">(<a href="#ref-greenwade93" role="doc-biblioref">1993</a>)</span> indicated, “bla bla”. You can also write the inline citation this way: <span class="citation">Fenner (<a href="#ref-fenner2012a" role="doc-biblioref">2012</a>, p. 10)</span> says “bla”.</p>
 <p>Finally, you can include citations in the references without citing them by using a <code>nocite</code> entry in a YAML block:</p>
 <pre><code>---
 nocite:
  | @item1, @item2
 ---</code></pre>
-<p>By default, the Chicago author-date format is used by Pandoc, but you can use a different style by specifying a CSL 1.0 style in a <code>csl</code> metadata entry in a YAML block. The RStudio <a href="http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html">rmarkdown</a> site indicates two interesting pages to get CSL files: <a href="https://github.com/citation-style-language/styles">CSL official repository</a> and <a href="http://zotero.org/styles">Zotero styles page</a> that allows easy browsing.</p>
+<p>By default, the Chicago author-date format is used by Pandoc, but you can use a different style by specifying a CSL 1.0 style in a <code>csl</code> metadata entry in a YAML block. The RStudio <a href="http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html" class="external-link">rmarkdown</a> site indicates two interesting pages to get CSL files: <a href="https://github.com/citation-style-language/styles" class="external-link">CSL official repository</a> and <a href="http://zotero.org/styles" class="external-link">Zotero styles page</a> that allows easy browsing.</p>
 <blockquote>
 <p>Take care: using the <code>csl</code> entry alone works in .Rmd rendering, but <strong>not</strong> in ‘pkgdown’ that uses a different mechanisms to determine required resource files. Consequently, the <code>.csl</code> file is not copied at the right pace and <code>pandoc-citeproc</code> fails. You have also to add a <code>resource_files</code> entry in the YAML header (not a YAML chunk inside the document) that points to the <code>csl</code> you want to use to get this working with ‘pkgdown’!</p>
 </blockquote>
@@ -169,32 +166,30 @@ nocite:
 </div>
 <div id="extensions-with-knitcitations" class="section level2">
 <h2 class="hasAnchor">
-<a href="#extensions-with-knitcitations" class="anchor"></a>Extensions with ‘knitcitations’</h2>
-<p>The R package ‘knitcitations’ uses pandoc citations, but enhances its mechanisms by allowing to add citations by DOIs or URL and by linking to cited papers directly. You need to start loading the package and clean up citations.</p>
-<p>In addition to standard Pandoc citation tags, ‘knitcitations’ allows also to build citations from DOIs, URLs, or it can use <code>greycite()</code> (see <a href="http://greycite.knowledgeblog.org" class="uri">http://greycite.knowledgeblog.org</a>) to correctly format URLs in citations and bibliographical references. All these entries are transformed into Pandoc-compatible citations. The question of independent <code>.bib</code> file, and/or need for an Internet link to compile the document is discussed here <a href="http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/" class="uri">http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/</a>.</p>
-<p>Now for ‘knitcitations’ citations… We can add a citation by DOI <span class="citation">(Abrams et al. <a href="#ref-Abrams_2012" role="doc-biblioref">2012</a>)</span>, or <span class="citation">Boettiger and Hastings (<a href="#ref-Boettiger_2013" role="doc-biblioref">2013</a>)</span>. Since a citation like <code>name_year</code> is automatically created, one do not need to recite the same items by DOI, but one can cite like this <span class="citation">(Abrams et al. <a href="#ref-Abrams_2012" role="doc-biblioref">2012</a>)</span>, which should be the same as <span class="citation">(Abrams et al. <a href="#ref-Abrams_2012" role="doc-biblioref">2012</a>)</span>. Finally, one can also cite R bibentry objects directly with the ‘knitcitations’ tags, like <span class="citation">(Xie <a href="#ref-Xie_2014" role="doc-biblioref">2014</a>, <a href="#ref-Xie_2015" role="doc-biblioref">2015</a>, <a href="#ref-Xie_2020" role="doc-biblioref">2020</a>)</span>. All these approaches are combinable with traditional Pandoc citations, providing the citations are already included in the <code>.bib</code> file, of course.</p>
-<p>Finally, don’t forget to generate the complete <code>.bib</code> file by appending the following last R chunk into your document in order to add the ‘knitcitations’ entries in your <code>.bib</code> document (this is useful to be fully compatible with the Pandoc citeproc process):</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu">write.bibtex</span>(<span class="kw">file</span> <span class="kw">=</span> <span class="st">"bibliography/bibliography-full.bib"</span>, <span class="kw">append</span> <span class="kw">=</span> <span class="fl">TRUE</span>)</pre></body></html></div>
-<p>You can look at <code>bibliography/bibliography-full.bib</code>. Note how the new references generated by ‘knitcitations’ are included automatically at the end of the document. Do not forget to put an adequate header by yourself at the end of the .Rmd file for the references section that will be generated automatically by Pandoc!</p>
+<a href="#extensions-with-knitcitations" class="anchor"></a>Extensions with {knitcitations}</h2>
+<p>The R package {knitcitations} uses pandoc citations, but enhances its mechanisms by allowing to add citations by DOIs or URL and by linking to cited papers directly. You need to start loading the package and clean up citations.</p>
+<p>In addition to standard Pandoc citation tags, {knitcitations} allows also to build citations from DOIs, URLs, or it can use <code>greycite()</code> (see <a href="http://greycite.knowledgeblog.org" class="external-link uri">http://greycite.knowledgeblog.org</a>) to correctly format URLs in citations and bibliographical references. All these entries are transformed into Pandoc-compatible citations. The question of independent <code>.bib</code> file, and/or need for an Internet link to compile the document is discussed here <a href="http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/" class="external-link uri">http://blog.martinfenner.org/2013/06/19/citations-in-scholarly-markdown/</a>.</p>
+<p>Now for {knitcitations} citations… We can add a citation by DOI <span class="citation">(Abrams et al. <a href="#ref-Abrams_2012" role="doc-biblioref">2012</a>)</span>, or <span class="citation">Boettiger and Hastings (<a href="#ref-Boettiger_2013" role="doc-biblioref">2013</a>)</span>. Since a citation like <code>name_year</code> is automatically created, one do not need to recite the same items by DOI, but one can cite like this <span class="citation">(Abrams et al. <a href="#ref-Abrams_2012" role="doc-biblioref">2012</a>)</span>, which should be the same as <span class="citation">(Abrams et al. <a href="#ref-Abrams_2012" role="doc-biblioref">2012</a>)</span>. Finally, one can also cite R bibentry objects directly with the {knitcitations} tags, like <span class="citation">(<span class="citeproc-not-found" data-reference-id="Xie_2021"><strong>???</strong></span>; Xie <a href="#ref-Xie_2014" role="doc-biblioref">2014</a>, <a href="#ref-Xie_2015" role="doc-biblioref">2015</a>)</span>. All these approaches are combinable with traditional Pandoc citations, providing the citations are already included in the <code>.bib</code> file, of course.</p>
+<p>Finally, don’t forget to generate the complete <code>.bib</code> file by appending the following last R chunk into your document in order to add the {knitcitations} entries in your <code>.bib</code> document (this is useful to be fully compatible with the Pandoc <code>citeproc</code> process):</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">write.bibtex</span><span class="op">(</span>file <span class="op">=</span> <span class="st">"bibliography/bibliography-full.bib"</span>, append <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre></div>
+<p>You can look at <code>bibliography/bibliography-full.bib</code>. Note how the new references generated by {knitcitations} are included automatically at the end of the document. Do not forget to put an adequate header by yourself at the end of the .Rmd file for the references section that will be generated automatically by Pandoc!</p>
 </div>
 <div id="references" class="section level2 unnumbered">
 <h2 class="hasAnchor">
 <a href="#references" class="anchor"></a>References</h2>
 <div id="refs" class="references">
 <div id="ref-Abrams_2012">
-<p>Abrams PA, Ruokolainen L, Shuter BJ, McCann KS (2012) Harvesting creates ecological traps: Consequences of invisible mortality risks in predatorprey metacommunities. Ecology 93:281–293. <a href="https://doi.org/10.1890/11-0011.1">https://doi.org/10.1890/11-0011.1</a></p>
+<p>Abrams PA, Ruokolainen L, Shuter BJ, McCann KS (2012) Harvesting creates ecological traps: Consequences of invisible mortality risks in predatorprey metacommunities. Ecology 93:281–293. <a href="https://doi.org/10.1890/11-0011.1" class="external-link">https://doi.org/10.1890/11-0011.1</a></p>
 </div>
 <div id="ref-Boettiger_2013">
-<p>Boettiger C, Hastings A (2013) No early warning signals for stochastic transitions: Insights from large deviation theory. Proceedings of the Royal Society B: Biological Sciences 280:20131372. <a href="https://doi.org/10.1098/rspb.2013.1372">https://doi.org/10.1098/rspb.2013.1372</a></p>
+<p>Boettiger C, Hastings A (2013) No early warning signals for stochastic transitions: Insights from large deviation theory. Proceedings of the Royal Society B: Biological Sciences 280:20131372. <a href="https://doi.org/10.1098/rspb.2013.1372" class="external-link">https://doi.org/10.1098/rspb.2013.1372</a></p>
 </div>
 <div id="ref-fenner2012a">
-<p>Fenner M (2012) One-click science marketing. Nature Materials 11:261–263. <a href="https://doi.org/10.1038/nmat3283">https://doi.org/10.1038/nmat3283</a></p>
+<p>Fenner M (2012) One-click science marketing. Nature Materials 11:261–263. <a href="https://doi.org/10.1038/nmat3283" class="external-link">https://doi.org/10.1038/nmat3283</a></p>
 </div>
 <div id="ref-greenwade93">
 <p>Greenwade G (1993) The Comprehensive Tex Archive Network (CTAN). TUGBoat 14:342–351</p>
-</div>
-<div id="ref-Xie_2020">
-<p>Xie Y (2020) Knitr: A general-purpose package for dynamic report generation in r</p>
 </div>
 <div id="ref-Xie_2015">
 <p>Xie Y (2015) Dynamic documents with R and knitr, 2nd edn. Chapman; Hall/CRC, Boca Raton, Florida</p>
@@ -227,19 +222,19 @@ nocite:
                         <!-- social icon -->
                         <ul class="list-inline">
 <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                <a class="external-link social-icon-outline" href="https://github.com/SciViews">
                                     <i class="ti-github"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                <a class="external-link social-icon-outline" href="https://twitter.com/PhilGrosjean">
                                     <i class="ti-twitter-alt"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                <a class="external-link social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
                                     <i class="ti-linkedin"></i>
                                 </a>
                             </li>
@@ -252,23 +247,23 @@ nocite:
                     <p class="h4 text-white mb-4">Related</p>
                     <ul class="footer-links">
 <li>
-                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                            <a href="http://econum.umons.ac.be" class="external-link">Our Lab</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                            <a href="https://web.umons.ac.be/fs/en/" class="external-link">Our Faculty</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                            <a href="https://web.umons.ac.be/complexys/en/" class="external-link">Complexys</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                            <a href="https://web.umons.ac.be/infortech/en/" class="external-link">InforTech</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                            <a href="https://web.umons.ac.be/en/" class="external-link">UMONS</a>
                         </li>
 
                     </ul>
@@ -278,23 +273,23 @@ nocite:
                     <p class="h4 text-white mb-4">Quick Link</p>
                     <ul class="footer-links">
 <li>
-                            <a href="https://www.sciviews.org/software/svbox">SciViews Box</a>
+                            <a href="https://www.sciviews.org/software/svbox" class="external-link">SciViews Box</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/sciviews-r">SciViews::R</a>
+                            <a href="https://www.sciviews.org/software/sciviews-r" class="external-link">SciViews::R</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/zooimage">Zoo/PhytoImage</a>
+                            <a href="https://www.sciviews.org/software/zooimage" class="external-link">Zoo/PhytoImage</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/blog">Blog</a>
+                            <a href="https://www.sciviews.org/blog" class="external-link">Blog</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/about">About</a>
+                            <a href="https://www.sciviews.org/about" class="external-link">About</a>
                         </li>
 
                     </ul>
@@ -321,7 +316,7 @@ nocite:
                 <div class="col-lg-6 col-md-7">
                     <ul class="list-inline text-center text-md-right">
 <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                            <a class="external-link font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
                         </li>
 
                     </ul>
@@ -342,6 +337,8 @@ nocite:
 
   
 
+
+  
 
   </body>
 </html>

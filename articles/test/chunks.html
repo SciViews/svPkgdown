@@ -23,6 +23,7 @@
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Chunks">
 <meta property="og:description" content="svPkgdown">
+<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
@@ -34,6 +35,8 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
   <img src="../../preloader.gif" alt="loading...">
@@ -51,7 +54,7 @@
       </button>
       <div class="navbar-brand-container">
        <div class="navbar-brand-logo">
-         <a class="navbar-brand" href="https://www.sciviews.org">
+         <a class="external-link navbar-brand" href="https://www.sciviews.org">
           <img src="../../logo_full.png" alt="SciViews"></a>
        </div>
        <div class="navbar-brand-package">
@@ -69,12 +72,6 @@
       </form>
       <!-- end svPkgdown global site search with Google -->
       <ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="../../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../../articles/svPkgdown.html">Get started</a>
 </li>
@@ -112,8 +109,8 @@
   <a href="../../news/index.html">Changelog</a>
 </li>
         <li>
-  <a href="https://github.com/SciViews/svPkgdown/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -132,35 +129,37 @@
 
       
 
-      </header><div class="row">
+      </header><script src="chunks_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Chunks</h1>
-                        <h4 class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
+                        <h4 data-toc-skip class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
             
-            <h4 class="date">2020-04-16</h4>
+            <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/chunks.Rmd"><code>vignettes/test/chunks.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/chunks.Rmd" class="external-link"><code>vignettes/test/chunks.Rmd</code></a></small>
       <div class="hidden name"><code>chunks.Rmd</code></div>
 
     </div>
 
     
     
-<p>The R package ‘knitr’ is used to insert R code withing your Markdown document, which makes altogether an R Markdown document, usually with the <code>.Rmd</code> extension. Go to ‘knitr’ <a href="http://yihui.name/knitr">homepage</a> for more details. This document uses various chunks to see how they appears in a ‘pkgdown’ site with the ‘svPkgdown’ style.</p>
+<p>The R package {knitr} is used to insert R code withing your Markdown document, which makes altogether an R Markdown document, usually with the <code>.Rmd</code> extension. Go to {knitr} <a href="http://yihui.name/knitr" class="external-link">homepage</a> for more details. This document uses various chunks to see how they appears in a {pkgdown} site with the {svPkgdown} style.</p>
 <div id="r-chunks" class="section level2">
 <h2 class="hasAnchor">
 <a href="#r-chunks" class="anchor"></a>R chunks</h2>
 <ul>
 <li>A few R commands:</li>
 </ul>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co"># This is a comment (don't use ##, since it is reserved for output!)</span>
-<span class="no">a</span> <span class="kw">&lt;-</span> <span class="fl">1</span> + <span class="fl">1</span> <span class="co"># Another comment</span>
-<span class="fl">TRUE</span>; <span class="fl">NA</span>; <span class="st">"Some text"</span></pre></body></html></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># This is a comment (don't use ##, since it is reserved for output!)</span>
+<span class="va">a</span> <span class="op">&lt;-</span> <span class="fl">1</span> <span class="op">+</span> <span class="fl">1</span> <span class="co"># Another comment</span>
+<span class="cn">TRUE</span>; <span class="cn">NA</span>; <span class="st">"Some text"</span></code></pre></div>
 <pre><code>## [1] TRUE</code></pre>
 <pre><code>## [1] NA</code></pre>
 <pre><code>## [1] "Some text"</code></pre>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/summary.html">summary</a></span>(<span class="no">cars</span>) <span class="co"># A table</span></pre></body></html></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">cars</span><span class="op">)</span> <span class="co"># A table</span></code></pre></div>
 <pre><code>##      speed           dist       
 ##  Min.   : 4.0   Min.   :  2.00  
 ##  1st Qu.:12.0   1st Qu.: 26.00  
@@ -171,19 +170,23 @@
 <ul>
 <li>Normal output <em>versus</em> message <em>versus</em> warning <em>versus</em> error:</li>
 </ul>
-<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="co"># Normal output</span>
-<span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span>(<span class="st">"Some text...\n"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Normal output</span>
+<span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="st">"Some text...\n"</span><span class="op">)</span></code></pre></div>
 <pre><code>## Some text...</code></pre>
-<div class="sourceCode" id="cb9"><html><body><pre class="r"><span class="co"># A message</span>
-<span class="fu"><a href="https://rdrr.io/r/base/message.html">message</a></span>(<span class="st">"My very nice message"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># A message</span>
+<span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">message</a></span><span class="op">(</span><span class="st">"My very nice message"</span><span class="op">)</span></code></pre></div>
 <pre><code>## My very nice message</code></pre>
-<div class="sourceCode" id="cb11"><html><body><pre class="r"><span class="co"># Output with a warning</span>
-<span class="fl">1</span>:<span class="fl">2</span> + <span class="fl">1</span>:<span class="fl">3</span></pre></body></html></div>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Output with a warning</span>
+<span class="fl">1</span><span class="op">:</span><span class="fl">2</span> <span class="op">+</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></code></pre></div>
 <pre><code>## Warning in 1:2 + 1:3: longer object length is not a multiple of shorter object
 ## length</code></pre>
 <pre><code>## [1] 2 4 4</code></pre>
-<div class="sourceCode" id="cb14"><html><body><pre class="r"><span class="co"># An error</span>
-<span class="no">non_existing_object</span></pre></body></html></div>
+<div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># An error</span>
+<span class="va">non_existing_object</span></code></pre></div>
 <pre><code>## Error in eval(expr, envir, enclos): object 'non_existing_object' not found</code></pre>
 <ul>
 <li>R chunk with option to generate a plot:</li>
@@ -196,8 +199,9 @@ An example figure generated by R, from the <code>cars</code> dataset.
 <ul>
 <li>Another plot:</li>
 </ul>
-<div class="sourceCode" id="cb16"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/qplot.html">qplot</a></span>(<span class="no">speed</span>, <span class="no">dist</span>, <span class="kw">data</span> <span class="kw">=</span> <span class="no">cars</span>) + <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html">geom_smooth</a></span>(<span class="kw">method</span> <span class="kw">=</span> <span class="st">"loess"</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span>
+<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/qplot.html" class="external-link">qplot</a></span><span class="op">(</span><span class="va">speed</span>, <span class="va">dist</span>, data <span class="op">=</span> <span class="va">cars</span><span class="op">)</span> <span class="op">+</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_smooth.html" class="external-link">geom_smooth</a></span><span class="op">(</span>method <span class="op">=</span> <span class="st">"loess"</span><span class="op">)</span></code></pre></div>
 <pre><code>## `geom_smooth()` using formula 'y ~ x'</code></pre>
 <div class="figure">
 <img src="chunks_files/figure-html/plot_cars2-1.png" alt="Distance in function of speed for the `cars` data set." width="480"><p class="caption">
@@ -209,7 +213,7 @@ Distance in function of speed for the <code>cars</code> data set.
 <h2 class="hasAnchor">
 <a href="#inline-r-expressions-and-special-chunks" class="anchor"></a>Inline R expressions and special chunks</h2>
 <ul>
-<li><p>Inline R expression like 2, or R version 3.6.3 (2020-02-29).</p></li>
+<li><p>Inline R expression like 2, or R version 4.0.5 (2021-03-31).</p></li>
 <li><p>Rcpp code chunks can also be included in your document:</p></li>
 </ul>
 <div class="sourceCode" id="cb18"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span id="cb18-1"><a href="#cb18-1"></a><span class="pp">#include </span><span class="im">&lt;Rcpp.h&gt;</span></span>
@@ -219,23 +223,27 @@ Distance in function of speed for the <code>cars</code> data set.
 <span id="cb18-5"><a href="#cb18-5"></a>    <span class="cf">if</span> (x == <span class="dv">0</span> || x == <span class="dv">1</span>) <span class="cf">return</span>(x);</span>
 <span id="cb18-6"><a href="#cb18-6"></a>    <span class="cf">return</span> (fibonacci(x - <span class="dv">1</span>)) + fibonacci(x - <span class="dv">2</span>);</span>
 <span id="cb18-7"><a href="#cb18-7"></a>}</span></code></pre></div>
-<p>Because fibonacci was defined with the <code>Rcpp::export</code> attribute it can now be called as a normal R function:</p>
-<div class="sourceCode" id="cb19"><html><body><pre class="r"><span class="fu">fibonacci</span>(<span class="fl">10L</span>)</pre></body></html></div>
+<p>Because <code>fibonacci()</code> was defined with the <code>Rcpp::export</code> attribute it can now be called as a normal R function:</p>
+<div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">fibonacci</span><span class="op">(</span><span class="fl">10L</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 55</code></pre>
-<div class="sourceCode" id="cb21"><html><body><pre class="r"><span class="fu">fibonacci</span>(<span class="fl">20L</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb21"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">fibonacci</span><span class="op">(</span><span class="fl">20L</span><span class="op">)</span></code></pre></div>
 <pre><code>## [1] 6765</code></pre>
 <ul>
 <li>An R chunk that is displayed, but not executed:</li>
 </ul>
-<div class="sourceCode" id="cb23"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">knitr</span>)
-<span class="fu"><a href="https://rdrr.io/pkg/knitr/man/knit.html">knit</a></span>(<span class="st">'R Markdown V2 Syntax.Rmd'</span>)</pre></body></html></div>
-<ul>
-<li>A Python chunk:</li>
-</ul>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1"></a><span class="im">import</span> sys</span>
-<span id="cb24-2"><a href="#cb24-2"></a><span class="bu">print</span>(sys.version)</span></code></pre></div>
-<pre><code>## 2.7.16 (default, Feb 29 2020, 01:55:37) 
-## [GCC 4.2.1 Compatible Apple LLVM 11.0.3 (clang-1103.0.29.20) (-macos10.15-objc-</code></pre>
+<div class="sourceCode" id="cb23"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://yihui.org/knitr/" class="external-link">knitr</a></span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/knitr/man/knit.html" class="external-link">knit</a></span><span class="op">(</span><span class="st">'R Markdown V2 Syntax.Rmd'</span><span class="op">)</span></code></pre></div>
+<!-- Note: this now fails in GitHub Actions => commented out
+* A Python chunk:
+
+`{python}
+import sys
+print(sys.version)
+`
+-->
 </div>
   </div>
 
@@ -260,19 +268,19 @@ Distance in function of speed for the <code>cars</code> data set.
                         <!-- social icon -->
                         <ul class="list-inline">
 <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                <a class="external-link social-icon-outline" href="https://github.com/SciViews">
                                     <i class="ti-github"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                <a class="external-link social-icon-outline" href="https://twitter.com/PhilGrosjean">
                                     <i class="ti-twitter-alt"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                <a class="external-link social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
                                     <i class="ti-linkedin"></i>
                                 </a>
                             </li>
@@ -285,23 +293,23 @@ Distance in function of speed for the <code>cars</code> data set.
                     <p class="h4 text-white mb-4">Related</p>
                     <ul class="footer-links">
 <li>
-                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                            <a href="http://econum.umons.ac.be" class="external-link">Our Lab</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                            <a href="https://web.umons.ac.be/fs/en/" class="external-link">Our Faculty</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                            <a href="https://web.umons.ac.be/complexys/en/" class="external-link">Complexys</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                            <a href="https://web.umons.ac.be/infortech/en/" class="external-link">InforTech</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                            <a href="https://web.umons.ac.be/en/" class="external-link">UMONS</a>
                         </li>
 
                     </ul>
@@ -311,23 +319,23 @@ Distance in function of speed for the <code>cars</code> data set.
                     <p class="h4 text-white mb-4">Quick Link</p>
                     <ul class="footer-links">
 <li>
-                            <a href="https://www.sciviews.org/software/svbox">SciViews Box</a>
+                            <a href="https://www.sciviews.org/software/svbox" class="external-link">SciViews Box</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/sciviews-r">SciViews::R</a>
+                            <a href="https://www.sciviews.org/software/sciviews-r" class="external-link">SciViews::R</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/zooimage">Zoo/PhytoImage</a>
+                            <a href="https://www.sciviews.org/software/zooimage" class="external-link">Zoo/PhytoImage</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/blog">Blog</a>
+                            <a href="https://www.sciviews.org/blog" class="external-link">Blog</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/about">About</a>
+                            <a href="https://www.sciviews.org/about" class="external-link">About</a>
                         </li>
 
                     </ul>
@@ -354,7 +362,7 @@ Distance in function of speed for the <code>cars</code> data set.
                 <div class="col-lg-6 col-md-7">
                     <ul class="list-inline text-center text-md-right">
 <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                            <a class="external-link font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
                         </li>
 
                     </ul>
@@ -375,6 +383,8 @@ Distance in function of speed for the <code>cars</code> data set.
 
   
 
+
+  
 
   </body>
 </html>

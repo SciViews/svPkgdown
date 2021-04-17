@@ -23,6 +23,7 @@
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Output Rendering">
 <meta property="og:description" content="svPkgdown">
+<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
@@ -34,6 +35,8 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
   <img src="../../preloader.gif" alt="loading...">
@@ -51,7 +54,7 @@
       </button>
       <div class="navbar-brand-container">
        <div class="navbar-brand-logo">
-         <a class="navbar-brand" href="https://www.sciviews.org">
+         <a class="external-link navbar-brand" href="https://www.sciviews.org">
           <img src="../../logo_full.png" alt="SciViews"></a>
        </div>
        <div class="navbar-brand-package">
@@ -69,12 +72,6 @@
       </form>
       <!-- end svPkgdown global site search with Google -->
       <ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="../../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../../articles/svPkgdown.html">Get started</a>
 </li>
@@ -112,8 +109,8 @@
   <a href="../../news/index.html">Changelog</a>
 </li>
         <li>
-  <a href="https://github.com/SciViews/svPkgdown/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -132,24 +129,24 @@
 
       
 
-      </header><script src="rendering_files/htmlwidgets-1.5.1/htmlwidgets.js"></script><script src="rendering_files/jquery-1.12.4/jquery.min.js"></script><link href="rendering_files/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+      </header><script src="rendering_files/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="rendering_files/htmlwidgets-1.5.3/htmlwidgets.js"></script><script src="rendering_files/jquery-1.12.4/jquery.min.js"></script><link href="rendering_files/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="rendering_files/leaflet-1.3.1/leaflet.js"></script><link href="rendering_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
-<script src="rendering_files/Proj4Leaflet-1.0.1/proj4-compressed.js"></script><script src="rendering_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="rendering_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="rendering_files/leaflet-binding-2.0.3/leaflet.js"></script><div class="row">
+<script src="rendering_files/proj4-2.6.2/proj4.min.js"></script><script src="rendering_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="rendering_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="rendering_files/leaflet-binding-2.0.4.1/leaflet.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Output Rendering</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/rendering.Rmd"><code>vignettes/test/rendering.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/rendering.Rmd" class="external-link"><code>vignettes/test/rendering.Rmd</code></a></small>
       <div class="hidden name"><code>rendering.Rmd</code></div>
 
     </div>
 
     
     
-<p>This is the <code>vignettes/test/rendering.Rmd</code> file from <code>pkgdown</code> copied here to see how pages render with the <code>svPkgdown</code> style, and amended with more examples.</p>
-<p>The <code>svPkgdown</code> styles have been made as close as possible as the styles used in the SciViews blogdown pages at <a href="https://www.sciviews.org" class="uri">https://www.sciviews.org</a>. However, there are a few differences:</p>
+<p>This is the <code>vignettes/test/rendering.Rmd</code> file from {pkgdown} copied here to see how pages render with the {svPkgdown} style, and amended with more examples.</p>
+<p>The {svPkgdown} styles have been made as close as possible as the styles used in the SciViews blogdown pages at <a href="https://www.sciviews.org" class="external-link uri">https://www.sciviews.org</a>. However, there are a few differences:</p>
 <ul>
 <li><p>Presentation of chunks inputs/outputs differ. Here, input and outputs are in the same boxes, and a copy to clipboard button is available at the top right, while in the blogdown, chunks inputs and outputs are separated and styled differently for a better perception (with varying styles for normal outputs, errors and warnings)</p></li>
 <li><p>Syntax highlighting use different coloring schemes and here, recognized R functions are links to their man pages on the web.</p></li>
@@ -157,8 +154,8 @@
 </ul>
 <div id="now-a-couple-of-tests---borrowed-from-pkgdown" class="section level3">
 <h3 class="hasAnchor">
-<a href="#now-a-couple-of-tests---borrowed-from-pkgdown" class="anchor"></a>Now a couple of tests.. borrowed from ‘pkgdown’</h3>
-<p>This vignette tests pkgdown output rendering for several use cases.</p>
+<a href="#now-a-couple-of-tests---borrowed-from-pkgdown" class="anchor"></a>Now a couple of tests.. borrowed from {pkgdown}</h3>
+<p>This vignette tests {pkgdown} output rendering for several use cases.</p>
 </div>
 <div id="highlighting" class="section level1">
 <h1 class="hasAnchor">
@@ -175,11 +172,11 @@
 </ul>
 <p>Remote:</p>
 <ul>
-<li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html">MASS::enlist</a></code></li>
-<li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html">MASS::enlist()</a></code></li>
-<li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html">?MASS::enlist</a></code></li>
-<li><code><a href="https://rdrr.io/r/base/match.html">%in%</a></code></li>
-<li><code><a href="https://rdrr.io/r/base/match.html">?`%in%`</a></code></li>
+<li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">MASS::enlist</a></code></li>
+<li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">MASS::enlist()</a></code></li>
+<li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">?MASS::enlist</a></code></li>
+<li><code><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></code></li>
+<li><code><a href="https://rdrr.io/r/base/match.html" class="external-link">?`%in%`</a></code></li>
 </ul>
 </div>
 <div id="spurious-links" class="section level2">
@@ -196,35 +193,40 @@
 <div id="code-blocks" class="section level2">
 <h2 class="hasAnchor">
 <a href="#code-blocks" class="anchor"></a>Code blocks</h2>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="co"># Shouldn't get linked</span>
-<span class="fu">enlist</span>(<span class="fl">5</span>)
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Shouldn't get linked</span>
+<span class="fu">enlist</span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>
 <span class="co"># Should get linked</span>
-<span class="kw pkg">MASS</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html">enlist</a></span>(<span class="fl">5</span>)</pre></body></html></div>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">MASS</span>)
-<span class="fu"><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html">enlist</a></span>(<span class="fl">5</span>)
+<span class="fu">MASS</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">enlist</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://www.stats.ox.ac.uk/pub/MASS4/" class="external-link">MASS</a></span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">enlist</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>
 <span class="co">#&gt; [[1]]</span>
-<span class="co">#&gt; [1] 5</span></pre></body></html></div>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="co"># Should get linked because MASS was loaded previously</span>
-<span class="fu"><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html">enlist</a></span>(<span class="fl">5</span>)
+<span class="co">#&gt; [1] 5</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Should get linked because MASS was loaded previously</span>
+<span class="fu"><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">enlist</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>
 <span class="co">#&gt; [[1]]</span>
-<span class="co">#&gt; [1] 5</span></pre></body></html></div>
+<span class="co">#&gt; [1] 5</span></code></pre></div>
 <hr>
 </div>
 </div>
 <div id="figures" class="section level1">
 <h1 class="hasAnchor">
 <a href="#figures" class="anchor"></a>Figures</h1>
-<div class="sourceCode" id="cb4"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.html">plot</a></span>(<span class="fl">1</span>:<span class="fl">10</span>)</pre></body></html></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span></code></pre></div>
 <p><img src="rendering_files/figure-html/unnamed-chunk-5-1.png" width="700"></p>
 <hr>
 </div>
 <div id="external-files" class="section level1">
 <h1 class="hasAnchor">
 <a href="#external-files" class="anchor"></a>External files</h1>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="no">x</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/readLines.html">readLines</a></span>(<span class="st">"test.txt"</span>)
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/readLines.html" class="external-link">readLines</a></span><span class="op">(</span><span class="st">"test.txt"</span><span class="op">)</span>
 <span class="co">#&gt; Warning in readLines("test.txt"): incomplete final line found on 'test.txt'</span>
-<span class="no">x</span>
-<span class="co">#&gt; [1] "a" "b" "c" "d"</span></pre></body></html></div>
+<span class="va">x</span>
+<span class="co">#&gt; [1] "a" "b" "c" "d"</span></code></pre></div>
 <p><img src="figures/bacon.jpg"></p>
 <hr>
 </div>
@@ -234,14 +236,15 @@
 <details>
 This should only be shown when required
 </details><details><p><summary>Some R code</summary></p>
-<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="fl">1</span> + <span class="fl">2</span>
-<span class="co">#&gt; [1] 3</span></pre></body></html></div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fl">1</span> <span class="op">+</span> <span class="fl">2</span>
+<span class="co">#&gt; [1] 3</span></code></pre></div>
 </details><hr>
 </div>
 <div id="tables" class="section level1">
 <h1 class="hasAnchor">
 <a href="#tables" class="anchor"></a>Tables</h1>
-<table class="table">
+<table style="width:100%;" class="table">
 <colgroup>
 <col width="33%">
 <col width="25%">
@@ -281,20 +284,23 @@ This should only be shown when required
 <div id="crayon" class="section level1">
 <h1 class="hasAnchor">
 <a href="#crayon" class="anchor"></a>Crayon</h1>
-<div class="sourceCode" id="cb7"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span>(<span class="kw pkg">crayon</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html">red</a></span>(<span class="st">"This is red"</span>), <span class="st">"\n"</span>)
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">red</a></span><span class="op">(</span><span class="st">"This is red"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span>
 <span class="co">#&gt; This is red</span>
-<span class="fu"><a href="https://rdrr.io/r/base/cat.html">cat</a></span>(<span class="kw pkg">crayon</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html">blue</a></span>(<span class="st">"This is blue\n"</span>), <span class="st">"\n"</span>)
+
+<span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">blue</a></span><span class="op">(</span><span class="st">"This is blue\n"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span>
 <span class="co">#&gt; This is blue</span>
 <span class="co">#&gt; </span>
 
-<span class="fu"><a href="https://rdrr.io/r/base/message.html">message</a></span>(<span class="kw pkg">crayon</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html">green</a></span>(<span class="st">"This is green"</span>))
+<span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">message</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">green</a></span><span class="op">(</span><span class="st">"This is green"</span><span class="op">)</span><span class="op">)</span>
 <span class="co">#&gt; This is green</span>
 
-<span class="fu"><a href="https://rdrr.io/r/base/warning.html">warning</a></span>(<span class="kw pkg">crayon</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html">bold</a></span>(<span class="st">"This is bold"</span>))
-<span class="co">#&gt; Warning: This is bold</span></pre></body></html></div>
+<span class="kw"><a href="https://rdrr.io/r/base/warning.html" class="external-link">warning</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">bold</a></span><span class="op">(</span><span class="st">"This is bold"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; Warning: This is bold</span></code></pre></div>
 <p>Some text</p>
-<div class="sourceCode" id="cb8"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/stop.html">stop</a></span>(<span class="kw pkg">crayon</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html">italic</a></span>(<span class="st">"This is italic"</span>))
-<span class="co">#&gt; Error in eval(expr, envir, enclos): This is italic</span></pre></body></html></div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">italic</a></span><span class="op">(</span><span class="st">"This is italic"</span><span class="op">)</span><span class="op">)</span>
+<span class="co">#&gt; Error in eval(expr, envir, enclos): This is italic</span></code></pre></div>
 <p>Some more text</p>
 </div>
   </div>
@@ -320,19 +326,19 @@ This should only be shown when required
                         <!-- social icon -->
                         <ul class="list-inline">
 <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                <a class="external-link social-icon-outline" href="https://github.com/SciViews">
                                     <i class="ti-github"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                <a class="external-link social-icon-outline" href="https://twitter.com/PhilGrosjean">
                                     <i class="ti-twitter-alt"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                <a class="external-link social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
                                     <i class="ti-linkedin"></i>
                                 </a>
                             </li>
@@ -345,23 +351,23 @@ This should only be shown when required
                     <p class="h4 text-white mb-4">Related</p>
                     <ul class="footer-links">
 <li>
-                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                            <a href="http://econum.umons.ac.be" class="external-link">Our Lab</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                            <a href="https://web.umons.ac.be/fs/en/" class="external-link">Our Faculty</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                            <a href="https://web.umons.ac.be/complexys/en/" class="external-link">Complexys</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                            <a href="https://web.umons.ac.be/infortech/en/" class="external-link">InforTech</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                            <a href="https://web.umons.ac.be/en/" class="external-link">UMONS</a>
                         </li>
 
                     </ul>
@@ -371,23 +377,23 @@ This should only be shown when required
                     <p class="h4 text-white mb-4">Quick Link</p>
                     <ul class="footer-links">
 <li>
-                            <a href="https://www.sciviews.org/software/svbox">SciViews Box</a>
+                            <a href="https://www.sciviews.org/software/svbox" class="external-link">SciViews Box</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/sciviews-r">SciViews::R</a>
+                            <a href="https://www.sciviews.org/software/sciviews-r" class="external-link">SciViews::R</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/zooimage">Zoo/PhytoImage</a>
+                            <a href="https://www.sciviews.org/software/zooimage" class="external-link">Zoo/PhytoImage</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/blog">Blog</a>
+                            <a href="https://www.sciviews.org/blog" class="external-link">Blog</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/about">About</a>
+                            <a href="https://www.sciviews.org/about" class="external-link">About</a>
                         </li>
 
                     </ul>
@@ -414,7 +420,7 @@ This should only be shown when required
                 <div class="col-lg-6 col-md-7">
                     <ul class="list-inline text-center text-md-right">
 <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                            <a class="external-link font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
                         </li>
 
                     </ul>
@@ -435,6 +441,8 @@ This should only be shown when required
 
   
 
+
+  
 
   </body>
 </html>

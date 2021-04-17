@@ -23,6 +23,7 @@
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Markdown formattings">
 <meta property="og:description" content="svPkgdown">
+<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
@@ -34,6 +35,8 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
   <img src="../../preloader.gif" alt="loading...">
@@ -51,7 +54,7 @@
       </button>
       <div class="navbar-brand-container">
        <div class="navbar-brand-logo">
-         <a class="navbar-brand" href="https://www.sciviews.org">
+         <a class="external-link navbar-brand" href="https://www.sciviews.org">
           <img src="../../logo_full.png" alt="SciViews"></a>
        </div>
        <div class="navbar-brand-package">
@@ -69,12 +72,6 @@
       </form>
       <!-- end svPkgdown global site search with Google -->
       <ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="../../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../../articles/svPkgdown.html">Get started</a>
 </li>
@@ -112,8 +109,8 @@
   <a href="../../news/index.html">Changelog</a>
 </li>
         <li>
-  <a href="https://github.com/SciViews/svPkgdown/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -132,22 +129,22 @@
 
       
 
-      </header><div class="row">
+      </header><script src="markdown_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Markdown formattings</h1>
-                        <h4 class="author">Philippe Grosjean( <a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
+                        <h4 data-toc-skip class="author">Philippe Grosjean( <a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
             
-            <h4 class="date">2020-04-16</h4>
+            <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/markdown.Rmd"><code>vignettes/test/markdown.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/markdown.Rmd" class="external-link"><code>vignettes/test/markdown.Rmd</code></a></small>
       <div class="hidden name"><code>markdown.Rmd</code></div>
 
     </div>
 
     
     
-<p>This is an illustration of the basic (R) Markdown formattings, as they are rendered in a ‘pkgdown’ site using the ‘svPkgdown’ style.</p>
+<p>This is an illustration of the basic (R) Markdown formattings, as they are rendered in a {pkgdown} site using the {svPkgdown} style.</p>
 <div id="headers" class="section level3 unnumbered">
 <h3 class="hasAnchor">
 <a href="#headers" class="anchor"></a>Headers</h3>
@@ -194,7 +191,7 @@
 </div>
 <div id="headers-can-contain-formatting-and-links" class="section level2">
 <h2 class="hasAnchor">
-<a href="#headers-can-contain-formatting-and-links" class="anchor"></a>Headers can <em>contain</em> forma<sup>tting</sup> and <a href="http://www.sciviews.org">links</a>
+<a href="#headers-can-contain-formatting-and-links" class="anchor"></a>Headers can <em>contain</em> forma<sup>tting</sup> and <a href="http://www.sciviews.org" class="external-link">links</a>
 </h2>
 <p><strong>Take care that a blank line is <em>required</em> before headers as #22 this could too easily be interpretted as a header otherwise.</strong></p>
 <ul>
@@ -217,7 +214,7 @@
 <li><p>Strikethrough with <del>this formatting</del>.</p></li>
 <li><p>Formattings can be combined of course, like <strong><em>bold italic with super<sup>script</sup></em></strong>.</p></li>
 <li><p>Inline code like <code>x &lt;- 1</code>, and if you need backquote inside it <code>`@var` &lt;- 2</code>.</p></li>
-<li><p>Links are automatically detected like <a href="http://example.com" class="uri">http://example.com</a>, or can be explicitly indicated (with a different text) like <a href="http://example.com">some example</a>. <em>Note that Markdown uses also <a href="#reflinks">reference links</a></em>. You can also put your links between angle brackets <a href="http://example.com" class="uri">http://example.com</a>.</p></li>
+<li><p>Links are automatically detected like <a href="http://example.com" class="external-link uri">http://example.com</a>, or can be explicitly indicated (with a different text) like <a href="http://example.com" class="external-link">some example</a>. <em>Note that Markdown uses also <a href="#reflinks">reference links</a></em>. You can also put your links between angle brackets <a href="http://example.com" class="external-link uri">http://example.com</a>.</p></li>
 <li><p>You can use any UTF-8 character (at least for HTML documents (examples: µm, Ω, Æ, ∫√)…</p></li>
 <li><p>You need to backslash-escape punctuation you don’t want to be interpreted ad formatting code, like *foo*.</p></li>
 <li><p>A non-breaking space is simply an escaped space, like between “Fig.” and “3” here: Fig. 3.</p></li>
@@ -261,21 +258,22 @@ And a new line here</div>
 <p>Preformatted text:</p>
 <p>Some preformatted text using indentation</p>
 </li>
-<li><p>Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (<code>~</code>) or backticks (<code>`</code>) and they must be separated from the surrounding using blank lines. You can use identifiers too like in <a href="#mycode">this block</a>:</p></li>
+<li><p>Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (<code><a href="https://rdrr.io/r/base/tilde.html" class="external-link">~</a></code>) or backticks (<code>`</code>) and they must be separated from the surrounding using blank lines. You can use identifiers too like in <a href="#mycode">this block</a>:</p></li>
 </ul>
 <pre><code>Some preformatted text (like for code blocks)
 using a fenced block with backticks</code></pre>
 <p>It is very easy to indicate a language, and syntax highlighting will be used for it:</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="co"># Idem, but with R syntax highlighting</span>
-<span class="kw">for</span> (<span class="no">i</span> <span class="kw">in</span> <span class="fl">1</span>:<span class="fl">100</span>) {
-  <span class="kw">if</span> (<span class="no">i</span> <span class="kw">&gt;</span> <span class="fl">1</span>) <span class="fu"><a href="https://rdrr.io/r/base/stop.html">stop</a></span>(<span class="st">"Got it!"</span>)
-}</pre></body></html></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># Idem, but with R syntax highlighting</span>
+<span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span><span class="op">)</span> <span class="op">{</span>
+  <span class="kw">if</span> <span class="op">(</span><span class="va">i</span> <span class="op">&gt;</span> <span class="fl">1</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="st">"Got it!"</span><span class="op">)</span>
+<span class="op">}</span></code></pre></div>
 <p>It can also be specified in a more complex way, and with marks allowing to link to it:</p>
 <div class="sourceCode" id="mycode"><pre class="sourceCode python"><code class="sourceCode python"><span id="mycode-1"><a href="#mycode-1"></a>name <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">'What is your name?</span><span class="ch">\n</span><span class="st">'</span>)</span>
 <span id="mycode-2"><a href="#mycode-2"></a><span class="bu">print</span> <span class="st">'Hi, </span><span class="sc">%s</span><span class="st">.'</span> <span class="op">%</span> name</span></code></pre></div>
 <p>Then you can link to it <a href="#mycode">like here</a>.</p>
 <ul>
-<li>Horizontal rule or page break using four or more <code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></code> or <code>_</code> optionally separated by spaces</li>
+<li>Horizontal rule or page break using four or more <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">*</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">-</a></code> or <code>_</code> optionally separated by spaces</li>
 </ul>
 <hr>
 <hr>
@@ -300,7 +298,7 @@ and this approach is the only way to do it in tables!</p></li>
 <a href="#lists" class="anchor"></a>Lists</h3>
 <ul>
 <li>
-<p>Unordered list (using <code><a href="https://rdrr.io/r/base/Arithmetic.html">*</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html">+</a></code> or <code><a href="https://rdrr.io/r/base/Arithmetic.html">-</a></code>)</p>
+<p>Unordered list (using <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">*</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">+</a></code> or <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">-</a></code>)</p>
 <ul>
 <li>Second level</li>
 </ul>
@@ -341,7 +339,7 @@ and this approach is the only way to do it in tables!</p></li>
 <li>Fourth item</li>
 </ol>
 <ul>
-<li>Definition lists are also supported (definitions must start with <code>:</code> or <code>~</code>) and blank lines are optional between the term and its definition (loose <em>vs</em> compact form), but not before the term. Finally, several definitions are allowed for the same term.</li>
+<li>Definition lists are also supported (definitions must start with <code><a href="https://rdrr.io/r/base/Colon.html" class="external-link">:</a></code> or <code><a href="https://rdrr.io/r/base/tilde.html" class="external-link">~</a></code>) and blank lines are optional between the term and its definition (loose <em>vs</em> compact form), but not before the term. Finally, several definitions are allowed for the same term.</li>
 </ul>
 <dl>
 <dt>Term 1</dt>
@@ -405,8 +403,9 @@ and this approach is the only way to do it in tables!</p></li>
 <ol style="list-style-type: decimal">
 <li>
 <p>The area of a circle with a given radius is:</p>
-<div class="sourceCode" id="cb6"><html><body><pre class="r"><span class="no">radius</span> <span class="kw">&lt;-</span> <span class="fl">3.5</span>
-<span class="no">pi</span> * <span class="no">radius</span> ^ <span class="fl">2</span></pre></body></html></div>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="va">radius</span> <span class="op">&lt;-</span> <span class="fl">3.5</span>
+<span class="va">pi</span> <span class="op">*</span> <span class="va">radius</span> <span class="op">^</span> <span class="fl">2</span></code></pre></div>
 <pre><code>## [1] 38.48451</code></pre>
 </li>
 <li><p>As you can see, the R chunk and its associated results are included in the list element!</p></li>
@@ -421,7 +420,7 @@ and this approach is the only way to do it in tables!</p></li>
 <h2 class="hasAnchor">
 <a href="#reflinks" class="anchor"></a>Reference links</h2>
 <ul>
-<li>Reference links are done this way <a href="https://www.sciviews.org" title="Title">a linked part</a>, or for images: <a href="http://www.sciviews.org"><img src="figures/svbox.png" title="Figure title" alt="alt text"></a>
+<li>Reference links are done this way <a href="https://www.sciviews.org" title="Title" class="external-link">a linked part</a>, or for images: <a href="http://www.sciviews.org" class="external-link"><img src="figures/svbox.png" title="Figure title" alt="alt text"></a>
 </li>
 </ul>
 </div>
@@ -439,16 +438,16 @@ and this approach is the only way to do it in tables!</p></li>
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
 \end{aligned}\]</span></p>
-<p>With ‘pkgdown’ and standard Pandoc, it is not easy to get numbered display equations and cross-references to these equations. . Here is an example:</p>
+<p>With {pkgdown} and standard Pandoc, it is not easy to get numbered display equations and cross-references to these equations. Here is an example:</p>
 <p><span class="math display">\[x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \label{my-equation} \tag{1}\]</span></p>
 <p>… and you can reference Eq. <span class="math inline">\(\ref{my-equation}\)</span> like this.</p>
-<p>The ‘svSweave’ eases writing and referencing numbered display equations from any R Markdown documents, see<a href="https://www.sciviews.org/svSweave/">svSweave</a>.</p>
-<p>If you feel difficult to write LaTeX equations, there are inline LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor">this one</a>, and you don’t need to install anything on your computer to used them. Also, there is a R Studio addin provided with the <code>bookdown</code> R package to ease entering LaTeX equations in your R Markdown document.</p>
+<p>The {svSweave} package eases writing and referencing numbered display equations from any R Markdown documents, see<a href="https://www.sciviews.org/svSweave/" class="external-link">svSweave documentation</a>.</p>
+<p>If you feel difficult to write LaTeX equations, there are inline LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor" class="external-link">this one</a>, and you don’t need to install anything on your computer to used them. Also, there is an RStudio addin provided with the {bookdown} R package to ease writing LaTeX equations in your R Markdown document.</p>
 </div>
 <div id="icons" class="section level2">
 <h2 class="hasAnchor">
 <a href="#icons" class="anchor"></a>Icons</h2>
-<p>You have both the <a href="https://fontawesome.com/icons?d=gallery&amp;m=free">font awesome</a>, and the <a href="https://themify.me/themify-icons">themify</a> icons. You need to create an object of class “fa fa-xxxx”, or “ti-xxxx”, where “xxxx” is an icon in the collection. Here is an example from font awesome <span class="fa fa-chart-bar"></span>, and here is one from themify: <span class="ti-package"></span>. You can use these icons everywhere!</p>
+<p>You have both the <a href="https://fontawesome.com/icons?d=gallery&amp;m=free" class="external-link">font awesome</a>, and the <a href="https://themify.me/themify-icons" class="external-link">themify</a> icons. You need to create an object of class “fa fa-xxxx”, or “ti-xxxx”, where “xxxx” is an icon in the collection. Here is an example from font awesome <span class="fa fa-chart-bar"></span>, and here is one from themify: <span class="ti-package"></span>. You can use these icons everywhere!</p>
 </div>
 </div>
 <div class="footnotes">
@@ -489,19 +488,19 @@ and this approach is the only way to do it in tables!</p></li>
                         <!-- social icon -->
                         <ul class="list-inline">
 <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                <a class="external-link social-icon-outline" href="https://github.com/SciViews">
                                     <i class="ti-github"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                <a class="external-link social-icon-outline" href="https://twitter.com/PhilGrosjean">
                                     <i class="ti-twitter-alt"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                <a class="external-link social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
                                     <i class="ti-linkedin"></i>
                                 </a>
                             </li>
@@ -514,23 +513,23 @@ and this approach is the only way to do it in tables!</p></li>
                     <p class="h4 text-white mb-4">Related</p>
                     <ul class="footer-links">
 <li>
-                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                            <a href="http://econum.umons.ac.be" class="external-link">Our Lab</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                            <a href="https://web.umons.ac.be/fs/en/" class="external-link">Our Faculty</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                            <a href="https://web.umons.ac.be/complexys/en/" class="external-link">Complexys</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                            <a href="https://web.umons.ac.be/infortech/en/" class="external-link">InforTech</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                            <a href="https://web.umons.ac.be/en/" class="external-link">UMONS</a>
                         </li>
 
                     </ul>
@@ -540,23 +539,23 @@ and this approach is the only way to do it in tables!</p></li>
                     <p class="h4 text-white mb-4">Quick Link</p>
                     <ul class="footer-links">
 <li>
-                            <a href="https://www.sciviews.org/software/svbox">SciViews Box</a>
+                            <a href="https://www.sciviews.org/software/svbox" class="external-link">SciViews Box</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/sciviews-r">SciViews::R</a>
+                            <a href="https://www.sciviews.org/software/sciviews-r" class="external-link">SciViews::R</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/zooimage">Zoo/PhytoImage</a>
+                            <a href="https://www.sciviews.org/software/zooimage" class="external-link">Zoo/PhytoImage</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/blog">Blog</a>
+                            <a href="https://www.sciviews.org/blog" class="external-link">Blog</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/about">About</a>
+                            <a href="https://www.sciviews.org/about" class="external-link">About</a>
                         </li>
 
                     </ul>
@@ -583,7 +582,7 @@ and this approach is the only way to do it in tables!</p></li>
                 <div class="col-lg-6 col-md-7">
                     <ul class="list-inline text-center text-md-right">
 <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                            <a class="external-link font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
                         </li>
 
                     </ul>
@@ -604,6 +603,8 @@ and this approach is the only way to do it in tables!</p></li>
 
   
 
+
+  
 
   </body>
 </html>

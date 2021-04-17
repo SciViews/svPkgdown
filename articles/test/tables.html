@@ -23,6 +23,7 @@
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Tables">
 <meta property="og:description" content="svPkgdown">
+<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
@@ -34,6 +35,8 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
   <img src="../../preloader.gif" alt="loading...">
@@ -51,7 +54,7 @@
       </button>
       <div class="navbar-brand-container">
        <div class="navbar-brand-logo">
-         <a class="navbar-brand" href="https://www.sciviews.org">
+         <a class="external-link navbar-brand" href="https://www.sciviews.org">
           <img src="../../logo_full.png" alt="SciViews"></a>
        </div>
        <div class="navbar-brand-package">
@@ -69,12 +72,6 @@
       </form>
       <!-- end svPkgdown global site search with Google -->
       <ul class="nav navbar-nav navbar-right">
-<li>
-  <a href="../../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="../../articles/svPkgdown.html">Get started</a>
 </li>
@@ -112,8 +109,8 @@
   <a href="../../news/index.html">Changelog</a>
 </li>
         <li>
-  <a href="https://github.com/SciViews/svPkgdown/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+  <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -132,26 +129,26 @@
 
       
 
-      </header><div class="row">
+      </header><script src="tables_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Tables</h1>
-                        <h4 class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
+                        <h4 data-toc-skip class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
             
-            <h4 class="date">2020-04-16</h4>
+            <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/tables.Rmd"><code>vignettes/test/tables.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/tables.Rmd" class="external-link"><code>vignettes/test/tables.Rmd</code></a></small>
       <div class="hidden name"><code>tables.Rmd</code></div>
 
     </div>
 
     
     
-<p>Here we explore different ways to produce tables in R Markdown documents, and we can see their visual appearance in a ‘pkgdown’ page with the ‘svPkgdown’ style.</p>
+<p>Here we explore different ways to produce tables in R Markdown documents, and we can see their visual appearance in a {pkgdown} page with the {svPkgdown} style.</p>
 <div id="standard-pandoc-tables" class="section level2">
 <h2 class="hasAnchor">
 <a href="#standard-pandoc-tables" class="anchor"></a>Standard Pandoc tables</h2>
-<p>Simple tables are easy to create. Header and rows must be on two lines, and column alignment is determined according to the position of the header relative to the line under it. Tables must be surrounded by empty lines and an optional caption may be added above or below the table, starting with <code>Table:</code> or <code>:</code> (which is stripped off).</p>
+<p>Simple tables are easy to create. Header and rows must be on two lines, and column alignment is determined according to the position of the header relative to the line under it. Tables must be surrounded by empty lines and an optional caption may be added above or below the table, starting with <code>Table:</code> or <code><a href="https://rdrr.io/r/base/Colon.html" class="external-link">:</a></code> (which is stripped off).</p>
 <table class="table">
 <caption>Demonstration of a simple table with caption.</caption>
 <thead><tr class="header">
@@ -206,7 +203,7 @@
 </tbody>
 </table>
 <p>Multiline tables start and end with a line of dashes. Cells are separated by spaces (in case of a single row table, add the empty line too, otherwise, the table is interpreted as a single-line table). In multiline tables, the writer tries to respect the relative size of the columns that appear in the markdown document.</p>
-<table class="table">
+<table style="width:86%;" class="table">
 <caption>A multiline table.</caption>
 <colgroup>
 <col width="16%">
@@ -236,7 +233,7 @@
 </tbody>
 </table>
 <p>Headers can be omitted too in multiline tables (note that this could be used as a simple formatting hack to place –short– material on several columns!):</p>
-<table class="table">
+<table style="width:86%;" class="table">
 <caption>Here’s a multiline table without headers.</caption>
 <colgroup>
 <col width="16%">
@@ -259,8 +256,8 @@
 </tr>
 </tbody>
 </table>
-<p>Grid tables (rows with <code>=</code> separate headers and can be omitted for headerless tables). Apparently, more formatting is allowed in gridded tables, like list items:</p>
-<table class="table">
+<p>Grid tables (rows with <code><a href="https://rdrr.io/r/base/assignOps.html" class="external-link">=</a></code> separate headers and can be omitted for headerless tables). Apparently, more formatting is allowed in gridded tables, like list items:</p>
+<table style="width:74%;" class="table">
 <caption>Sample grid table.</caption>
 <colgroup>
 <col width="22%">
@@ -291,7 +288,7 @@
 </tr>
 </tbody>
 </table>
-<p>Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like <code><a href="https://rdrr.io/r/base/Logic.html">|</a></code> cannot appear in the table and this form does not support multiline tables. The semicolumn <code>:</code>may be used to indicate alignment inside each column, but it is an optional feature.</p>
+<p>Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like <code><a href="https://rdrr.io/r/base/Logic.html" class="external-link">|</a></code> cannot appear in the table and this form does not support multiline tables. The semicolumn <code><a href="https://rdrr.io/r/base/Colon.html" class="external-link">:</a></code> may be used to indicate alignment inside each column, but it is an optional feature.</p>
 <table class="table">
 <caption>A typical pipe table.</caption>
 <thead><tr class="header">
@@ -325,8 +322,9 @@
 <div id="tables-using-knitrkable" class="section level2">
 <h2 class="hasAnchor">
 <a href="#tables-using-knitrkable" class="anchor"></a>Tables using ‘knitr::kable()’</h2>
-<p>The ‘knitr’ package provides the function ‘kable()’ to format data frames as Markdown tables, and it is very easy to use:</p>
-<div class="sourceCode" id="cb1"><html><body><pre class="r"><span class="kw pkg">knitr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html">kable</a></span>(<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="no">iris</span>))</pre></body></html></div>
+<p>The {knitr} package provides the function <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable()</a></code> to format data frames as Markdown tables, and it is very easy to use:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></code></pre></div>
 <table class="table">
 <thead><tr class="header">
 <th align="right">Sepal.Length</th>
@@ -383,19 +381,20 @@
 </div>
 <div id="tables-using-xtable" class="section level2">
 <h2 class="hasAnchor">
-<a href="#tables-using-xtable" class="anchor"></a>Tables using ‘xtable’</h2>
-<p>The ‘xtable’ R package offers an alternative to output well-formatted tables in an R Markdown document (note that you must specify <code>type = "html"</code> or <code>type = "latex"</code> (default) and a way to automate it is provided here depending on the R Markdown output and indicate <code>results='asis'</code> in the chunk header):</p>
-<div class="sourceCode" id="cb2"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">xtable</span>)
-<span class="fu"><a href="https://rdrr.io/r/utils/data.html">data</a></span>(<span class="no">tli</span>)
+<a href="#tables-using-xtable" class="anchor"></a>Tables using {xtable}</h2>
+<p>The {xtable} R package offers an alternative to output well-formatted tables in an R Markdown document (note that you must specify <code>type = "html"</code> or <code>type = "latex"</code> (default) and a way to automate it is provided here depending on the R Markdown output and indicate <code>results='asis'</code> in the chunk header):</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://xtable.r-forge.r-project.org/" class="external-link">xtable</a></span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">tli</span><span class="op">)</span>
 <span class="co"># Demonstrate data.frame... can also export many objects!</span>
-<span class="no">tli.table</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xtable/man/xtable.html">xtable</a></span>(<span class="no">tli</span>[<span class="fl">1</span>:<span class="fl">10</span>, ])
-<span class="fu"><a href="https://rdrr.io/pkg/xtable/man/table.attributes.html">digits</a></span>(<span class="no">tli.table</span>)[<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">2</span>, <span class="fl">6</span>)] <span class="kw">&lt;-</span> <span class="fl">0</span>
+<span class="va">tli.table</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xtable/man/xtable.html" class="external-link">xtable</a></span><span class="op">(</span><span class="va">tli</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/xtable/man/table.attributes.html" class="external-link">digits</a></span><span class="op">(</span><span class="va">tli.table</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">6</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">0</span>
 <span class="co"># Choose 'one of these!'html' or 'latex' automatically</span>
-<span class="fu"><a href="https://rdrr.io/r/base/options.html">options</a></span>(<span class="kw">xtable.type</span> <span class="kw">=</span> <span class="kw">if</span> (<span class="kw pkg">knitr</span><span class="kw ns">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html">is_html_output</a></span>()) <span class="st">"html"</span> <span class="kw">else</span> <span class="st">"latex"</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/print.html">print</a></span>(<span class="no">tli.table</span>, <span class="kw">floating</span> <span class="kw">=</span> <span class="fl">FALSE</span>) <span class="co"># or add type = "html"|"latex")</span></pre></body></html></div>
-<!-- html table generated in R 3.6.3 by xtable 1.8-4 package -->
-<!-- Mon Apr 20 11:07:10 2020 -->
-<table class="table">
+<span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>xtable.type <span class="op">=</span> <span class="kw">if</span> <span class="op">(</span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html" class="external-link">is_html_output</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="st">"html"</span> <span class="kw">else</span> <span class="st">"latex"</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">tli.table</span>, floating <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co"># or add type = "html"|"latex")</span></code></pre></div>
+<!-- html table generated in R 4.0.5 by xtable 1.8-4 package -->
+<!-- Sat Apr 17 08:38:43 2021 -->
+<table border="1" class="table">
 <tr>
 <th>
 </th>
@@ -619,17 +618,18 @@ HISPANIC
 </div>
 <div id="tables-using-pander" class="section level2">
 <h2 class="hasAnchor">
-<a href="#tables-using-pander" class="anchor"></a>Tables using ‘pander’</h2>
-<p>The ‘pander’ R package can output various objects in Pandoc:</p>
-<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">pander</span>)
+<a href="#tables-using-pander" class="anchor"></a>Tables using {pander}</h2>
+<p>The {pander} R package can output various objects in Pandoc:</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://rapporter.github.io/pander" class="external-link">pander</a></span><span class="op">)</span>
 <span class="co"># You can change default pander options:</span>
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html">panderOptions</a></span>(<span class="st">'table.alignment.default'</span>, <span class="kw">function</span>(<span class="no">df</span>)
-  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html">ifelse</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/lapply.html">sapply</a></span>(<span class="no">df</span>, <span class="no">is.numeric</span>), <span class="st">'right'</span>, <span class="st">'left'</span>))
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html">panderOptions</a></span>(<span class="st">'table.split.table'</span>, <span class="fl">Inf</span>)
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html">panderOptions</a></span>(<span class="st">'big.mark'</span>, <span class="st">","</span>)
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html">panderOptions</a></span>(<span class="st">'keep.trailing.zeros'</span>, <span class="fl">TRUE</span>)
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/pander.html">pander</a></span>(<span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="no">iris</span>))</pre></body></html></div>
-<table class="table">
+<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.alignment.default'</span>, <span class="kw">function</span><span class="op">(</span><span class="va">df</span><span class="op">)</span>
+  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">sapply</a></span><span class="op">(</span><span class="va">df</span>, <span class="va">is.numeric</span><span class="op">)</span>, <span class="st">'right'</span>, <span class="st">'left'</span><span class="op">)</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.split.table'</span>, <span class="cn">Inf</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'big.mark'</span>, <span class="st">","</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'keep.trailing.zeros'</span>, <span class="cn">TRUE</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/pkg/pander/man/pander.html" class="external-link">pander</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<table style="width:94%;" class="table">
 <colgroup>
 <col width="20%">
 <col width="19%">
@@ -692,26 +692,27 @@ HISPANIC
 </div>
 <div id="tables-using-flextable" class="section level2">
 <h2 class="hasAnchor">
-<a href="#tables-using-flextable" class="anchor"></a>Tables using ‘flextable’</h2>
-<p>The ‘flextable’ R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in Github Action):</p>
+<a href="#tables-using-flextable" class="anchor"></a>Tables using {flextable}</h2>
+<p>The {flextable} R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in GitHub Action):</p>
 <pre><code>Error : package or namespace load failed for 'flextable' in dyn.load(file, DLLpath = DLLpath, ...):
 90
 *  unable to load shared object '/Users/runner/runners/2.169.0/work/_temp/Library/systemfonts/libs/systemfonts.so':
 91
 *   dlopen(/Users/runner/runners/2.169.0/work/_temp/Library/systemfonts/libs/systemfonts.so, 6): Library not loaded: /opt/X11/lib/libfreetype.6.dylib</code></pre>
-<div class="sourceCode" id="cb5"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">flextable</span>)
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dplyr</span>)
-<span class="no">mtcars</span> <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span>(<span class="no">.</span>, <span class="no">cyl</span>, <span class="no">am</span>) <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span>(<span class="no">.</span>, <span class="kw">avg</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span>(<span class="no">mpg</span>)) <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/pkg/flextable/man/flextable.html">flextable</a></span>(<span class="no">.</span>) <span class="kw">%&gt;%</span>
-  <span class="fu"><a href="https://rdrr.io/pkg/flextable/man/bg.html">bg</a></span>(<span class="no">.</span>, <span class="kw">bg</span> <span class="kw">=</span> <span class="st">'#c7deff'</span>, <span class="kw">part</span> <span class="kw">=</span> <span class="st">'header'</span>)</pre></body></html></div>
-<p>There are many other packages to output well-formatted tables from R objects, like: ‘stargazer’, ‘table1’, ‘tables’, ‘formattable, ’htmlTable’, ‘huxtable’, ‘kableExtra’, ‘pixiedust’, ‘tangram’, ‘texreg’, ‘ztable’, etc.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ardata-fr.github.io/flextable-book/" class="external-link">flextable</a></span><span class="op">)</span>
+<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
+<span class="va">mtcars</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">.</span>, <span class="va">cyl</span>, <span class="va">am</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span><span class="va">.</span>, avg <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/flextable.html" class="external-link">flextable</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">%&gt;%</span>
+  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/bg.html" class="external-link">bg</a></span><span class="op">(</span><span class="va">.</span>, bg <span class="op">=</span> <span class="st">'#c7deff'</span>, part <span class="op">=</span> <span class="st">'header'</span><span class="op">)</span></code></pre></div>
+<p>There are many other packages to output well-formatted tables from R objects, like: {stargazer}, {table1}, {tables}, {formattable}, {htmlTable}, {huxtable}, {kableExtra}, {pixiedust}, {tangram}, {texreg}, {ztable}, etc.</p>
 </div>
 <div id="table-numbers-and-references" class="section level2">
 <h2 class="hasAnchor">
 <a href="#table-numbers-and-references" class="anchor"></a>Table numbers and references</h2>
-<p>Standard Pandoc does not allow to number tables and figures, nor to refer to them in text, like it is usual to do in the scientific litterature. If the Markdown document is converted into LaTeX (to produce a PDF, or Beamer presentation, for instance), one can add LaTeX tags to do so. However, these tags will not work obviously with HTML outputs. The ‘bookdown’ format extends the Markdown syntax to allow numbered tables and cross-references with <code>@ref(label)</code> tags, see <a href="https://bookdown.org/yihui/bookdown/cross-references.html">here</a>. In ‘blogdown’, providing you generate your tables with <code><a href="https://rdrr.io/pkg/knitr/man/kable.html">knitr::kable()</a></code>, and you indicate a <code>caption =</code> argument.</p>
+<p>Standard Pandoc does not allow to number tables and figures, nor to refer to them in text, like it is usual to do in the scientific litterature. If the Markdown document is converted into LaTeX (to produce a PDF, or Beamer presentation, for instance), one can add LaTeX tags to do so. However, these tags will not work obviously with HTML outputs. The {bookdown} format extends the Markdown syntax to allow numbered tables and cross-references with <code>@ref(label)</code> tags, see <a href="https://bookdown.org/yihui/bookdown/cross-references.html" class="external-link">here</a>. In {blogdown}, providing you generate your tables with <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">knitr::kable()</a></code>, and you indicate a <code>caption =</code> argument.</p>
 <table class="table">
 <caption>The first few lines of the <code>iris</code> data set.</caption>
 <thead><tr class="header">
@@ -766,7 +767,7 @@ HISPANIC
 </tr>
 </tbody>
 </table>
-<p>Now, you can refer to this table in the text in ‘blogdown’ using a link like this <code>[this Table](#tab:table-iris)</code>, where <code>table-iris</code> is the name of the chunk that generated the table. In ‘blogdown’, it gives this (see <a href="#tab:table-iris">this Table</a>), but in ‘pkgdown’, it does <strong>not</strong> work. The ‘svSweave’ R package can generate numbers for tables, figures and equations, and it allows for cross-referencing them in the text <strong>using pure R code</strong>. Thus, it works with <strong>all</strong> R Markdown documents, see <a href="https://www.sciviews.org/svSweave/">svSweave</a>.</p>
+<p>Now, you can refer to this table in the text in {blogdown} using a link like this <code>[this Table](#tab:table-iris)</code>, where <code>table-iris</code> is the name of the chunk that generated the table. In {blogdown}, it gives this (see <a href="#tab:table-iris">this Table</a>), but in {pkgdown}, it does <strong>not</strong> work. The {svSweave} R package can generate numbers for tables, figures and equations, and it allows for cross-referencing them in the text <strong>using pure R code</strong>. Thus, it works with <strong>all</strong> R Markdown documents, see the <a href="https://www.sciviews.org/svSweave/" class="external-link">svSweave documentation</a>.</p>
 </div>
   </div>
 
@@ -791,19 +792,19 @@ HISPANIC
                         <!-- social icon -->
                         <ul class="list-inline">
 <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                <a class="external-link social-icon-outline" href="https://github.com/SciViews">
                                     <i class="ti-github"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                <a class="external-link social-icon-outline" href="https://twitter.com/PhilGrosjean">
                                     <i class="ti-twitter-alt"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                <a class="external-link social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
                                     <i class="ti-linkedin"></i>
                                 </a>
                             </li>
@@ -816,23 +817,23 @@ HISPANIC
                     <p class="h4 text-white mb-4">Related</p>
                     <ul class="footer-links">
 <li>
-                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                            <a href="http://econum.umons.ac.be" class="external-link">Our Lab</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                            <a href="https://web.umons.ac.be/fs/en/" class="external-link">Our Faculty</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                            <a href="https://web.umons.ac.be/complexys/en/" class="external-link">Complexys</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                            <a href="https://web.umons.ac.be/infortech/en/" class="external-link">InforTech</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                            <a href="https://web.umons.ac.be/en/" class="external-link">UMONS</a>
                         </li>
 
                     </ul>
@@ -842,23 +843,23 @@ HISPANIC
                     <p class="h4 text-white mb-4">Quick Link</p>
                     <ul class="footer-links">
 <li>
-                            <a href="https://www.sciviews.org/software/svbox">SciViews Box</a>
+                            <a href="https://www.sciviews.org/software/svbox" class="external-link">SciViews Box</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/sciviews-r">SciViews::R</a>
+                            <a href="https://www.sciviews.org/software/sciviews-r" class="external-link">SciViews::R</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/zooimage">Zoo/PhytoImage</a>
+                            <a href="https://www.sciviews.org/software/zooimage" class="external-link">Zoo/PhytoImage</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/blog">Blog</a>
+                            <a href="https://www.sciviews.org/blog" class="external-link">Blog</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/about">About</a>
+                            <a href="https://www.sciviews.org/about" class="external-link">About</a>
                         </li>
 
                     </ul>
@@ -885,7 +886,7 @@ HISPANIC
                 <div class="col-lg-6 col-md-7">
                     <ul class="list-inline text-center text-md-right">
 <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                            <a class="external-link font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
                         </li>
 
                     </ul>
@@ -906,6 +907,8 @@ HISPANIC
 
   
 
+
+  
 
   </body>
 </html>
