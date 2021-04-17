@@ -2,13 +2,13 @@
 title: "Output Rendering"
 ---
 
-This is the `vignettes/test/rendering.Rmd` file from `pkgdown` copied here to see how pages render with the `svPkgdown` style, and amended with more examples.
+This is the `vignettes/test/rendering.Rmd` file from {pkgdown} copied here to see how pages render with the {svPkgdown} style, and amended with more examples.
 
 ```{r include = FALSE}
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 ```
 
-The `svPkgdown` styles have been made as close as possible as the styles used in the SciViews blogdown pages at https://www.sciviews.org. However, there are a few differences:
+The {svPkgdown} styles have been made as close as possible as the styles used in the SciViews blogdown pages at https://www.sciviews.org. However, there are a few differences:
 
 - Presentation of chunks inputs/outputs differ. Here, input and outputs are in the same boxes, and a copy to clipboard button is available at the top right, while in the blogdown, chunks inputs and outputs are separated and styled differently for a better perception (with varying styles for normal outputs, errors and warnings)
 
@@ -16,9 +16,9 @@ The `svPkgdown` styles have been made as close as possible as the styles used in
 
 - Figures and tables are not numbered here, and it is not possible to reference to them (a mechanism available in bookdown/blogdown). Table styling is also a little bit different, and they are left-aligned here while they are centered in blogdown.
 
-### Now a couple of tests.. borrowed from 'pkgdown'
+### Now a couple of tests.. borrowed from {pkgdown}
 
-This vignette tests pkgdown output rendering for several use cases.
+This vignette tests {pkgdown} output rendering for several use cases.
 
 # Highlighting
 
@@ -150,6 +150,7 @@ Test spacing below widget.
 
 ```{r}
 cat(crayon::red("This is red"), "\n")
+
 cat(crayon::blue("This is blue\n"), "\n")
 
 message(crayon::green("This is green"))

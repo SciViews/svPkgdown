@@ -22,9 +22,9 @@ knitr::opts_chunk$set(
 library(svPkgdown)
 ```
 
-# A template for 'pkgdown' SciViews
+# A template for {pkgdown} SciViews sites
 
-> This 'pkgdown' template is designed specifically for the [SciViews](https://www.sciviews.org) web site. It hard encodes several links (in the header and footer, among other). So, it is **not** possible to use it elsewhere!
+> This {pkgdown} template is designed specifically for the [SciViews](https://www.sciviews.org) web site. It hard encodes several links (in the header and footer, among other). So, do **not** reuse it elsewhere unmodified!
 
 Some text... and a figure.
 

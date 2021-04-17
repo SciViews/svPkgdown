@@ -6,6 +6,8 @@
 \alias{svPkgdown-package}
 \title{svPkgdown: 'pkgdown' Template for SciViews Packages}
 \description{
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
 This is a private template to style pkgdown sub-sites in
   https://www.sciviews.org. Please don't use it for another purpose.
 }

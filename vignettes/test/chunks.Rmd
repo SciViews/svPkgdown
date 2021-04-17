@@ -5,7 +5,7 @@ date: "2020-04-16"
 output: html_document
 ---
 
-The R package 'knitr' is used to insert R code withing your Markdown document, which makes altogether an R Markdown document, usually with the `.Rmd` extension. Go to 'knitr' [homepage](http://yihui.name/knitr) for more details. This document uses various chunks to see how they appears in a 'pkgdown' site with the 'svPkgdown' style.
+The R package {knitr} is used to insert R code withing your Markdown document, which makes altogether an R Markdown document, usually with the `.Rmd` extension. Go to {knitr} [homepage](http://yihui.name/knitr) for more details. This document uses various chunks to see how they appears in a {pkgdown} site with the {svPkgdown} style.
 
 ## R chunks
 
@@ -65,7 +65,7 @@ int fibonacci(const int x) {
 }
 ```
 
-Because fibonacci was defined with the `Rcpp::export` attribute it can now be called as a normal R function:
+Because `fibonacci()` was defined with the `Rcpp::export` attribute it can now be called as a normal R function:
 
 ```{r fibonacci_test}
 fibonacci(10L)

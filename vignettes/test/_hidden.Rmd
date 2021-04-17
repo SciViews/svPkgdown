@@ -5,7 +5,7 @@ date: "2020-04-16"
 output: html_document
 ---
 
-This Markdown document is in a subdirectory of `vignettes`. So, it is not considered to build vignettes with `R CMD build`. R Markdown documents in subdirectories are considered, on the other hand by 'pkgdown' and included in the **Articles** section of the web site by default, *except the documents whose name start with an underscore `_` like this one.
+This Markdown document is in a subdirectory of `vignettes`. So, it is not considered to build vignettes with `R CMD build`. R Markdown documents in subdirectories are considered, on the other hand by {pkgdown} and included in the **Articles** section of the web site by default, *except the documents whose name start with an underscore `_` like this one.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

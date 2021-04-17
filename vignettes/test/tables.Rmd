@@ -5,7 +5,7 @@ date: "2020-04-16"
 output: html_document
 ---
 
-Here we explore different ways to produce tables in R Markdown documents, and we can see their visual appearance in a 'pkgdown' page with the 'svPkgdown' style.
+Here we explore different ways to produce tables in R Markdown documents, and we can see their visual appearance in a {pkgdown} page with the {svPkgdown} style.
 
 ## Standard Pandoc tables
 
@@ -72,7 +72,7 @@ Grid tables (rows with `=` separate headers and can be omitted for headerless ta
 |               |               | - tasty            |
 +---------------+---------------+--------------------+
 
-Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like `|` cannot appear in the table and this form does not support multiline tables. The semicolumn `:`may be used to indicate alignment inside each column, but it is an optional feature.
+Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like `|` cannot appear in the table and this form does not support multiline tables. The semicolumn `:` may be used to indicate alignment inside each column, but it is an optional feature.
 
 : A typical pipe table.
 
@@ -84,15 +84,15 @@ Pipe tables look like this (beginning and end pipes are optional, and optional c
 
 ## Tables using 'knitr::kable()'
 
-The 'knitr' package provides the function 'kable()' to format data frames as Markdown tables, and it is very easy to use:
+The {knitr} package provides the function `kable()` to format data frames as Markdown tables, and it is very easy to use:
 
 ```{r}
 knitr::kable(head(iris))
 ```
 
-## Tables using 'xtable'
+## Tables using {xtable}
 
-The 'xtable' R package offers an alternative to output well-formatted tables in an R Markdown document (note that you must specify `type = "html"` or `type = "latex"` (default) and a way to automate it is provided here depending on the R Markdown output and indicate `results='asis'` in the chunk header): 
+The {xtable} R package offers an alternative to output well-formatted tables in an R Markdown document (note that you must specify `type = "html"` or `type = "latex"` (default) and a way to automate it is provided here depending on the R Markdown output and indicate `results='asis'` in the chunk header): 
 
 ```{r, results='asis'}
 library(xtable)
@@ -105,9 +105,9 @@ options(xtable.type = if (knitr::is_html_output()) "html" else "latex")
 print(tli.table, floating = FALSE) # or add type = "html"|"latex")
 ```
 
-## Tables using 'pander'
+## Tables using {pander}
 
-The 'pander' R package can output various objects in Pandoc:
+The {pander} R package can output various objects in Pandoc:
 
 ```{r, results='asis'}
 library(pander)
@@ -120,9 +120,9 @@ panderOptions('keep.trailing.zeros', TRUE)
 pander(head(iris))
 ```
 
-## Tables using 'flextable'
+## Tables using {flextable}
 
-The 'flextable' R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in Github Action):
+The {flextable} R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in GitHub Action):
 
 ```
 Error : package or namespace load failed for 'flextable' in dyn.load(file, DLLpath = DLLpath, ...):
@@ -143,15 +143,15 @@ mtcars %>%
   bg(., bg = '#c7deff', part = 'header')
 ```
 
-There are many other packages to output well-formatted tables from R objects, like: 'stargazer', 'table1', 'tables', 'formattable, 'htmlTable', 'huxtable', 'kableExtra', 'pixiedust', 'tangram', 'texreg',  'ztable',  etc.
+There are many other packages to output well-formatted tables from R objects, like: {stargazer}, {table1}, {tables}, {formattable}, {htmlTable}, {huxtable}, {kableExtra}, {pixiedust}, {tangram}, {texreg}, {ztable}, etc.
 
 ## Table numbers and references
 
-Standard Pandoc does not allow to number tables and figures, nor to refer to them in text, like it is usual to do in the scientific litterature. If the Markdown document is converted into LaTeX (to produce a PDF, or Beamer presentation, for instance), one can add LaTeX tags to do so. However, these tags will not work obviously with HTML outputs. The 'bookdown' format extends the Markdown syntax to allow numbered tables and cross-references with `@ref(label)` tags, see [here](https://bookdown.org/yihui/bookdown/cross-references.html). In 'blogdown', providing you generate your tables with `knitr::kable()`, and you indicate a `caption =` argument.
+Standard Pandoc does not allow to number tables and figures, nor to refer to them in text, like it is usual to do in the scientific litterature. If the Markdown document is converted into LaTeX (to produce a PDF, or Beamer presentation, for instance), one can add LaTeX tags to do so. However, these tags will not work obviously with HTML outputs. The {bookdown} format extends the Markdown syntax to allow numbered tables and cross-references with `@ref(label)` tags, see [here](https://bookdown.org/yihui/bookdown/cross-references.html). In {blogdown}, providing you generate your tables with `knitr::kable()`, and you indicate a `caption =` argument.
 
 ```{r table-iris, echo=FALSE}
 knitr::kable(head(iris), digits = 2,
   caption = "The first few lines of the `iris` data set.")
 ```
 
-Now, you can refer to this table in the text in 'blogdown' using a link like this `[this Table](#tab:table-iris)`, where `table-iris` is the name of the chunk that generated the table. In 'blogdown', it gives this (see [this Table](#tab:table-iris)), but in 'pkgdown', it does **not** work. The 'svSweave' R package can generate numbers for tables, figures and equations, and it allows for cross-referencing them in the text **using pure R code**. Thus, it works with **all** R Markdown documents, see [svSweave](https://www.sciviews.org/svSweave/).
+Now, you can refer to this table in the text in {blogdown} using a link like this `[this Table](#tab:table-iris)`, where `table-iris` is the name of the chunk that generated the table. In {blogdown}, it gives this (see [this Table](#tab:table-iris)), but in {pkgdown}, it does **not** work. The {svSweave} R package can generate numbers for tables, figures and equations, and it allows for cross-referencing them in the text **using pure R code**. Thus, it works with **all** R Markdown documents, see the [svSweave documentation](https://www.sciviews.org/svSweave/).
