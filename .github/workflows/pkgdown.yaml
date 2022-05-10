@@ -1,6 +1,11 @@
+# Workflow derived from https://github.com/r-lib/actions/tree/master/examples
+# Need help debugging build failures? Start at https://github.com/r-lib/actions#where-to-find-help
 on:
   push:
-    branches: master
+    branches: [main, master]
+  release:
+    types: [published]
+  workflow_dispatch:
 
 name: pkgdown
 
@@ -10,7 +15,7 @@ jobs:
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
-     - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - uses: r-lib/actions/setup-pandoc@v1
 
@@ -23,17 +28,13 @@ jobs:
           extra-packages: pkgdown
           needs: website
 
-      - name: Install dependencies
+      - name: Install svPkgdown
         run: |
-          install.packages("remotes")
-          remotes::install_deps(dependencies = TRUE)
-          remotes::install_dev("pkgdown")
+          install.packages('remotes')
+          remotes::install_github("SciViews/svPkgdown")
         shell: Rscript {0}
 
-      - name: Install package
-        run: R CMD INSTALL .
-
-       - name: Deploy package
+      - name: Deploy package
         run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
