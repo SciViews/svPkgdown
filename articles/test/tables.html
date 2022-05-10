@@ -79,7 +79,7 @@
   <a href="../../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -116,7 +116,7 @@
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v0.1.2</small></p></a>
+        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -137,7 +137,7 @@
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/tables.Rmd" class="external-link"><code>vignettes/test/tables.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/tables.Rmd" class="external-link"><code>vignettes/test/tables.Rmd</code></a></small>
       <div class="hidden name"><code>tables.Rmd</code></div>
 
     </div>
@@ -145,10 +145,10 @@
     
     
 <p>Here we explore different ways to produce tables in R Markdown documents, and we can see their visual appearance in a {pkgdown} page with the {svPkgdown} style.</p>
-<div id="standard-pandoc-tables" class="section level2">
-<h2 class="hasAnchor">
-<a href="#standard-pandoc-tables" class="anchor"></a>Standard Pandoc tables</h2>
-<p>Simple tables are easy to create. Header and rows must be on two lines, and column alignment is determined according to the position of the header relative to the line under it. Tables must be surrounded by empty lines and an optional caption may be added above or below the table, starting with <code>Table:</code> or <code><a href="https://rdrr.io/r/base/Colon.html" class="external-link">:</a></code> (which is stripped off).</p>
+<div class="section level2">
+<h2 id="standard-pandoc-tables">Standard Pandoc tables<a class="anchor" aria-label="anchor" href="#standard-pandoc-tables"></a>
+</h2>
+<p>Simple tables are easy to create. Header and rows must be on two lines, and column alignment is determined according to the position of the header relative to the line under it. Tables must be surrounded by empty lines and an optional caption may be added above or below the table, starting with <code>Table:</code> or <code>:</code> (which is stripped off).</p>
 <table class="table">
 <caption>Demonstration of a simple table with caption.</caption>
 <thead><tr class="header">
@@ -256,7 +256,7 @@
 </tr>
 </tbody>
 </table>
-<p>Grid tables (rows with <code><a href="https://rdrr.io/r/base/assignOps.html" class="external-link">=</a></code> separate headers and can be omitted for headerless tables). Apparently, more formatting is allowed in gridded tables, like list items:</p>
+<p>Grid tables (rows with <code>=</code> separate headers and can be omitted for headerless tables). Apparently, more formatting is allowed in gridded tables, like list items:</p>
 <table style="width:74%;" class="table">
 <caption>Sample grid table.</caption>
 <colgroup>
@@ -288,7 +288,7 @@
 </tr>
 </tbody>
 </table>
-<p>Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like <code><a href="https://rdrr.io/r/base/Logic.html" class="external-link">|</a></code> cannot appear in the table and this form does not support multiline tables. The semicolumn <code><a href="https://rdrr.io/r/base/Colon.html" class="external-link">:</a></code> may be used to indicate alignment inside each column, but it is an optional feature.</p>
+<p>Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like <code>|</code> cannot appear in the table and this form does not support multiline tables. The semicolumn <code>:</code> may be used to indicate alignment inside each column, but it is an optional feature.</p>
 <table class="table">
 <caption>A typical pipe table.</caption>
 <thead><tr class="header">
@@ -319,9 +319,9 @@
 </tbody>
 </table>
 </div>
-<div id="tables-using-knitrkable" class="section level2">
-<h2 class="hasAnchor">
-<a href="#tables-using-knitrkable" class="anchor"></a>Tables using ‘knitr::kable()’</h2>
+<div class="section level2">
+<h2 id="tables-using-knitrkable">Tables using ‘knitr::kable()’<a class="anchor" aria-label="anchor" href="#tables-using-knitrkable"></a>
+</h2>
 <p>The {knitr} package provides the function <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable()</a></code> to format data frames as Markdown tables, and it is very easy to use:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></code></pre></div>
@@ -379,9 +379,9 @@
 </tbody>
 </table>
 </div>
-<div id="tables-using-xtable" class="section level2">
-<h2 class="hasAnchor">
-<a href="#tables-using-xtable" class="anchor"></a>Tables using {xtable}</h2>
+<div class="section level2">
+<h2 id="tables-using-xtable">Tables using {xtable}<a class="anchor" aria-label="anchor" href="#tables-using-xtable"></a>
+</h2>
 <p>The {xtable} R package offers an alternative to output well-formatted tables in an R Markdown document (note that you must specify <code>type = "html"</code> or <code>type = "latex"</code> (default) and a way to automate it is provided here depending on the R Markdown output and indicate <code>results='asis'</code> in the chunk header):</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://xtable.r-forge.r-project.org/" class="external-link">xtable</a></span><span class="op">)</span>
@@ -392,8 +392,8 @@
 <span class="co"># Choose 'one of these!'html' or 'latex' automatically</span>
 <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>xtable.type <span class="op">=</span> <span class="kw">if</span> <span class="op">(</span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html" class="external-link">is_html_output</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="st">"html"</span> <span class="kw">else</span> <span class="st">"latex"</span><span class="op">)</span>
 <span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">tli.table</span>, floating <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co"># or add type = "html"|"latex")</span></code></pre></div>
-<!-- html table generated in R 4.0.5 by xtable 1.8-4 package -->
-<!-- Sat Apr 17 08:38:43 2021 -->
+<!-- html table generated in R 4.2.0 by xtable 1.8-4 package -->
+<!-- Tue May 10 11:14:31 2022 -->
 <table border="1" class="table">
 <tr>
 <th>
@@ -616,12 +616,12 @@ HISPANIC
 </tr>
 </table>
 </div>
-<div id="tables-using-pander" class="section level2">
-<h2 class="hasAnchor">
-<a href="#tables-using-pander" class="anchor"></a>Tables using {pander}</h2>
+<div class="section level2">
+<h2 id="tables-using-pander">Tables using {pander}<a class="anchor" aria-label="anchor" href="#tables-using-pander"></a>
+</h2>
 <p>The {pander} R package can output various objects in Pandoc:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://rapporter.github.io/pander" class="external-link">pander</a></span><span class="op">)</span>
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://rapporter.github.io/pander/" class="external-link">pander</a></span><span class="op">)</span>
 <span class="co"># You can change default pander options:</span>
 <span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.alignment.default'</span>, <span class="kw">function</span><span class="op">(</span><span class="va">df</span><span class="op">)</span>
   <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">sapply</a></span><span class="op">(</span><span class="va">df</span>, <span class="va">is.numeric</span><span class="op">)</span>, <span class="st">'right'</span>, <span class="st">'left'</span><span class="op">)</span><span class="op">)</span>
@@ -690,9 +690,9 @@ HISPANIC
 </tbody>
 </table>
 </div>
-<div id="tables-using-flextable" class="section level2">
-<h2 class="hasAnchor">
-<a href="#tables-using-flextable" class="anchor"></a>Tables using {flextable}</h2>
+<div class="section level2">
+<h2 id="tables-using-flextable">Tables using {flextable}<a class="anchor" aria-label="anchor" href="#tables-using-flextable"></a>
+</h2>
 <p>The {flextable} R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in GitHub Action):</p>
 <pre><code>Error : package or namespace load failed for 'flextable' in dyn.load(file, DLLpath = DLLpath, ...):
 90
@@ -702,16 +702,16 @@ HISPANIC
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ardata-fr.github.io/flextable-book/" class="external-link">flextable</a></span><span class="op">)</span>
 <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
-<span class="va">mtcars</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">.</span>, <span class="va">cyl</span>, <span class="va">am</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span><span class="va">.</span>, avg <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/flextable.html" class="external-link">flextable</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op">%&gt;%</span>
+<span class="va">mtcars</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">.</span>, <span class="va">cyl</span>, <span class="va">am</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span><span class="va">.</span>, avg <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
+  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/flextable.html" class="external-link">flextable</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
   <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/bg.html" class="external-link">bg</a></span><span class="op">(</span><span class="va">.</span>, bg <span class="op">=</span> <span class="st">'#c7deff'</span>, part <span class="op">=</span> <span class="st">'header'</span><span class="op">)</span></code></pre></div>
 <p>There are many other packages to output well-formatted tables from R objects, like: {stargazer}, {table1}, {tables}, {formattable}, {htmlTable}, {huxtable}, {kableExtra}, {pixiedust}, {tangram}, {texreg}, {ztable}, etc.</p>
 </div>
-<div id="table-numbers-and-references" class="section level2">
-<h2 class="hasAnchor">
-<a href="#table-numbers-and-references" class="anchor"></a>Table numbers and references</h2>
+<div class="section level2">
+<h2 id="table-numbers-and-references">Table numbers and references<a class="anchor" aria-label="anchor" href="#table-numbers-and-references"></a>
+</h2>
 <p>Standard Pandoc does not allow to number tables and figures, nor to refer to them in text, like it is usual to do in the scientific litterature. If the Markdown document is converted into LaTeX (to produce a PDF, or Beamer presentation, for instance), one can add LaTeX tags to do so. However, these tags will not work obviously with HTML outputs. The {bookdown} format extends the Markdown syntax to allow numbered tables and cross-references with <code>@ref(label)</code> tags, see <a href="https://bookdown.org/yihui/bookdown/cross-references.html" class="external-link">here</a>. In {blogdown}, providing you generate your tables with <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">knitr::kable()</a></code>, and you indicate a <code>caption =</code> argument.</p>
 <table class="table">
 <caption>The first few lines of the <code>iris</code> data set.</caption>

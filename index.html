@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>pkgdown Template for SciViews Packages • svPkgdown</title>
+<title>SciViews - pkgdown Template for SciViews Packages • svPkgdown</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -21,7 +21,7 @@
 <script src="pkgdown.js"></script><!-- svPkgdown --><script src="script.js"></script><!-- themify icon --><link rel="stylesheet" href="themify-icons.css?nocache=123">
 <!--<link rel="stylesheet" href="style.css?nocache=123">--><!-- bootstrat v4.1.1, required CSS from more recent version --><link rel="stylesheet" href="bootstrap.more.css?nocache=123">
 <link href="style.css?nocache=123" rel="stylesheet">
-<!-- end of addition for svPkgdown --><meta property="og:title" content="pkgdown Template for SciViews Packages">
+<!-- end of addition for svPkgdown --><meta property="og:title" content="SciViews - pkgdown Template for SciViews Packages">
 <meta property="og:description" content="This is a private template to style pkgdown sub-sites in
   https://www.sciviews.org. Please don't use it for another purpose.">
 <meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
@@ -55,7 +55,7 @@
       </button>
       <div class="navbar-brand-container">
        <div class="navbar-brand-logo">
-         <a class="navbar-brand" href="https://www.sciviews.org">
+         <a class="external-link navbar-brand" href="https://www.sciviews.org">
           <img src="logo_full.png" alt="SciViews"></a>
        </div>
        <div class="navbar-brand-package">
@@ -80,7 +80,7 @@
   <a href="reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -110,14 +110,14 @@
   <a href="news/index.html">Changelog</a>
 </li>
         <li>
-  <a href="https://github.com/SciViews/svPkgdown/">
+  <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="index.html"><p class="h2">svPkgdown <small>v0.1.2</small></p></a>
+        <a class="navbar-brand" href="index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -132,18 +132,17 @@
 
       </header><div class="row">
   <div class="contents col-md-9">
-<div id="svpkgdown-" class="section level1">
+<div class="section level1">
 
 <!-- badges: start -->
-
-<p>The {svPkgdown} R package provides a custom style for SciViews R package sites generated automatically with {pkgdown}. Please don’t use it unmodified for your own purpose outside of the https://www.sciviews.org web site (but you can reuse it as a starting point from your own template if you wish)!</p>
+<!-- badges: end --><p>The {svPkgdown} R package provides a custom style for SciViews R package sites generated automatically with {pkgdown}. Please don’t use it unmodified for your own purpose outside of the <a href="https://www.sciviews.org" class="external-link uri">https://www.sciviews.org</a> web site (but you can reuse it as a starting point from your own template if you wish)!</p>
 <p>Inspired by <a href="https://github.com/tidyverse/tidytemplate/" class="external-link">tidytemplate</a>, <a href="https://github.com/lockedatapublished/lockedatapkg" class="external-link">lockedatapkg</a> and <a href="https://github.com/ropensci/rotemplate" class="external-link">rotemplate</a>.</p>
-<div id="how-to-use-svpkgdown" class="section level2">
-<h2 class="hasAnchor">
-<a href="#how-to-use-svpkgdown" class="anchor"></a>How to use {svPkgdown}</h2>
+<div class="section level2">
+<h2 id="how-to-use-svpkgdown">How to use {svPkgdown}<a class="anchor" aria-label="anchor" href="#how-to-use-svpkgdown"></a>
+</h2>
 <p>Starting from a GitHub repository for an R package with no {pkgdown} site yet,</p>
 <ol style="list-style-type: decimal">
-<li>upgrade {usethis} to the latest development version using <code><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">remotes::install_github("r-lib/usethis")</a></code>.</li>
+<li>upgrade {usethis} to the latest development version using <code>remotes::install_github("r-lib/usethis")</code>.</li>
 <li>In you GitHub repo do <code>usethis::use_pkgdown()</code> then, <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code> to view how it renders with all defaults.</li>
 <li>Add <code>docs</code> and <code>docs/</code> in <code>.gitignore</code> to avoid pushing your local version of the site to GitHub.</li>
 <li>Edit <code>_pkgdown.yml</code>. For SciViews, a custom template is used by means of this {svPkgdown} package, based on the bootstrap <code>spacelab</code> template. You may also place additional information for the authors, for instance:</li>
@@ -156,7 +155,7 @@
 <span id="cb1-6"><a href="#cb1-6"></a><span class="fu">authors</span><span class="kw">:</span></span>
 <span id="cb1-7"><a href="#cb1-7"></a><span class="at">  </span><span class="fu">Philippe Grosjean</span><span class="kw">:</span></span>
 <span id="cb1-8"><a href="#cb1-8"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://phgrosjean.sciviews.org/</span></span></code></pre></div>
-<ol start="5" style="list-style-type: decimal">
+<ol style="list-style-type: decimal">
 <li>Regenerate your site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code>, or from RStudio, from the corresponding addin. Check its appearance.</li>
 <li>Create a GitHub action to automatically regenerate the site on GitHub on every push with <code>usethis::use_github_action("pkgdown.yaml")</code>.</li>
 <li>Commit and push, then check if the action is run (click on the little icon on the left of “Latest commit …” on the main page of the repository).</li>
@@ -165,9 +164,9 @@
 </ol>
 <p>Further explanations on how to customize the {pkgdown} site <a href="https://github.com/tidyverse/tidytemplate" class="external-link">here</a>.</p>
 </div>
-<div id="example-sites" class="section level2">
-<h2 class="hasAnchor">
-<a href="#example-sites" class="anchor"></a>Example sites</h2>
+<div class="section level2">
+<h2 id="example-sites">Example sites<a class="anchor" aria-label="anchor" href="#example-sites"></a>
+</h2>
 <ul>
 <li><p><a href="https://www.SciViews.org/svUnit/" class="external-link">{svUnit}</a></p></li>
 <li><p><a href="https://www.SciViews.org/svGUI/" class="external-link">{svGUI}</a></p></li>
@@ -175,9 +174,9 @@
 <li><p><a href="https://www.SciViews.org/svSweave/" class="external-link">{svSweave}</a></p></li>
 </ul>
 </div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <p>You can install the latest version of {svPkgdown} from GitHub. Make sure you have the {devtools} R package installed:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></code></pre></div>
@@ -186,19 +185,19 @@
 <code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"SciViews/svPkgdown"</span><span class="op">)</span></code></pre></div>
 <p>R should install all required dependencies automatically, and then it should compile and install {svPkgdown}.</p>
 </div>
-<div id="further-explore-svpkgdown" class="section level2">
-<h2 class="hasAnchor">
-<a href="#further-explore-svpkgdown" class="anchor"></a>Further explore {svPkgdown}</h2>
+<div class="section level2">
+<h2 id="further-explore-svpkgdown">Further explore {svPkgdown}<a class="anchor" aria-label="anchor" href="#further-explore-svpkgdown"></a>
+</h2>
 <p>You can get further help about this package this way:</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span>help <span class="op">=</span> <span class="st">"svPkgdown"</span><span class="op">)</span>
 <span class="va">package</span><span class="op">?</span><span class="va">svPkgdown</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/vignette.html" class="external-link">vignette</a></span><span class="op">(</span><span class="st">"svPkgdown"</span><span class="op">)</span> <span class="co"># None is installed with install_github()</span></code></pre></div>
-<p>For further instructions, please, refer to the related web site at https://www.sciviews.org/svPkgdown/.</p>
+<p>For further instructions, please, refer to the related web site at <a href="https://www.sciviews.org/svPkgdown/" class="uri">https://www.sciviews.org/svPkgdown/</a>.</p>
 </div>
-<div id="code-of-conduct" class="section level2">
-<h2 class="hasAnchor">
-<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<div class="section level2">
+<h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
+</h2>
 <p>Please note that the svPkgdown project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
@@ -208,10 +207,8 @@
     <div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/SciViews/svPkgdown/">https://​github.com/​SciViews/​svPkgdown/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/SciViews/svPkgdown/issues">https://​github.com/​SciViews/​svPkgdown/​issues</a>
-</li>
+<li><a href="https://github.com/SciViews/svPkgdown/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/SciViews/svPkgdown/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -219,7 +216,7 @@
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 
@@ -233,7 +230,7 @@
 <div class="citation">
 <h2 data-toc-skip>Citation</h2>
 <ul class="list-unstyled">
-<li><a href="authors.html">Citing svPkgdown</a></li>
+<li><a href="authors.html#citation">Citing svPkgdown</a></li>
 </ul>
 </div>
 
@@ -241,15 +238,16 @@
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>
-<a href="https://phgrosjean.sciviews.org/">Philippe Grosjean</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-2694-9471" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<a href="https://phgrosjean.sciviews.org/" class="external-link">Philippe Grosjean</a> <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0002-2694-9471" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
 <div class="dev-status">
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.repostatus.org/#wip" class="external-link"><img src="https://www.repostatus.org/badges/latest/wip.svg?branch=master" alt="Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public."></a></li>
-<li><a href="https://travis-ci.com/github/SciViews/svPkgdown" class="external-link"><img src="https://api.travis-ci.com/SciViews/svPkgdown.svg" alt="Linux build Status"></a></li>
+<li><a href="https://github.com/SciViews/svPkgdown/actions" class="external-link"><img src="https://github.com/SciViews/svPkgdown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></li>
+<li><a href="https://www.tidyverse.org/lifecycle/#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
 </ul>
 </div>
 
@@ -268,19 +266,19 @@
                         <!-- social icon -->
                         <ul class="list-inline">
 <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://github.com/SciViews">
+                                <a class="external-link social-icon-outline" href="https://github.com/SciViews">
                                     <i class="ti-github"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://twitter.com/PhilGrosjean">
+                                <a class="external-link social-icon-outline" href="https://twitter.com/PhilGrosjean">
                                     <i class="ti-twitter-alt"></i>
                                 </a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a class="social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
+                                <a class="external-link social-icon-outline" href="https://www.linkedin.com/in/philippe-grosjean-5b6b29a2/">
                                     <i class="ti-linkedin"></i>
                                 </a>
                             </li>
@@ -293,23 +291,23 @@
                     <p class="h4 text-white mb-4">Related</p>
                     <ul class="footer-links">
 <li>
-                            <a href="http://econum.umons.ac.be">Our Lab</a>
+                            <a href="http://econum.umons.ac.be" class="external-link">Our Lab</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/fs/en/">Our Faculty</a>
+                            <a href="https://web.umons.ac.be/fs/en/" class="external-link">Our Faculty</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/complexys/en/">Complexys</a>
+                            <a href="https://web.umons.ac.be/complexys/en/" class="external-link">Complexys</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/infortech/en/">InforTech</a>
+                            <a href="https://web.umons.ac.be/infortech/en/" class="external-link">InforTech</a>
                         </li>
 
                         <li>
-                            <a href="https://web.umons.ac.be/en/">UMONS</a>
+                            <a href="https://web.umons.ac.be/en/" class="external-link">UMONS</a>
                         </li>
 
                     </ul>
@@ -319,23 +317,23 @@
                     <p class="h4 text-white mb-4">Quick Link</p>
                     <ul class="footer-links">
 <li>
-                            <a href="https://www.sciviews.org/software/svbox">SciViews Box</a>
+                            <a href="https://www.sciviews.org/software/svbox" class="external-link">SciViews Box</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/sciviews-r">SciViews::R</a>
+                            <a href="https://www.sciviews.org/software/sciviews-r" class="external-link">SciViews::R</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/software/zooimage">Zoo/PhytoImage</a>
+                            <a href="https://www.sciviews.org/software/zooimage" class="external-link">Zoo/PhytoImage</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/blog">Blog</a>
+                            <a href="https://www.sciviews.org/blog" class="external-link">Blog</a>
                         </li>
 
                         <li>
-                            <a href="https://www.sciviews.org/about">About</a>
+                            <a href="https://www.sciviews.org/about" class="external-link">About</a>
                         </li>
 
                     </ul>
@@ -362,7 +360,7 @@
                 <div class="col-lg-6 col-md-7">
                     <ul class="list-inline text-center text-md-right">
 <li class="list-inline-item mx-lg-3 my-lg-0 mx-2 my-2">
-                            <a class="font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
+                            <a class="external-link font-secondary text-white" href="https://creativecommons.org/licenses/by/4.0/">Site content under CC-BY 4.0 license</a>
                         </li>
 
                     </ul>

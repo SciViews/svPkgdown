@@ -1,15 +1,15 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1.9001
-pkgdown_sha: 8e0838e273462cec420dfa20f240c684a33425d9
+pkgdown: 2.0.3
+pkgdown_sha: ~
 articles:
   svPkgdown: svPkgdown.html
-  test/bibliography: bibliography.html
-  test/chunks: chunks.html
-  test/markdown: markdown.html
-  test/presentations/presentation_github: presentation_github.html
-  test/rendering: rendering.html
-  test/tables: tables.html
-last_built: 2021-04-17T08:37Z
+  bibliography: test/bibliography.html
+  chunks: test/chunks.html
+  markdown: test/markdown.html
+  presentation_github: test/presentations/presentation_github.html
+  rendering: test/rendering.html
+  tables: test/tables.html
+last_built: 2022-05-10T11:13Z
 urls:
   reference: https://www.sciviews.org/svPkgdown/reference
   article: https://www.sciviews.org/svPkgdown/articles

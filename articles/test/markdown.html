@@ -79,7 +79,7 @@
   <a href="../../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -116,7 +116,7 @@
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v0.1.2</small></p></a>
+        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -137,7 +137,7 @@
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/markdown.Rmd" class="external-link"><code>vignettes/test/markdown.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/markdown.Rmd" class="external-link"><code>vignettes/test/markdown.Rmd</code></a></small>
       <div class="hidden name"><code>markdown.Rmd</code></div>
 
     </div>
@@ -145,35 +145,36 @@
     
     
 <p>This is an illustration of the basic (R) Markdown formattings, as they are rendered in a {pkgdown} site using the {svPkgdown} style.</p>
-<div id="headers" class="section level3 unnumbered">
-<h3 class="hasAnchor">
-<a href="#headers" class="anchor"></a>Headers</h3>
+<div class="section level4">
+<h4 id="headers">Headers<a class="anchor" aria-label="anchor" href="#headers"></a>
+</h4>
 <ul>
 <li>Header with 6 levels, either with <code>#</code>, or with underline:</li>
 </ul>
 </div>
-<div id="header-1" class="section level1">
-<h1 class="hasAnchor">
-<a href="#header-1" class="anchor"></a>Header 1</h1>
+<div class="section level2">
+<h2 id="header-1">Header 1<a class="anchor" aria-label="anchor" href="#header-1"></a>
+</h2>
 <p>Some text…</p>
-<div id="header-2" class="section level2">
-<h2 class="hasAnchor">
-<a href="#header-2" class="anchor"></a>Header 2</h2>
+<div class="section level3">
+<h3 id="header-2">Header 2<a class="anchor" aria-label="anchor" href="#header-2"></a>
+</h3>
 <p>Some text…</p>
-<div id="header-3" class="section level3">
-<h3 class="hasAnchor">
-<a href="#header-3" class="anchor"></a>Header 3</h3>
+<div class="section level4">
+<h4 id="header-3">Header 3<a class="anchor" aria-label="anchor" href="#header-3"></a>
+</h4>
 <p>Some text…</p>
-<div id="header-4" class="section level4">
-<h4 class="hasAnchor">
-<a href="#header-4" class="anchor"></a>Header 4</h4>
+<div class="section level5">
+<h5 id="header-4">Header 4<a class="anchor" aria-label="anchor" href="#header-4"></a>
+</h5>
 <p>Some text…</p>
-<div id="header-5" class="section level5">
-<h5 class="hasAnchor">
-<a href="#header-5" class="anchor"></a>Header 5</h5>
+<div class="section level6">
+<h6 id="header-5">Header 5<a class="anchor" aria-label="anchor" href="#header-5"></a>
+</h6>
 <p>Some text…</p>
-<div id="header-6" class="section level6">
-<h6>Header 6</h6>
+<div class="section level7">
+<h6 id="header-6">Header 6<a class="anchor" aria-label="anchor" href="#header-6"></a>
+</h6>
 <p>Some text…</p>
 <p>An alternate syntax for headers:</p>
 </div>
@@ -182,31 +183,30 @@
 </div>
 </div>
 </div>
-<div id="header-1-1" class="section level1">
-<h1 class="hasAnchor">
-<a href="#header-1-1" class="anchor"></a>Header 1</h1>
-<div id="header-2-1" class="section level2">
-<h2 class="hasAnchor">
-<a href="#header-2-1" class="anchor"></a>Header 2</h2>
-</div>
-<div id="headers-can-contain-formatting-and-links" class="section level2">
-<h2 class="hasAnchor">
-<a href="#headers-can-contain-formatting-and-links" class="anchor"></a>Headers can <em>contain</em> forma<sup>tting</sup> and <a href="http://www.sciviews.org" class="external-link">links</a>
+<div class="section level2">
+<h2 id="header-1-1">Header 1<a class="anchor" aria-label="anchor" href="#header-1-1"></a>
 </h2>
+<div class="section level3">
+<h3 id="header-2-1">Header 2<a class="anchor" aria-label="anchor" href="#header-2-1"></a>
+</h3>
+</div>
+<div class="section level3">
+<h3 id="headers-can-contain-formatting-and-links">Headers can <em>contain</em> forma<sup>tting</sup> and <a href="http://www.sciviews.org" class="external-link">links</a><a class="anchor" aria-label="anchor" href="#headers-can-contain-formatting-and-links"></a>
+</h3>
 <p><strong>Take care that a blank line is <em>required</em> before headers as #22 this could too easily be interpretted as a header otherwise.</strong></p>
 <ul>
 <li>One can put identifiers after header, to allow <a href="#myheader">linking to them</a> elsewhere. Otherwise, headers are autoidentified by a special kind of reformatting of the string. Note also that references to headers can also be implicit. That is, <code>[linking to a header]</code>, or <code>[linking to a header][]</code> should work too: this is a link to the [abstract][].</li>
 </ul>
-<div id="myheader" class="section level4">
-<h4 class="hasAnchor">
-<a href="#myheader" class="anchor"></a>An identified header</h4>
+<div class="section level5">
+<h5 id="myheader">An identified header<a class="anchor" aria-label="anchor" href="#myheader"></a>
+</h5>
 <ul>
 <li>One can force unnumbered titles using <code>{-}</code> or <code>{.unnumbered}</code> (providing, of course, that the other headers are numbered).</li>
 </ul>
 </div>
-<div id="basic-text-formatting" class="section level3">
-<h3 class="hasAnchor">
-<a href="#basic-text-formatting" class="anchor"></a>Basic text formatting</h3>
+<div class="section level4">
+<h4 id="basic-text-formatting">Basic text formatting<a class="anchor" aria-label="anchor" href="#basic-text-formatting"></a>
+</h4>
 <ul>
 <li><p>Bold using <strong>bold</strong> or <strong>bold</strong></p></li>
 <li><p>Italic using <em>italic</em> or <em>italic</em>, but intra_word_underscore is not interpreted (use stars for that like in this w<em>or</em>d)</p></li>
@@ -221,9 +221,9 @@
 <li><p>A few sequences of characters produce special characters. Use of –dashes– and —em-dashes—. Three dots is ellipsis… and I can use any unicode, too, for special characters, like 😌.</p></li>
 </ul>
 </div>
-<div id="special-paragraphs-and-other-items" class="section level3">
-<h3 class="hasAnchor">
-<a href="#special-paragraphs-and-other-items" class="anchor"></a>Special paragraphs and other items</h3>
+<div class="section level4">
+<h4 id="special-paragraphs-and-other-items">Special paragraphs and other items<a class="anchor" aria-label="anchor" href="#special-paragraphs-and-other-items"></a>
+</h4>
 <ul>
 <li>Quoted text (need blank line before it to avoid misinterpretation of &gt; inside a paragraph)</li>
 </ul>
@@ -258,7 +258,7 @@ And a new line here</div>
 <p>Preformatted text:</p>
 <p>Some preformatted text using indentation</p>
 </li>
-<li><p>Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (<code><a href="https://rdrr.io/r/base/tilde.html" class="external-link">~</a></code>) or backticks (<code>`</code>) and they must be separated from the surrounding using blank lines. You can use identifiers too like in <a href="#mycode">this block</a>:</p></li>
+<li><p>Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (<code>~</code>) or backticks (<code>`</code>) and they must be separated from the surrounding using blank lines. You can use identifiers too like in <a href="#mycode">this block</a>:</p></li>
 </ul>
 <pre><code>Some preformatted text (like for code blocks)
 using a fenced block with backticks</code></pre>
@@ -273,7 +273,7 @@ using a fenced block with backticks</code></pre>
 <span id="mycode-2"><a href="#mycode-2"></a><span class="bu">print</span> <span class="st">'Hi, </span><span class="sc">%s</span><span class="st">.'</span> <span class="op">%</span> name</span></code></pre></div>
 <p>Then you can link to it <a href="#mycode">like here</a>.</p>
 <ul>
-<li>Horizontal rule or page break using four or more <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">*</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">-</a></code> or <code>_</code> optionally separated by spaces</li>
+<li>Horizontal rule or page break using four or more <code>*</code>, <code>-</code> or <code>_</code> optionally separated by spaces</li>
 </ul>
 <hr>
 <hr>
@@ -293,12 +293,12 @@ and this approach is the only way to do it in tables!</p></li>
 </ul>
 <p>Text after the long note…</p>
 </div>
-<div id="lists" class="section level3">
-<h3 class="hasAnchor">
-<a href="#lists" class="anchor"></a>Lists</h3>
+<div class="section level4">
+<h4 id="lists">Lists<a class="anchor" aria-label="anchor" href="#lists"></a>
+</h4>
 <ul>
 <li>
-<p>Unordered list (using <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">*</a></code>, <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">+</a></code> or <code><a href="https://rdrr.io/r/base/Arithmetic.html" class="external-link">-</a></code>)</p>
+<p>Unordered list (using <code>*</code>, <code>+</code> or <code>-</code>)</p>
 <ul>
 <li>Second level</li>
 </ul>
@@ -339,7 +339,7 @@ and this approach is the only way to do it in tables!</p></li>
 <li>Fourth item</li>
 </ol>
 <ul>
-<li>Definition lists are also supported (definitions must start with <code><a href="https://rdrr.io/r/base/Colon.html" class="external-link">:</a></code> or <code><a href="https://rdrr.io/r/base/tilde.html" class="external-link">~</a></code>) and blank lines are optional between the term and its definition (loose <em>vs</em> compact form), but not before the term. Finally, several definitions are allowed for the same term.</li>
+<li>Definition lists are also supported (definitions must start with <code>:</code> or <code>~</code>) and blank lines are optional between the term and its definition (loose <em>vs</em> compact form), but not before the term. Finally, several definitions are allowed for the same term.</li>
 </ul>
 <dl>
 <dt>Term 1</dt>
@@ -406,7 +406,7 @@ and this approach is the only way to do it in tables!</p></li>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">radius</span> <span class="op">&lt;-</span> <span class="fl">3.5</span>
 <span class="va">pi</span> <span class="op">*</span> <span class="va">radius</span> <span class="op">^</span> <span class="fl">2</span></code></pre></div>
-<pre><code>## [1] 38.48451</code></pre>
+<pre><code><span class="co">## [1] 38.48451</span></code></pre>
 </li>
 <li><p>As you can see, the R chunk and its associated results are included in the list element!</p></li>
 </ol>
@@ -416,17 +416,17 @@ and this approach is the only way to do it in tables!</p></li>
 </div>
 </div>
 </div>
-<div id="reflinks" class="section level2">
-<h2 class="hasAnchor">
-<a href="#reflinks" class="anchor"></a>Reference links</h2>
+<div class="section level3">
+<h3 id="reflinks">Reference links<a class="anchor" aria-label="anchor" href="#reflinks"></a>
+</h3>
 <ul>
 <li>Reference links are done this way <a href="https://www.sciviews.org" title="Title" class="external-link">a linked part</a>, or for images: <a href="http://www.sciviews.org" class="external-link"><img src="figures/svbox.png" title="Figure title" alt="alt text"></a>
 </li>
 </ul>
 </div>
-<div id="equations" class="section level2">
-<h2 class="hasAnchor">
-<a href="#equations" class="anchor"></a>Equations</h2>
+<div class="section level3">
+<h3 id="equations">Equations<a class="anchor" aria-label="anchor" href="#equations"></a>
+</h3>
 <ul>
 <li><p>Inline equations like <span class="math inline">\(\frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta\)</span>, or <span class="math inline">\(f(\alpha, \beta) \propto x^{\alpha-1}(1-x)^{\beta-1}\)</span>.</p></li>
 <li><p>Display equation</p></li>
@@ -444,9 +444,9 @@ and this approach is the only way to do it in tables!</p></li>
 <p>The {svSweave} package eases writing and referencing numbered display equations from any R Markdown documents, see<a href="https://www.sciviews.org/svSweave/" class="external-link">svSweave documentation</a>.</p>
 <p>If you feel difficult to write LaTeX equations, there are inline LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor" class="external-link">this one</a>, and you don’t need to install anything on your computer to used them. Also, there is an RStudio addin provided with the {bookdown} R package to ease writing LaTeX equations in your R Markdown document.</p>
 </div>
-<div id="icons" class="section level2">
-<h2 class="hasAnchor">
-<a href="#icons" class="anchor"></a>Icons</h2>
+<div class="section level3">
+<h3 id="icons">Icons<a class="anchor" aria-label="anchor" href="#icons"></a>
+</h3>
 <p>You have both the <a href="https://fontawesome.com/icons?d=gallery&amp;m=free" class="external-link">font awesome</a>, and the <a href="https://themify.me/themify-icons" class="external-link">themify</a> icons. You need to create an object of class “fa fa-xxxx”, or “ti-xxxx”, where “xxxx” is an icon in the collection. Here is an example from font awesome <span class="fa fa-chart-bar"></span>, and here is one from themify: <span class="ti-package"></span>. You can use these icons everywhere!</p>
 </div>
 </div>

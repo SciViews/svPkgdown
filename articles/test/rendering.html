@@ -79,7 +79,7 @@
   <a href="../../reference/index.html">Reference</a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
      
     <span class="caret"></span>
@@ -116,7 +116,7 @@
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v0.1.2</small></p></a>
+        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -129,16 +129,16 @@
 
       
 
-      </header><script src="rendering_files/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="rendering_files/htmlwidgets-1.5.3/htmlwidgets.js"></script><script src="rendering_files/jquery-1.12.4/jquery.min.js"></script><link href="rendering_files/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+      </header><script src="rendering_files/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="rendering_files/htmlwidgets-1.5.4/htmlwidgets.js"></script><link href="rendering_files/leaflet-1.3.1/leaflet.css" rel="stylesheet">
 <script src="rendering_files/leaflet-1.3.1/leaflet.js"></script><link href="rendering_files/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
 <script src="rendering_files/proj4-2.6.2/proj4.min.js"></script><script src="rendering_files/Proj4Leaflet-1.0.1/proj4leaflet.js"></script><link href="rendering_files/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
-<script src="rendering_files/leaflet-binding-2.0.4.1/leaflet.js"></script><div class="row">
+<script src="rendering_files/leaflet-binding-2.1.1/leaflet.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Output Rendering</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/master/vignettes/test/rendering.Rmd" class="external-link"><code>vignettes/test/rendering.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/rendering.Rmd" class="external-link"><code>vignettes/test/rendering.Rmd</code></a></small>
       <div class="hidden name"><code>rendering.Rmd</code></div>
 
     </div>
@@ -152,18 +152,18 @@
 <li><p>Syntax highlighting use different coloring schemes and here, recognized R functions are links to their man pages on the web.</p></li>
 <li><p>Figures and tables are not numbered here, and it is not possible to reference to them (a mechanism available in bookdown/blogdown). Table styling is also a little bit different, and they are left-aligned here while they are centered in blogdown.</p></li>
 </ul>
-<div id="now-a-couple-of-tests---borrowed-from-pkgdown" class="section level3">
-<h3 class="hasAnchor">
-<a href="#now-a-couple-of-tests---borrowed-from-pkgdown" class="anchor"></a>Now a couple of tests.. borrowed from {pkgdown}</h3>
+<div class="section level4">
+<h4 id="now-a-couple-of-tests---borrowed-from-pkgdown">Now a couple of tests.. borrowed from {pkgdown}<a class="anchor" aria-label="anchor" href="#now-a-couple-of-tests---borrowed-from-pkgdown"></a>
+</h4>
 <p>This vignette tests {pkgdown} output rendering for several use cases.</p>
 </div>
-<div id="highlighting" class="section level1">
-<h1 class="hasAnchor">
-<a href="#highlighting" class="anchor"></a>Highlighting</h1>
+<div class="section level2">
+<h2 id="highlighting">Highlighting<a class="anchor" aria-label="anchor" href="#highlighting"></a>
+</h2>
 <p>This document uses a variety of linking styles for testing purposes</p>
-<div id="inline-code" class="section level2">
-<h2 class="hasAnchor">
-<a href="#inline-code" class="anchor"></a>Inline code</h2>
+<div class="section level3">
+<h3 id="inline-code">Inline code<a class="anchor" aria-label="anchor" href="#inline-code"></a>
+</h3>
 <p>Local:</p>
 <ul>
 <li><code><a href="../../articles/svPkgdown.html">vignette("svPkgdown")</a></code></li>
@@ -175,13 +175,13 @@
 <li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">MASS::enlist</a></code></li>
 <li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">MASS::enlist()</a></code></li>
 <li><code><a href="https://rdrr.io/pkg/MASS/man/MASS-internal.html" class="external-link">?MASS::enlist</a></code></li>
-<li><code><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></code></li>
+<li><code>%in%</code></li>
 <li><code><a href="https://rdrr.io/r/base/match.html" class="external-link">?`%in%`</a></code></li>
 </ul>
 </div>
-<div id="spurious-links" class="section level2">
-<h2 class="hasAnchor">
-<a href="#spurious-links" class="anchor"></a>Spurious links</h2>
+<div class="section level3">
+<h3 id="spurious-links">Spurious links<a class="anchor" aria-label="anchor" href="#spurious-links"></a>
+</h3>
 <p>These shouldn’t be linked.</p>
 <ul>
 <li><code>Authors@R</code></li>
@@ -190,9 +190,9 @@
 <li><code>x = y</code></li>
 </ul>
 </div>
-<div id="code-blocks" class="section level2">
-<h2 class="hasAnchor">
-<a href="#code-blocks" class="anchor"></a>Code blocks</h2>
+<div class="section level3">
+<h3 id="code-blocks">Code blocks<a class="anchor" aria-label="anchor" href="#code-blocks"></a>
+</h3>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Shouldn't get linked</span>
 <span class="fu">enlist</span><span class="op">(</span><span class="fl">5</span><span class="op">)</span>
@@ -211,17 +211,17 @@
 <hr>
 </div>
 </div>
-<div id="figures" class="section level1">
-<h1 class="hasAnchor">
-<a href="#figures" class="anchor"></a>Figures</h1>
+<div class="section level2">
+<h2 id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a>
+</h2>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/graphics/plot.default.html" class="external-link">plot</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span><span class="op">)</span></code></pre></div>
 <p><img src="rendering_files/figure-html/unnamed-chunk-5-1.png" width="700"></p>
 <hr>
 </div>
-<div id="external-files" class="section level1">
-<h1 class="hasAnchor">
-<a href="#external-files" class="anchor"></a>External files</h1>
+<div class="section level2">
+<h2 id="external-files">External files<a class="anchor" aria-label="anchor" href="#external-files"></a>
+</h2>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/readLines.html" class="external-link">readLines</a></span><span class="op">(</span><span class="st">"test.txt"</span><span class="op">)</span>
 <span class="co">#&gt; Warning in readLines("test.txt"): incomplete final line found on 'test.txt'</span>
@@ -230,9 +230,9 @@
 <p><img src="figures/bacon.jpg"></p>
 <hr>
 </div>
-<div id="details-tag" class="section level1">
-<h1 class="hasAnchor">
-<a href="#details-tag" class="anchor"></a>Details tag</h1>
+<div class="section level2">
+<h2 id="details-tag">Details tag<a class="anchor" aria-label="anchor" href="#details-tag"></a>
+</h2>
 <details>
 This should only be shown when required
 </details><details><p><summary>Some R code</summary></p>
@@ -241,9 +241,9 @@ This should only be shown when required
 <span class="co">#&gt; [1] 3</span></code></pre></div>
 </details><hr>
 </div>
-<div id="tables" class="section level1">
-<h1 class="hasAnchor">
-<a href="#tables" class="anchor"></a>Tables</h1>
+<div class="section level2">
+<h2 id="tables">Tables<a class="anchor" aria-label="anchor" href="#tables"></a>
+</h2>
 <table style="width:100%;" class="table">
 <colgroup>
 <col width="33%">
@@ -266,41 +266,41 @@ This should only be shown when required
 </table>
 <hr>
 </div>
-<div id="mathjax" class="section level1">
-<h1 class="hasAnchor">
-<a href="#mathjax" class="anchor"></a>Mathjax</h1>
+<div class="section level2">
+<h2 id="mathjax">Mathjax<a class="anchor" aria-label="anchor" href="#mathjax"></a>
+</h2>
 <p><span class="math display">\[f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu^2)}{2\sigma^2}}\]</span></p>
 <p>Inline equations: <span class="math inline">\(y=x^2\)</span></p>
 <hr>
 </div>
-<div id="widgets" class="section level1">
-<h1 class="hasAnchor">
-<a href="#widgets" class="anchor"></a>Widgets</h1>
+<div class="section level2">
+<h2 id="widgets">Widgets<a class="anchor" aria-label="anchor" href="#widgets"></a>
+</h2>
 <p>Test spacing above widget.</p>
 <div id="htmlwidget-30e4409849e39179307f" style="width:700px;height:432.632880098888px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-30e4409849e39179307f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script><p>Test spacing below widget.</p>
+<script type="application/json" data-for="htmlwidget-30e4409849e39179307f">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[-36.852,174.768,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"The birthplace of R",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-36.852,-36.852],"lng":[174.768,174.768]}},"evals":[],"jsHooks":[]}</script><p>Test spacing below widget.</p>
 <hr>
 </div>
-<div id="crayon" class="section level1">
-<h1 class="hasAnchor">
-<a href="#crayon" class="anchor"></a>Crayon</h1>
+<div class="section level2">
+<h2 id="crayon">Crayon<a class="anchor" aria-label="anchor" href="#crayon"></a>
+</h2>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">red</a></span><span class="op">(</span><span class="st">"This is red"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span>
-<span class="co">#&gt; This is red</span>
+<span class="co">#&gt; <span style="color: #BB0000;">This is red</span></span>
 
 <span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">blue</a></span><span class="op">(</span><span class="st">"This is blue\n"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span>
-<span class="co">#&gt; This is blue</span>
-<span class="co">#&gt; </span>
+<span class="co">#&gt; <span style="color: #0000BB;">This is blue</span></span>
+<span class="co"><span style="color: #0000BB;">#&gt; </span></span>
 
 <span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">message</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">green</a></span><span class="op">(</span><span class="st">"This is green"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; This is green</span>
+<span class="co">#&gt; <span style="color: #00BB00;">This is green</span></span>
 
 <span class="kw"><a href="https://rdrr.io/r/base/warning.html" class="external-link">warning</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">bold</a></span><span class="op">(</span><span class="st">"This is bold"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; Warning: This is bold</span></code></pre></div>
+<span class="co">#&gt; Warning: <span style="font-weight: bold;">This is bold</span></span></code></pre></div>
 <p>Some text</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">italic</a></span><span class="op">(</span><span class="st">"This is italic"</span><span class="op">)</span><span class="op">)</span>
-<span class="co">#&gt; Error in eval(expr, envir, enclos): This is italic</span></code></pre></div>
+<span class="co">#&gt; Error in eval(expr, envir, enclos): <span style="font-style: italic;">This is italic</span></span></code></pre></div>
 <p>Some more text</p>
 </div>
   </div>
