@@ -20,11 +20,13 @@ Suggests:
     flextable,
     dplyr,
     Rcpp,
+    bibtex,
     knitcitations,
     svSweave,
     rticles,
     spelling,
     reticulate
+Remotes: ROpenSci/bibtex
 License: MIT + file LICENSE
 URL: https://github.com/SciViews/svPkgdown, https://www.sciviews.org/svPkgdown/
 BugReports: https://github.com/SciViews/svPkgdown/issues
