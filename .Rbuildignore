@@ -9,9 +9,10 @@ CODE_OF_CONDUCT.md
 LICENSE.md
 Makefile
 .Rprofile
+^\.Rproj\.user$
+^\.*\Rproj$
 ^\.travis\.yml$
 ^appveyor\.yml$
-^\.Rproj\.user$
 ^.*\.Rproj$
 ^doc$
 ^Meta$
@@ -19,3 +20,4 @@ Makefile
 ^docs$
 ^pkgdown$
 ^\.github$
+^revdep$

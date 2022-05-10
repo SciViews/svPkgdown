@@ -4,7 +4,7 @@
 \name{svPkgdown-package}
 \alias{svPkgdown}
 \alias{svPkgdown-package}
-\title{svPkgdown: 'pkgdown' Template for SciViews Packages}
+\title{svPkgdown: 'SciViews' - 'pkgdown' Template for SciViews Packages}
 \description{
 \if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
 
