@@ -46,7 +46,9 @@ jobs:
         shell: bash
 
       - name: Upload test results
-        uses: codecov/codecov-action@v4.0.1
+        if: failure()
+        uses: actions/upload-artifact@v4
         with:
+          name: coverage-test-failures
+          path: ${{ runner.temp }}/package
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: SciViews/svPkgdown
