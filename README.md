@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SciViews/svPkgdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/svPkgdown/actions/workflows/R-CMD-check.yaml) [![Codecov test coverage](https://codecov.io/gh/SciViews/svPkgdown/branch/main/graph/badge.svg)](https://codecov.io/gh/SciViews/svPkgdown?branch=main) [![CRAN status](https://www.r-pkg.org/badges/version/svPkgdown)](https://cran.r-project.org/package=svPkgdown) [![r-universe status](https://sciviews.r-universe.dev/badges/svPkgdown)](https://sciviews.r-universe.dev/svPkgdown) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![R-CMD-check](https://github.com/SciViews/svPkgdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/svPkgdown/actions/workflows/R-CMD-check.yaml) [![CRAN status](https://www.r-pkg.org/badges/version/svPkgdown)](https://cran.r-project.org/package=svPkgdown) [![r-universe status](https://sciviews.r-universe.dev/badges/svPkgdown)](https://sciviews.r-universe.dev/svPkgdown) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 
 <!-- badges: end -->
 
