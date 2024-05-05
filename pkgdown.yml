@@ -8,7 +8,7 @@ articles:
   rendering: test/rendering.html
   svPkgdown: svPkgdown.html
   tables: test/tables.html
-last_built: 2024-05-05T13:03Z
+last_built: 2024-05-05T13:42Z
 urls:
   reference: https://www.sciviews.org/svPkgdown/reference
   article: https://www.sciviews.org/svPkgdown/articles
