@@ -1,37 +1,39 @@
 Package: svPkgdown
 Type: Package
-Version: 1.0.0
-Date: 2022-05-10
-Title: 'SciViews' - 'pkgdown' Template for SciViews Packages
+Version: 1.0.1
+Title: 'pkgdown' Template for SciViews Packages
 Description: This is a private template to style pkgdown sub-sites in
   https://www.sciviews.org. Please don't use it for another purpose.
 Authors@R: c(person("Philippe", "Grosjean", role = c("aut", "cre"),
   email = "phgrosjean@sciviews.org",
   comment = c(ORCID = "0000-0002-2694-9471")))
 Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
+Depends: R (>= 4.2.0)
 Suggests: 
-    knitr,
-    rmarkdown,
-    MASS,
-    leaflet,
-    ggplot2,
-    xtable,
-    pander,
-    flextable,
-    dplyr,
-    Rcpp,
-    bibtex,
-    knitcitations,
-    svSweave,
-    rticles,
-    spelling,
-    reticulate
-Remotes: ROpenSci/bibtex
+    bibtex (>= 0.5.1),
+    dplyr (>= 1.1.4),
+    flextable (>= 0.9.1),
+    ggplot2 (>= 3.4.2),
+    knitcitations (>= 1.0.12),
+    leaflet (>= 2.1.2),
+    MASS (>= 7.3.58.3),
+    pander (>= 0.6.5),
+    Rcpp (>= 1.0.10),
+    reticulate (>= 1.28),
+    rticles (>= 0.24),
+    xtable (>= 1.8-4),
+    knitr (>= 1.42),
+    rmarkdown (>= 2.21),
+    spelling (>= 2.2.1),
+    testthat (>= 3.0.0)
 License: MIT + file LICENSE
 URL: https://github.com/SciViews/svPkgdown, https://www.sciviews.org/svPkgdown/
 BugReports: https://github.com/SciViews/svPkgdown/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.1
+RoxygenNote: 7.2.3
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US
+ByteCompile: yes
+Config/testthat/edition: 3
+Config/Needs/website: svPkgdown

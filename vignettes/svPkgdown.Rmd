@@ -11,14 +11,8 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
-
-```{r setup}
+```{r setup, include = FALSE}
+knitr::opts_chunk$set( collapse = TRUE, comment = "#>")
 library(svPkgdown)
 ```
 
@@ -26,7 +20,7 @@ library(svPkgdown)
 
 > This {pkgdown} template is designed specifically for the [SciViews](https://www.sciviews.org) web site. It hard encodes several links (in the header and footer, among other). So, do **not** reuse it elsewhere unmodified!
 
-Some text... and a figure.
+Some text... and a figure, just for test.
 
 ```{r}
 hist(rnorm(500))
@@ -35,6 +29,6 @@ hist(rnorm(500))
 
 ## Subtitle 1
 
-## Subtitle 2 is actually very very long wow
+## Subtitle 2 is actually quite long and could be wrapped
 
 # Title 2

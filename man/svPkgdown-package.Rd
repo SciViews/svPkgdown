@@ -4,12 +4,11 @@
 \name{svPkgdown-package}
 \alias{svPkgdown}
 \alias{svPkgdown-package}
-\title{svPkgdown: 'SciViews' - 'pkgdown' Template for SciViews Packages}
+\title{svPkgdown: 'pkgdown' Template for SciViews Packages}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-This is a private template to style pkgdown sub-sites in
-  https://www.sciviews.org. Please don't use it for another purpose.
+This is a private template to style pkgdown sub-sites in https://www.sciviews.org. Please don't use it for another purpose.
 }
 \seealso{
 Useful links:

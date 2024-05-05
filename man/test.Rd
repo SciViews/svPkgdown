@@ -10,5 +10,5 @@ test()
 Test function
 }
 \examples{
-x <- NULL
+test()
 }

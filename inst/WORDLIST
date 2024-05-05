@@ -5,6 +5,7 @@ backslash
 Beamer
 bibentry
 BibLaTeX
+bibtex
 biodatascience
 Bitbucket
 bla
@@ -49,6 +50,7 @@ includegraphics
 interpretted
 intra
 ioslides
+jquery
 kable
 kableExtra
 knitcitations
@@ -80,6 +82,7 @@ reflinks
 repo
 rmarkdown
 Rmd
+ROpenSci
 rotemplate
 rstudio
 RStudio

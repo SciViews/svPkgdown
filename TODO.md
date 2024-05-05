@@ -1,10 +1,10 @@
-# svPkgdown - To do list
+# svPkgdown To do list
 
 -   Solve the problem with PDF compilation.
 
 -   Make sure packages using {svPkgdown} always use last version.
 
--   Change style (smaller top bar, UMONS colors, fonts matching gitbook, ...).
+-   Change style (smaller top bar, UMONS colors, fonts matching gitbook...).
 
 -   A better presentation of the top bar when width is lowered.
 

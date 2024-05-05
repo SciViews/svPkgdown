@@ -306,8 +306,6 @@ $$x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \label{my-equation} \tag{1}$$
 
 ... and you can reference Eq.\ $\ref{my-equation}$ like this.
 
-The {svSweave} package eases writing and referencing numbered display equations from any R Markdown documents, see[svSweave documentation](https://www.sciviews.org/svSweave/).
-
 If you feel difficult to write LaTeX equations, there are inline LateX equation editors like [this one](http://www.sciweavers.org/free-online-latex-equation-editor), and you don't need to install anything on your computer to used them. Also, there is an RStudio addin provided with the {bookdown} R package to ease writing LaTeX equations in your R Markdown document.
 
 ## Icons

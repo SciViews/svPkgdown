@@ -1,3 +1,11 @@
+# svPkgdown 1.0.1
+
+-   Remotes to ROpenSci/bibtex eliminated because the package is on CRAN.
+
+-   jquery updated to version 3.7.1.
+
+-   First trial of using Bootstrap 5, but there is an error during compilation of our test .Rmd files.
+
 # svPkgdown 1.0.0
 
 -   It is now tested with more than an dozen packages, so the version number is bumped to one and it is considered as stable.
