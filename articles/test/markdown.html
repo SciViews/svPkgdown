@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../../bootstrap-toc.css">
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
@@ -95,9 +95,6 @@
       <a href="../../articles/test/markdown.html">Markdown formattings</a>
     </li>
     <li>
-      <a href="../../articles/test/presentations/presentation_github.html">Git and Github in a few slides</a>
-    </li>
-    <li>
       <a href="../../articles/test/rendering.html">Output Rendering</a>
     </li>
     <li>
@@ -116,7 +113,7 @@
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
+        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.1</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -129,11 +126,12 @@
 
       
 
-      </header><script src="markdown_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Markdown formattings</h1>
-                        <h4 data-toc-skip class="author">Philippe Grosjean( <a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
+                        <h4 data-toc-skip class="author">Philippe
+Grosjean( <a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
@@ -144,12 +142,14 @@
 
     
     
-<p>This is an illustration of the basic (R) Markdown formattings, as they are rendered in a {pkgdown} site using the {svPkgdown} style.</p>
+<p>This is an illustration of the basic (R) Markdown formattings, as
+they are rendered in a {pkgdown} site using the {svPkgdown} style.</p>
 <div class="section level4">
-<h4 id="headers">Headers<a class="anchor" aria-label="anchor" href="#headers"></a>
+<h4 class="unnumbered" id="headers">Headers<a class="anchor" aria-label="anchor" href="#headers"></a>
 </h4>
 <ul>
-<li>Header with 6 levels, either with <code>#</code>, or with underline:</li>
+<li>Header with 6 levels, either with <code>#</code>, or with
+underline:</li>
 </ul>
 </div>
 <div class="section level2">
@@ -193,39 +193,64 @@
 <div class="section level3">
 <h3 id="headers-can-contain-formatting-and-links">Headers can <em>contain</em> forma<sup>tting</sup> and <a href="http://www.sciviews.org" class="external-link">links</a><a class="anchor" aria-label="anchor" href="#headers-can-contain-formatting-and-links"></a>
 </h3>
-<p><strong>Take care that a blank line is <em>required</em> before headers as #22 this could too easily be interpretted as a header otherwise.</strong></p>
+<p><strong>Take care that a blank line is <em>required</em> before
+headers as #22 this could too easily be interpretted as a header
+otherwise.</strong></p>
 <ul>
-<li>One can put identifiers after header, to allow <a href="#myheader">linking to them</a> elsewhere. Otherwise, headers are autoidentified by a special kind of reformatting of the string. Note also that references to headers can also be implicit. That is, <code>[linking to a header]</code>, or <code>[linking to a header][]</code> should work too: this is a link to the [abstract][].</li>
+<li>One can put identifiers after header, to allow <a href="#myheader">linking to them</a> elsewhere. Otherwise, headers are
+autoidentified by a special kind of reformatting of the string. Note
+also that references to headers can also be implicit. That is,
+<code>[linking to a header]</code>, or
+<code>[linking to a header][]</code> should work too: this is a link to
+the [abstract][].</li>
 </ul>
 <div class="section level5">
 <h5 id="myheader">An identified header<a class="anchor" aria-label="anchor" href="#myheader"></a>
 </h5>
 <ul>
-<li>One can force unnumbered titles using <code>{-}</code> or <code>{.unnumbered}</code> (providing, of course, that the other headers are numbered).</li>
+<li>One can force unnumbered titles using <code>{-}</code> or
+<code>{.unnumbered}</code> (providing, of course, that the other headers
+are numbered).</li>
 </ul>
 </div>
 <div class="section level4">
 <h4 id="basic-text-formatting">Basic text formatting<a class="anchor" aria-label="anchor" href="#basic-text-formatting"></a>
 </h4>
 <ul>
-<li><p>Bold using <strong>bold</strong> or <strong>bold</strong></p></li>
-<li><p>Italic using <em>italic</em> or <em>italic</em>, but intra_word_underscore is not interpreted (use stars for that like in this w<em>or</em>d)</p></li>
-<li><p>Super<sup>script</sup>, or sub<sub>script</sub>. No space can occur inside super- or subscript. If you need it, backslash-escape the space like P<sub>a cat</sub>.</p></li>
+<li><p>Bold using <strong>bold</strong> or
+<strong>bold</strong></p></li>
+<li><p>Italic using <em>italic</em> or <em>italic</em>, but
+intra_word_underscore is not interpreted (use stars for that like in
+this w<em>or</em>d)</p></li>
+<li><p>Super<sup>script</sup>, or sub<sub>script</sub>. No space can
+occur inside super- or subscript. If you need it, backslash-escape the
+space like P<sub>a cat</sub>.</p></li>
 <li><p>Strikethrough with <del>this formatting</del>.</p></li>
-<li><p>Formattings can be combined of course, like <strong><em>bold italic with super<sup>script</sup></em></strong>.</p></li>
-<li><p>Inline code like <code>x &lt;- 1</code>, and if you need backquote inside it <code>`@var` &lt;- 2</code>.</p></li>
-<li><p>Links are automatically detected like <a href="http://example.com" class="external-link uri">http://example.com</a>, or can be explicitly indicated (with a different text) like <a href="http://example.com" class="external-link">some example</a>. <em>Note that Markdown uses also <a href="#reflinks">reference links</a></em>. You can also put your links between angle brackets <a href="http://example.com" class="external-link uri">http://example.com</a>.</p></li>
-<li><p>You can use any UTF-8 character (at least for HTML documents (examples: µm, Ω, Æ, ∫√)…</p></li>
-<li><p>You need to backslash-escape punctuation you don’t want to be interpreted ad formatting code, like *foo*.</p></li>
-<li><p>A non-breaking space is simply an escaped space, like between “Fig.” and “3” here: Fig. 3.</p></li>
-<li><p>A few sequences of characters produce special characters. Use of –dashes– and —em-dashes—. Three dots is ellipsis… and I can use any unicode, too, for special characters, like 😌.</p></li>
+<li><p>Formattings can be combined of course, like <strong><em>bold
+italic with super<sup>script</sup></em></strong>.</p></li>
+<li><p>Inline code like <code>x &lt;- 1</code>, and if you need
+backquote inside it <code>`@var` &lt;- 2</code>.</p></li>
+<li><p>Links are automatically detected like <a href="http://example.com" class="external-link uri">http://example.com</a>, or can be
+explicitly indicated (with a different text) like <a href="http://example.com" class="external-link">some example</a>. <em>Note that Markdown uses
+also <a href="#reflinks">reference links</a></em>. You can also put your
+links between angle brackets <a href="http://example.com" class="external-link uri">http://example.com</a>.</p></li>
+<li><p>You can use any UTF-8 character (at least for HTML documents
+(examples: µm, Ω, Æ, ∫√)…</p></li>
+<li><p>You need to backslash-escape punctuation you don’t want to be
+interpreted ad formatting code, like *foo*.</p></li>
+<li><p>A non-breaking space is simply an escaped space, like between
+“Fig.” and “3” here: Fig. 3.</p></li>
+<li><p>A few sequences of characters produce special characters. Use of
+–dashes– and —em-dashes—. Three dots is ellipsis… and I can use any
+unicode, too, for special characters, like 😌.</p></li>
 </ul>
 </div>
 <div class="section level4">
 <h4 id="special-paragraphs-and-other-items">Special paragraphs and other items<a class="anchor" aria-label="anchor" href="#special-paragraphs-and-other-items"></a>
 </h4>
 <ul>
-<li>Quoted text (need blank line before it to avoid misinterpretation of &gt; inside a paragraph)</li>
+<li>Quoted text (need blank line before it to avoid misinterpretation of
+&gt; inside a paragraph)</li>
 </ul>
 <blockquote>
 <p>Some quoted text</p>
@@ -234,7 +259,8 @@
 <p>With two paragraph…</p>
 </blockquote>
 <blockquote>
-<p>More quoted <br>with a second paragraph within the same quote block.</p>
+<p>More quoted <br>with a second paragraph within the same quote
+block.</p>
 </blockquote>
 <blockquote>
 <blockquote>
@@ -258,38 +284,59 @@ And a new line here</div>
 <p>Preformatted text:</p>
 <p>Some preformatted text using indentation</p>
 </li>
-<li><p>Preformatted or verbatim sections indented with four spaces of fenced (but only fenced blocks work in lists and are thus the preferred mean to do so). Fenced blocks are delimited by three or more tildes (<code>~</code>) or backticks (<code>`</code>) and they must be separated from the surrounding using blank lines. You can use identifiers too like in <a href="#mycode">this block</a>:</p></li>
+<li><p>Preformatted or verbatim sections indented with four spaces of
+fenced (but only fenced blocks work in lists and are thus the preferred
+mean to do so). Fenced blocks are delimited by three or more tildes
+(<code>~</code>) or backticks (<code>`</code>) and they must be
+separated from the surrounding using blank lines. You can use
+identifiers too like in <a href="#mycode">this block</a>:</p></li>
 </ul>
 <pre><code>Some preformatted text (like for code blocks)
 using a fenced block with backticks</code></pre>
-<p>It is very easy to indicate a language, and syntax highlighting will be used for it:</p>
+<p>It is very easy to indicate a language, and syntax highlighting will
+be used for it:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Idem, but with R syntax highlighting</span>
-<span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span><span class="op">)</span> <span class="op">{</span>
-  <span class="kw">if</span> <span class="op">(</span><span class="va">i</span> <span class="op">&gt;</span> <span class="fl">1</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="st">"Got it!"</span><span class="op">)</span>
-<span class="op">}</span></code></pre></div>
-<p>It can also be specified in a more complex way, and with marks allowing to link to it:</p>
-<div class="sourceCode" id="mycode"><pre class="sourceCode python"><code class="sourceCode python"><span id="mycode-1"><a href="#mycode-1"></a>name <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">'What is your name?</span><span class="ch">\n</span><span class="st">'</span>)</span>
-<span id="mycode-2"><a href="#mycode-2"></a><span class="bu">print</span> <span class="st">'Hi, </span><span class="sc">%s</span><span class="st">.'</span> <span class="op">%</span> name</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Idem, but with R syntax highlighting</span></span>
+<span><span class="kw">for</span> <span class="op">(</span><span class="va">i</span> <span class="kw">in</span> <span class="fl">1</span><span class="op">:</span><span class="fl">100</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="va">i</span> <span class="op">&gt;</span> <span class="fl">1</span><span class="op">)</span> <span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="st">"Got it!"</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre></div>
+<p>It can also be specified in a more complex way, and with marks
+allowing to link to it:</p>
+<div class="sourceCode" id="mycode"><pre class="sourceCode python"><code class="sourceCode python"><span id="mycode-1"><a href="#mycode-1" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">raw_input</span>(<span class="st">'What is your name?</span><span class="ch">\n</span><span class="st">'</span>)</span>
+<span id="mycode-2"><a href="#mycode-2" tabindex="-1"></a><span class="bu">print</span> <span class="st">'Hi, </span><span class="sc">%s</span><span class="st">.'</span> <span class="op">%</span> name</span></code></pre></div>
 <p>Then you can link to it <a href="#mycode">like here</a>.</p>
 <ul>
-<li>Horizontal rule or page break using four or more <code>*</code>, <code>-</code> or <code>_</code> optionally separated by spaces</li>
+<li>Horizontal rule or page break using four or more <code>*</code>,
+<code>-</code> or <code>_</code> optionally separated by spaces</li>
 </ul>
 <hr>
 <hr>
 <hr>
 <ul>
 <li><p>Line breaks when ending with two or more spaces<br>
-like this paragraph. However, this is not very visible, nor usable in table. So you can also use a backslash followed by a newline<br>
+like this paragraph. However, this is not very visible, nor usable in
+table. So you can also use a backslash followed by a newline<br>
 and this approach is the only way to do it in tables!</p></li>
-<li><p>You can escape special characters except in code block or inline code if you don’t want them to be interpreted as formatting marks like _here_.</p></li>
-<li><p>Non-breaking space is entered as a backslash-escaped space (<code>\</code>).</p></li>
-<li><p>Comment that do not appear in the final document are similar to HTML comments (<code>&lt;!-- comment--&gt;</code>), but can also be entered using the <code>[//]:</code> syntax. <!-- this is a comment and should not be present in the final document --></p></li>
+<li><p>You can escape special characters except in code block or inline
+code if you don’t want them to be interpreted as formatting marks like
+_here_.</p></li>
+<li><p>Non-breaking space is entered as a backslash-escaped space
+(<code>\</code>).</p></li>
+<li><p>Comment that do not appear in the final document are similar to
+HTML comments (<code>&lt;!-- comment--&gt;</code>), but can also be
+entered using the <code>[//]:</code> syntax.
+<!-- this is a comment and should not be present in the final document --></p></li>
 </ul>
 <ul>
-<li><p>Smart punctuation is used and converts straight quotes into curly ones like ‘here’ or “here”. It will also interpret <code>--</code> as en-dash –, <code>---</code> as em-dash —, and <code>...</code> as ellipses … Moreover, non- breaking spaces are automatically used after certain items like Mr. Schmidt.</p></li>
-<li><p>Note that raw HTML (with or without interpretation of markdown inside it) can be included too.</p></li>
-<li><p>Footnotes<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> are easy to insert. Another example<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. And here, I use an inline footnote<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p></li>
+<li><p>Smart punctuation is used and converts straight quotes into curly
+ones like ‘here’ or “here”. It will also interpret <code>--</code> as
+en-dash –, <code>---</code> as em-dash —, and <code>...</code> as
+ellipses … Moreover, non- breaking spaces are automatically used after
+certain items like Mr. Schmidt.</p></li>
+<li><p>Note that raw HTML (with or without interpretation of markdown
+inside it) can be included too.</p></li>
+<li><p>Footnotes<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> are easy to insert. Another example<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>. And here,
+I use an inline footnote<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</p></li>
 </ul>
 <p>Text after the long note…</p>
 </div>
@@ -298,7 +345,8 @@ and this approach is the only way to do it in tables!</p></li>
 </h4>
 <ul>
 <li>
-<p>Unordered list (using <code>*</code>, <code>+</code> or <code>-</code>)</p>
+<p>Unordered list (using <code>*</code>, <code>+</code> or
+<code>-</code>)</p>
 <ul>
 <li>Second level</li>
 </ul>
@@ -320,13 +368,17 @@ and this approach is the only way to do it in tables!</p></li>
 </li>
 <li><p>Back to first level</p></li>
 <li>
-<p>There is a mechanism to include paragraphs inside the list using indentation (don’t forget the empty line in between to start a new paragraph):</p>
+<p>There is a mechanism to include paragraphs inside the list using
+indentation (don’t forget the empty line in between to start a new
+paragraph):</p>
 <pre><code>Some preformatted inside a list item</code></pre>
 </li>
 <li><p>Fourth item</p></li>
 </ol>
 <ul>
-<li>The fancy list extension allow for using <code>#.</code> for ordered lists, as well as something like <code>1)</code>, or <code>(I)</code> for instance:</li>
+<li>The fancy list extension allow for using <code>#.</code> for ordered
+lists, as well as something like <code>1)</code>, or <code>(I)</code>
+for instance:</li>
 </ul>
 <ol style="list-style-type: decimal">
 <li>First item</li>
@@ -339,7 +391,11 @@ and this approach is the only way to do it in tables!</p></li>
 <li>Fourth item</li>
 </ol>
 <ul>
-<li>Definition lists are also supported (definitions must start with <code>:</code> or <code>~</code>) and blank lines are optional between the term and its definition (loose <em>vs</em> compact form), but not before the term. Finally, several definitions are allowed for the same term.</li>
+<li>Definition lists are also supported (definitions must start with
+<code>:</code> or <code>~</code>) and blank lines are optional between
+the term and its definition (loose <em>vs</em> compact form), but not
+before the term. Finally, several definitions are allowed for the same
+term.</li>
 </ul>
 <dl>
 <dt>Term 1</dt>
@@ -357,16 +413,20 @@ and this approach is the only way to do it in tables!</p></li>
 <p>or</p>
 <dl>
 <dt>Term 1</dt>
-<dd>Definition 1
+<dd>
+Definition 1
 </dd>
 <dt>Term 2</dt>
-<dd>Definition 2a
+<dd>
+Definition 2a
 </dd>
-<dd>Definition 2b
+<dd>
+Definition 2b
 </dd>
 </dl>
 <ul>
-<li>Numbered example lists use a sequential numbering throughout the whole document and use the <code>@.</code> syntax:</li>
+<li>Numbered example lists use a sequential numbering throughout the
+whole document and use the <code>@.</code> syntax:</li>
 </ul>
 <ol class="example" style="list-style-type: decimal">
 <li>First item</li>
@@ -376,17 +436,21 @@ and this approach is the only way to do it in tables!</p></li>
 <ol start="3" class="example" style="list-style-type: decimal">
 <li>Third item</li>
 </ol>
-<p>You can give them labels (alphanumeric + character + hyphen) and refer to them later on. You can also enclose it into parentheses, but it does not change how it is displayed:</p>
+<p>You can give them labels (alphanumeric + character + hyphen) and
+refer to them later on. You can also enclose it into parentheses, but it
+does not change how it is displayed:</p>
 <ol start="4" class="example" style="list-style-type: decimal">
 <li>
 <a name="good"></a>This is a good example</li>
 </ol>
 <p>As <a href="#good">example</a> 4 illustrates<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>, …</p>
-<p>And what if I refer to it before the label like 5? Yes! It works! But unfortunately, there is no link to <a href="#notgood">example</a> 5.</p>
+<p>And what if I refer to it before the label like 5? Yes! It works! But
+unfortunately, there is no link to <a href="#notgood">example</a> 5.</p>
 <ol start="5" class="example" style="list-style-type: decimal">
 <li>A bad example</li>
 </ol>
-<p>Finally, to force ending a list, just add a comment where you want to end it (same trick applies for restarting another numbered list):</p>
+<p>Finally, to force ending a list, just add a comment where you want to
+end it (same trick applies for restarting another numbered list):</p>
 <ol style="list-style-type: decimal">
 <li><p>list item</p></li>
 <li>
@@ -399,20 +463,22 @@ and this approach is the only way to do it in tables!</p></li>
 <ol style="list-style-type: decimal">
 <li>New list item #1</li>
 </ol>
-<p>Indent paragraphs or blocks or chunks (see hereunder) following a list item to include it in the list:</p>
+<p>Indent paragraphs or blocks or chunks (see hereunder) following a
+list item to include it in the list:</p>
 <ol style="list-style-type: decimal">
 <li>
 <p>The area of a circle with a given radius is:</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">radius</span> <span class="op">&lt;-</span> <span class="fl">3.5</span>
-<span class="va">pi</span> <span class="op">*</span> <span class="va">radius</span> <span class="op">^</span> <span class="fl">2</span></code></pre></div>
-<pre><code><span class="co">## [1] 38.48451</span></code></pre>
+<code class="sourceCode R"><span><span class="va">radius</span> <span class="op">&lt;-</span> <span class="fl">3.5</span></span>
+<span><span class="va">pi</span> <span class="op">*</span> <span class="va">radius</span> <span class="op">^</span> <span class="fl">2</span></span></code></pre></div>
+<pre><code><span><span class="co">## [1] 38.48451</span></span></code></pre>
 </li>
-<li><p>As you can see, the R chunk and its associated results are included in the list element!</p></li>
+<li><p>As you can see, the R chunk and its associated results are
+included in the list element!</p></li>
 </ol>
 <p>Image from the Internet:</p>
-<div class="figure">
-<img src="https://www.r-project.org/logo/Rlogo.png" alt=""><p class="caption">The official R logo.</p>
+<div class="float">
+<img src="https://www.r-project.org/logo/Rlogo.png" alt="The official R logo."><div class="figcaption">The official R logo.</div>
 </div>
 </div>
 </div>
@@ -428,41 +494,56 @@ and this approach is the only way to do it in tables!</p></li>
 <h3 id="equations">Equations<a class="anchor" aria-label="anchor" href="#equations"></a>
 </h3>
 <ul>
-<li><p>Inline equations like <span class="math inline">\(\frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta\)</span>, or <span class="math inline">\(f(\alpha, \beta) \propto x^{\alpha-1}(1-x)^{\beta-1}\)</span>.</p></li>
+<li><p>Inline equations like <span class="math inline">\(\frac{1}{n}
+\sum_{i=1}^{n} x_{i} + \beta\)</span>, or <span class="math inline">\(f(\alpha, \beta) \propto
+x^{\alpha-1}(1-x)^{\beta-1}\)</span>.</p></li>
 <li><p>Display equation</p></li>
 </ul>
-<p><span class="math display">\[ \frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta \]</span></p>
+<p><span class="math display">\[ \frac{1}{n} \sum_{i=1}^{n} x_{i} +
+\beta \]</span></p>
 <p>Here is a more complex example spanning on several lines:</p>
 <p><span class="math display">\[ \begin{aligned}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
 \end{aligned}\]</span></p>
-<p>With {pkgdown} and standard Pandoc, it is not easy to get numbered display equations and cross-references to these equations. Here is an example:</p>
-<p><span class="math display">\[x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \label{my-equation} \tag{1}\]</span></p>
+<p>With {pkgdown} and standard Pandoc, it is not easy to get numbered
+display equations and cross-references to these equations. Here is an
+example:</p>
+<p><span class="math display">\[x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\label{my-equation} \tag{1}\]</span></p>
 <p>… and you can reference Eq. <span class="math inline">\(\ref{my-equation}\)</span> like this.</p>
-<p>The {svSweave} package eases writing and referencing numbered display equations from any R Markdown documents, see<a href="https://www.sciviews.org/svSweave/" class="external-link">svSweave documentation</a>.</p>
-<p>If you feel difficult to write LaTeX equations, there are inline LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor" class="external-link">this one</a>, and you don’t need to install anything on your computer to used them. Also, there is an RStudio addin provided with the {bookdown} R package to ease writing LaTeX equations in your R Markdown document.</p>
+<p>If you feel difficult to write LaTeX equations, there are inline
+LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor" class="external-link">this
+one</a>, and you don’t need to install anything on your computer to used
+them. Also, there is an RStudio addin provided with the {bookdown} R
+package to ease writing LaTeX equations in your R Markdown document.</p>
 </div>
 <div class="section level3">
 <h3 id="icons">Icons<a class="anchor" aria-label="anchor" href="#icons"></a>
 </h3>
-<p>You have both the <a href="https://fontawesome.com/icons?d=gallery&amp;m=free" class="external-link">font awesome</a>, and the <a href="https://themify.me/themify-icons" class="external-link">themify</a> icons. You need to create an object of class “fa fa-xxxx”, or “ti-xxxx”, where “xxxx” is an icon in the collection. Here is an example from font awesome <span class="fa fa-chart-bar"></span>, and here is one from themify: <span class="ti-package"></span>. You can use these icons everywhere!</p>
+<p>You have both the <a href="https://fontawesome.com/icons?d=gallery&amp;m=free" class="external-link">font
+awesome</a>, and the <a href="https://themify.me/themify-icons" class="external-link">themify</a> icons. You need to
+create an object of class “fa fa-xxxx”, or “ti-xxxx”, where “xxxx” is an
+icon in the collection. Here is an example from font awesome <span class="fa fa-chart-bar"></span>, and here is one from themify: <span class="ti-package"></span>. You can use these icons everywhere!</p>
 </div>
 </div>
-<div class="footnotes">
+<div class="footnotes footnotes-end-of-document">
 <hr>
 <ol>
 <li id="fn1"><p>This is my simple footnote.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2">
-<p>Footnotes can span on multiple paragraphs, providing you indent them with four spaces:</p>
+<p>Footnotes can span on multiple paragraphs, providing you
+indent them with four spaces:</p>
 <ul>
 <li>A list item</li>
 </ul>
 <p>Another paragraph belonging to the note.<a href="#fnref2" class="footnote-back">↩︎</a></p>
 </li>
-<li id="fn3"><p>Inline footnotes are easier to write right in your text, but they can only span on a single paragraph.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Note that you <strong>cannot</strong> include the number inside the link, unfortunately.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Inline footnotes are easier to write right in your text,
+but they can only span on a single paragraph.<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Note that you <strong>cannot</strong> include the number
+inside the link, unfortunately.<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
   </div>

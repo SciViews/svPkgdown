@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SciViews - pkgdown Template for SciViews Packages • svPkgdown</title>
+<title>pkgdown Template for SciViews Packages • svPkgdown</title>
 <!-- favicons --><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="apple-touch-icon.png">
@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
 <script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
@@ -21,9 +21,8 @@
 <script src="pkgdown.js"></script><!-- svPkgdown --><script src="script.js"></script><!-- themify icon --><link rel="stylesheet" href="themify-icons.css?nocache=123">
 <!--<link rel="stylesheet" href="style.css?nocache=123">--><!-- bootstrat v4.1.1, required CSS from more recent version --><link rel="stylesheet" href="bootstrap.more.css?nocache=123">
 <link href="style.css?nocache=123" rel="stylesheet">
-<!-- end of addition for svPkgdown --><meta property="og:title" content="SciViews - pkgdown Template for SciViews Packages">
-<meta property="og:description" content="This is a private template to style pkgdown sub-sites in
-  https://www.sciviews.org. Please don't use it for another purpose.">
+<!-- end of addition for svPkgdown --><meta property="og:title" content="pkgdown Template for SciViews Packages">
+<meta property="og:description" content="This is a private template to style pkgdown sub-sites in https://www.sciviews.org. Please don't use it for another purpose.">
 <meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
@@ -96,9 +95,6 @@
       <a href="articles/test/markdown.html">Markdown formattings</a>
     </li>
     <li>
-      <a href="articles/test/presentations/presentation_github.html">Git and Github in a few slides</a>
-    </li>
-    <li>
       <a href="articles/test/rendering.html">Output Rendering</a>
     </li>
     <li>
@@ -117,7 +113,7 @@
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
+        <a class="navbar-brand" href="index.html"><p class="h2">svPkgdown <small>v1.0.1</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -135,33 +131,73 @@
 <div class="section level1">
 
 <!-- badges: start -->
-<!-- badges: end --><p>The {svPkgdown} R package provides a custom style for SciViews R package sites generated automatically with {pkgdown}. Please don’t use it unmodified for your own purpose outside of the <a href="https://www.sciviews.org" class="external-link uri">https://www.sciviews.org</a> web site (but you can reuse it as a starting point from your own template if you wish)!</p>
+
+<!-- badges: end -->
+<p>The {svPkgdown} package provides a custom style for SciViews R package sites generated automatically with {pkgdown}. Please don’t use it unmodified for your own purpose outside of the <a href="https://www.sciviews.org" class="external-link uri">https://www.sciviews.org</a> web site (but you can reuse it as a starting point from your own template if you wish)!</p>
 <p>Inspired by <a href="https://github.com/tidyverse/tidytemplate/" class="external-link">tidytemplate</a>, <a href="https://github.com/lockedatapublished/lockedatapkg" class="external-link">lockedatapkg</a> and <a href="https://github.com/ropensci/rotemplate" class="external-link">rotemplate</a>.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>Being specific to SciViews packages, {svPkgdown} will never be available from CRAN. You can install it from the <a href="https://sciviews.r-universe.dev" class="external-link">SciViews R-Universe</a> this way:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'svPkgdown'</span>, <span class="st">'pkgdown'</span><span class="op">)</span>,</span>
+<span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://sciviews.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>You can install the latest version of {svPkgdown} from GitHub. Make sure you have the {devtools} R package installed:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"remotes"</span><span class="op">)</span></span></code></pre></div>
+<p>Use <code>install_github()</code> to install {svPkgdown} from GitHub (source from <strong>main</strong> branch will be recompiled on your machine):</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"SciViews/svPkgdown"</span><span class="op">)</span></span></code></pre></div>
+<p>R should install all required dependencies automatically, and then it should compile and install {svPkgdown}.</p>
+</div>
 <div class="section level2">
 <h2 id="how-to-use-svpkgdown">How to use {svPkgdown}<a class="anchor" aria-label="anchor" href="#how-to-use-svpkgdown"></a>
 </h2>
 <p>Starting from a GitHub repository for an R package with no {pkgdown} site yet,</p>
-<ol style="list-style-type: decimal">
-<li>upgrade {usethis} to the latest development version using <code>remotes::install_github("r-lib/usethis")</code>.</li>
+<ul>
+<li>upgrade {usethis} to the latest development version using <code>remotes::install_github("r-lib/usethis")</code> if needed.</li>
 <li>In you GitHub repo do <code>usethis::use_pkgdown()</code> then, <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code> to view how it renders with all defaults.</li>
 <li>Add <code>docs</code> and <code>docs/</code> in <code>.gitignore</code> to avoid pushing your local version of the site to GitHub.</li>
 <li>Edit <code>_pkgdown.yml</code>. For SciViews, a custom template is used by means of this {svPkgdown} package, based on the bootstrap <code>spacelab</code> template. You may also place additional information for the authors, for instance:</li>
-</ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">destination</span><span class="kw">:</span><span class="at"> docs</span></span>
-<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">template</span><span class="kw">:</span></span>
-<span id="cb1-3"><a href="#cb1-3"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
-<span id="cb1-4"><a href="#cb1-4"></a><span class="at">    </span><span class="fu">bootswatch</span><span class="kw">:</span><span class="at"> spacelab</span></span>
-<span id="cb1-5"><a href="#cb1-5"></a><span class="at">    </span><span class="fu">mathjax</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
-<span id="cb1-6"><a href="#cb1-6"></a><span class="fu">authors</span><span class="kw">:</span></span>
-<span id="cb1-7"><a href="#cb1-7"></a><span class="at">  </span><span class="fu">Philippe Grosjean</span><span class="kw">:</span></span>
-<span id="cb1-8"><a href="#cb1-8"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://phgrosjean.sciviews.org/</span></span></code></pre></div>
-<ol style="list-style-type: decimal">
+</ul>
+<div class="sourceCode" id="cb4"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">url</span><span class="kw">:</span><span class="at"> https://www.sciviews.org/svPkgdown</span></span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a><span class="fu">destination</span><span class="kw">:</span><span class="at"> docs</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="fu">development</span><span class="kw">:</span></span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="at">  </span><span class="fu">mode</span><span class="kw">:</span><span class="at"> auto</span></span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> svPkgdown</span></span>
+<span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="at">  </span><span class="fu">bootstrap</span><span class="kw">:</span><span class="at"> </span><span class="dv">3</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="at">  </span><span class="fu">bootswatch</span><span class="kw">:</span><span class="at"> spacelab</span></span>
+<span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="at">  </span><span class="fu">params</span><span class="kw">:</span></span>
+<span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="at">    </span><span class="fu">mathjax</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="at">  </span><span class="fu">bslib</span><span class="kw">:</span></span>
+<span id="cb4-15"><a href="#cb4-15" tabindex="-1"></a><span class="at">    </span><span class="fu">pkgdown-nav-height</span><span class="kw">:</span><span class="at"> 80px</span></span>
+<span id="cb4-16"><a href="#cb4-16" tabindex="-1"></a><span class="at">    </span><span class="fu">code_font</span><span class="kw">:</span><span class="at"> </span><span class="kw">{</span><span class="fu">google</span><span class="kw">:</span><span class="at"> </span><span class="st">"JetBrains Mono"</span><span class="kw">}</span></span>
+<span id="cb4-17"><a href="#cb4-17" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" tabindex="-1"></a><span class="fu">toc</span><span class="kw">:</span></span>
+<span id="cb4-19"><a href="#cb4-19" tabindex="-1"></a><span class="at">  </span><span class="fu">depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">3</span></span>
+<span id="cb4-20"><a href="#cb4-20" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="#cb4-21" tabindex="-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb4-22"><a href="#cb4-22" tabindex="-1"></a><span class="at">  </span><span class="fu">structure</span><span class="kw">:</span></span>
+<span id="cb4-23"><a href="#cb4-23" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at">  </span><span class="kw">[</span><span class="at">intro</span><span class="kw">,</span><span class="at"> reference</span><span class="kw">,</span><span class="at"> articles</span><span class="kw">,</span><span class="at"> tutorials</span><span class="kw">,</span><span class="at"> news</span><span class="kw">]</span></span>
+<span id="cb4-24"><a href="#cb4-24" tabindex="-1"></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">search</span><span class="kw">,</span><span class="at"> github</span><span class="kw">]</span></span>
+<span id="cb4-25"><a href="#cb4-25" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" tabindex="-1"></a><span class="fu">home</span><span class="kw">:</span></span>
+<span id="cb4-27"><a href="#cb4-27" tabindex="-1"></a><span class="at">  </span><span class="fu">strip_header</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-28"><a href="#cb4-28" tabindex="-1"></a></span>
+<span id="cb4-29"><a href="#cb4-29" tabindex="-1"></a><span class="fu">authors</span><span class="kw">:</span></span>
+<span id="cb4-30"><a href="#cb4-30" tabindex="-1"></a><span class="at">  </span><span class="fu">Philippe Grosjean</span><span class="kw">:</span></span>
+<span id="cb4-31"><a href="#cb4-31" tabindex="-1"></a><span class="at">    </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://phgrosjean.sciviews.org/</span></span></code></pre></div>
+<ul>
 <li>Regenerate your site with <code><a href="https://pkgdown.r-lib.org/reference/build_site.html" class="external-link">pkgdown::build_site()</a></code>, or from RStudio, from the corresponding addin. Check its appearance.</li>
-<li>Create a GitHub action to automatically regenerate the site on GitHub on every push with <code>usethis::use_github_action("pkgdown.yaml")</code>.</li>
+<li>Create a GitHub action to automatically regenerate the site on GitHub on every push with <code>usethis::use_github_action("pkgdown")</code>.</li>
 <li>Commit and push, then check if the action is run (click on the little icon on the left of “Latest commit …” on the main page of the repository).</li>
 <li>In the repo settings, activate or reactivate <strong>Pages</strong> -&gt; <strong>source</strong> -&gt; “gh-pages branch” -&gt; <strong>/root</strong>. You may also check “Enforce HTTPS”. Navigate to your site (the URL is provided directly in the settings page). If it does not work, try another push to refresh the site.</li>
 <li>Once your site is operational, refer to it in the main page of your repo (edit the description at the top, and may be also place a link to it in the <code>README.md</code> file).</li>
-</ol>
+</ul>
 <p>Further explanations on how to customize the {pkgdown} site <a href="https://github.com/tidyverse/tidytemplate" class="external-link">here</a>.</p>
 </div>
 <div class="section level2">
@@ -171,34 +207,22 @@
 <li><p><a href="https://www.SciViews.org/svUnit/" class="external-link">{svUnit}</a></p></li>
 <li><p><a href="https://www.SciViews.org/svGUI/" class="external-link">{svGUI}</a></p></li>
 <li><p><a href="https://www.SciViews.org/svMisc/" class="external-link">{svMisc}</a></p></li>
-<li><p><a href="https://www.SciViews.org/svSweave/" class="external-link">{svSweave}</a></p></li>
 </ul>
-</div>
-<div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
-</h2>
-<p>You can install the latest version of {svPkgdown} from GitHub. Make sure you have the {devtools} R package installed:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"devtools"</span><span class="op">)</span></code></pre></div>
-<p>Use <code>install_github()</code> to install {svPkgdown} from GitHub (source from <strong>master</strong> branch will be recompiled on your machine):</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"SciViews/svPkgdown"</span><span class="op">)</span></code></pre></div>
-<p>R should install all required dependencies automatically, and then it should compile and install {svPkgdown}.</p>
 </div>
 <div class="section level2">
 <h2 id="further-explore-svpkgdown">Further explore {svPkgdown}<a class="anchor" aria-label="anchor" href="#further-explore-svpkgdown"></a>
 </h2>
 <p>You can get further help about this package this way:</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span>help <span class="op">=</span> <span class="st">"svPkgdown"</span><span class="op">)</span>
-<span class="va">package</span><span class="op">?</span><span class="va">svPkgdown</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/vignette.html" class="external-link">vignette</a></span><span class="op">(</span><span class="st">"svPkgdown"</span><span class="op">)</span> <span class="co"># None is installed with install_github()</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span>help <span class="op">=</span> <span class="st">"svPkgdown"</span><span class="op">)</span></span>
+<span><span class="va">package</span><span class="op">?</span><span class="va">svPkgdown</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/vignette.html" class="external-link">vignette</a></span><span class="op">(</span><span class="st">"svPkgdown"</span><span class="op">)</span> <span class="co"># None is installed with install_github()</span></span></code></pre></div>
 <p>For further instructions, please, refer to the related web site at <a href="https://www.sciviews.org/svPkgdown/" class="uri">https://www.sciviews.org/svPkgdown/</a>.</p>
 </div>
 <div class="section level2">
 <h2 id="code-of-conduct">Code of Conduct<a class="anchor" aria-label="anchor" href="#code-of-conduct"></a>
 </h2>
-<p>Please note that the svPkgdown project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
+<p>Please note that the {inferit} package is released with a <a href="https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html" class="external-link">Contributor Code of Conduct</a>. By contributing to this project, you agree to abide by its terms.</p>
 </div>
 </div>
   </div>
@@ -242,14 +266,7 @@
 </ul>
 </div>
 
-<div class="dev-status">
-<h2 data-toc-skip>Dev status</h2>
-<ul class="list-unstyled">
-<li><a href="https://github.com/SciViews/svPkgdown/actions" class="external-link"><img src="https://github.com/SciViews/svPkgdown/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a></li>
-<li><a href="https://opensource.org/licenses/MIT" class="external-link"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a></li>
-<li><a href="https://www.tidyverse.org/lifecycle/#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a></li>
-</ul>
-</div>
+
 
   </div>
 </div>

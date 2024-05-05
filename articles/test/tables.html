@@ -13,7 +13,7 @@
 <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../../apple-touch-icon-120x120.png">
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../../apple-touch-icon-60x60.png">
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../../bootstrap-toc.css">
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/all.min.css" integrity="sha256-PbSmjxuVAzJ6FPvNYsrXygfGhNJYyZ2GktDbkMBqQZg=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/css/v4-shims.min.css" integrity="sha256-A6jcAdwFD48VMjlI3GDxUd+eCQa7/KWy6G9oe/ovaPA=" crossorigin="anonymous">
@@ -95,9 +95,6 @@
       <a href="../../articles/test/markdown.html">Markdown formattings</a>
     </li>
     <li>
-      <a href="../../articles/test/presentations/presentation_github.html">Git and Github in a few slides</a>
-    </li>
-    <li>
       <a href="../../articles/test/rendering.html">Output Rendering</a>
     </li>
     <li>
@@ -116,7 +113,7 @@
 </li>
       </ul>
 <div class="navbar-title">
-        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.0</small></p></a>
+        <a class="navbar-brand" href="../../index.html"><p class="h2">svPkgdown <small>v1.0.1</small></p></a>
       </div>
     </div>
 <!--/.nav-collapse -->
@@ -129,11 +126,13 @@
 
       
 
-      </header><script src="tables_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
+      </header><link href="tables_files/tabwid-1.1.3/tabwid.css" rel="stylesheet">
+<script src="tables_files/tabwid-1.1.3/tabwid.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>Tables</h1>
-                        <h4 data-toc-skip class="author">Philippe Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
+                        <h4 data-toc-skip class="author">Philippe
+Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciviews.org</a>)</h4>
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
@@ -144,11 +143,18 @@
 
     
     
-<p>Here we explore different ways to produce tables in R Markdown documents, and we can see their visual appearance in a {pkgdown} page with the {svPkgdown} style.</p>
+<p>Here we explore different ways to produce tables in R Markdown
+documents, and we can see their visual appearance in a {pkgdown} page
+with the {svPkgdown} style.</p>
 <div class="section level2">
 <h2 id="standard-pandoc-tables">Standard Pandoc tables<a class="anchor" aria-label="anchor" href="#standard-pandoc-tables"></a>
 </h2>
-<p>Simple tables are easy to create. Header and rows must be on two lines, and column alignment is determined according to the position of the header relative to the line under it. Tables must be surrounded by empty lines and an optional caption may be added above or below the table, starting with <code>Table:</code> or <code>:</code> (which is stripped off).</p>
+<p>Simple tables are easy to create. Header and rows must be on two
+lines, and column alignment is determined according to the position of
+the header relative to the line under it. Tables must be surrounded by
+empty lines and an optional caption may be added above or below the
+table, starting with <code>Table:</code> or <code>:</code> (which is
+stripped off).</p>
 <table class="table">
 <caption>Demonstration of a simple table with caption.</caption>
 <thead><tr class="header">
@@ -178,7 +184,8 @@
 </tr>
 </tbody>
 </table>
-<p>The header may be omitted, but then, the ending line is mandatory.</p>
+<p>The header may be omitted, but then, the ending line is
+mandatory.</p>
 <table class="table">
 <caption>A table without header.</caption>
 <tbody>
@@ -202,7 +209,11 @@
 </tr>
 </tbody>
 </table>
-<p>Multiline tables start and end with a line of dashes. Cells are separated by spaces (in case of a single row table, add the empty line too, otherwise, the table is interpreted as a single-line table). In multiline tables, the writer tries to respect the relative size of the columns that appear in the markdown document.</p>
+<p>Multiline tables start and end with a line of dashes. Cells are
+separated by spaces (in case of a single row table, add the empty line
+too, otherwise, the table is interpreted as a single-line table). In
+multiline tables, the writer tries to respect the relative size of the
+columns that appear in the markdown document.</p>
 <table style="width:86%;" class="table">
 <caption>A multiline table.</caption>
 <colgroup>
@@ -228,11 +239,14 @@
 <td align="center">Second</td>
 <td>row</td>
 <td align="right">5.0</td>
-<td align="left">* Here’s another one. Note the blank line between rows.</td>
+<td align="left">* Here’s another one. Note the blank line between
+rows.</td>
 </tr>
 </tbody>
 </table>
-<p>Headers can be omitted too in multiline tables (note that this could be used as a simple formatting hack to place –short– material on several columns!):</p>
+<p>Headers can be omitted too in multiline tables (note that this could
+be used as a simple formatting hack to place –short– material on several
+columns!):</p>
 <table style="width:86%;" class="table">
 <caption>Here’s a multiline table without headers.</caption>
 <colgroup>
@@ -252,11 +266,14 @@
 <td align="center">Second</td>
 <td align="left">row</td>
 <td align="right">5.0</td>
-<td align="left">Here’s another one. Note the blank line between rows.</td>
+<td align="left">Here’s another one. Note the blank line between
+rows.</td>
 </tr>
 </tbody>
 </table>
-<p>Grid tables (rows with <code>=</code> separate headers and can be omitted for headerless tables). Apparently, more formatting is allowed in gridded tables, like list items:</p>
+<p>Grid tables (rows with <code>=</code> separate headers and can be
+omitted for headerless tables). Apparently, more formatting is allowed
+in gridded tables, like list items:</p>
 <table style="width:74%;" class="table">
 <caption>Sample grid table.</caption>
 <colgroup>
@@ -288,7 +305,13 @@
 </tr>
 </tbody>
 </table>
-<p>Pipe tables look like this (beginning and end pipes are optional, and optional colon indicates alignment, header can be omitted but not the lines, and finally, although ugly, pipe do not need to align). Note that table characters like <code>|</code> cannot appear in the table and this form does not support multiline tables. The semicolumn <code>:</code> may be used to indicate alignment inside each column, but it is an optional feature.</p>
+<p>Pipe tables look like this (beginning and end pipes are optional, and
+optional colon indicates alignment, header can be omitted but not the
+lines, and finally, although ugly, pipe do not need to align). Note that
+table characters like <code>|</code> cannot appear in the table and this
+form does not support multiline tables. The semicolumn <code>:</code>
+may be used to indicate alignment inside each column, but it is an
+optional feature.</p>
 <table class="table">
 <caption>A typical pipe table.</caption>
 <thead><tr class="header">
@@ -322,9 +345,10 @@
 <div class="section level2">
 <h2 id="tables-using-knitrkable">Tables using ‘knitr::kable()’<a class="anchor" aria-label="anchor" href="#tables-using-knitrkable"></a>
 </h2>
-<p>The {knitr} package provides the function <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable()</a></code> to format data frames as Markdown tables, and it is very easy to use:</p>
+<p>The {knitr} package provides the function <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable()</a></code> to
+format data frames as Markdown tables, and it is very easy to use:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">kable</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <table class="table">
 <thead><tr class="header">
 <th align="right">Sepal.Length</th>
@@ -382,18 +406,22 @@
 <div class="section level2">
 <h2 id="tables-using-xtable">Tables using {xtable}<a class="anchor" aria-label="anchor" href="#tables-using-xtable"></a>
 </h2>
-<p>The {xtable} R package offers an alternative to output well-formatted tables in an R Markdown document (note that you must specify <code>type = "html"</code> or <code>type = "latex"</code> (default) and a way to automate it is provided here depending on the R Markdown output and indicate <code>results='asis'</code> in the chunk header):</p>
+<p>The {xtable} R package offers an alternative to output well-formatted
+tables in an R Markdown document (note that you must specify
+<code>type = "html"</code> or <code>type = "latex"</code> (default) and
+a way to automate it is provided here depending on the R Markdown output
+and indicate <code>results='asis'</code> in the chunk header):</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://xtable.r-forge.r-project.org/" class="external-link">xtable</a></span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">tli</span><span class="op">)</span>
-<span class="co"># Demonstrate data.frame... can also export many objects!</span>
-<span class="va">tli.table</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xtable/man/xtable.html" class="external-link">xtable</a></span><span class="op">(</span><span class="va">tli</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/xtable/man/table.attributes.html" class="external-link">digits</a></span><span class="op">(</span><span class="va">tli.table</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">6</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">0</span>
-<span class="co"># Choose 'one of these!'html' or 'latex' automatically</span>
-<span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>xtable.type <span class="op">=</span> <span class="kw">if</span> <span class="op">(</span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html" class="external-link">is_html_output</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="st">"html"</span> <span class="kw">else</span> <span class="st">"latex"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">tli.table</span>, floating <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co"># or add type = "html"|"latex")</span></code></pre></div>
-<!-- html table generated in R 4.2.0 by xtable 1.8-4 package -->
-<!-- Tue May 10 11:14:31 2022 -->
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://xtable.r-forge.r-project.org/" class="external-link">xtable</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">tli</span><span class="op">)</span></span>
+<span><span class="co"># Demonstrate data.frame... can also export many objects!</span></span>
+<span><span class="va">tli.table</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/xtable/man/xtable.html" class="external-link">xtable</a></span><span class="op">(</span><span class="va">tli</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, <span class="op">]</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/xtable/man/table.attributes.html" class="external-link">digits</a></span><span class="op">(</span><span class="va">tli.table</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">2</span>, <span class="fl">6</span><span class="op">)</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="fl">0</span></span>
+<span><span class="co"># Choose 'one of these!'html' or 'latex' automatically</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>xtable.type <span class="op">=</span> <span class="kw">if</span> <span class="op">(</span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html" class="external-link">is_html_output</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="st">"html"</span> <span class="kw">else</span> <span class="st">"latex"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">tli.table</span>, floating <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co"># or add type = "html"|"latex")</span></span></code></pre></div>
+<!-- html table generated in R 4.4.0 by xtable 1.8-4 package -->
+<!-- Sun May  5 13:04:21 2024 -->
 <table border="1" class="table">
 <tr>
 <th>
@@ -621,14 +649,14 @@ HISPANIC
 </h2>
 <p>The {pander} R package can output various objects in Pandoc:</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://rapporter.github.io/pander/" class="external-link">pander</a></span><span class="op">)</span>
-<span class="co"># You can change default pander options:</span>
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.alignment.default'</span>, <span class="kw">function</span><span class="op">(</span><span class="va">df</span><span class="op">)</span>
-  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">sapply</a></span><span class="op">(</span><span class="va">df</span>, <span class="va">is.numeric</span><span class="op">)</span>, <span class="st">'right'</span>, <span class="st">'left'</span><span class="op">)</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.split.table'</span>, <span class="cn">Inf</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'big.mark'</span>, <span class="st">","</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'keep.trailing.zeros'</span>, <span class="cn">TRUE</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/pkg/pander/man/pander.html" class="external-link">pander</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://rapporter.github.io/pander/" class="external-link">pander</a></span><span class="op">)</span></span>
+<span><span class="co"># You can change default pander options:</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.alignment.default'</span>, <span class="kw">function</span><span class="op">(</span><span class="va">df</span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html" class="external-link">sapply</a></span><span class="op">(</span><span class="va">df</span>, <span class="va">is.numeric</span><span class="op">)</span>, <span class="st">'right'</span>, <span class="st">'left'</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'table.split.table'</span>, <span class="cn">Inf</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'big.mark'</span>, <span class="st">","</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/pander/man/panderOptions.html" class="external-link">panderOptions</a></span><span class="op">(</span><span class="st">'keep.trailing.zeros'</span>, <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/pkg/pander/man/pander.html" class="external-link">pander</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">iris</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <table style="width:94%;" class="table">
 <colgroup>
 <col width="20%">
@@ -693,28 +721,97 @@ HISPANIC
 <div class="section level2">
 <h2 id="tables-using-flextable">Tables using {flextable}<a class="anchor" aria-label="anchor" href="#tables-using-flextable"></a>
 </h2>
-<p>The {flextable} R package allows for fine customization of the formatted table using a pipeline-compatible approach (inactivated for now, because I have an error in GitHub Action):</p>
-<pre><code>Error : package or namespace load failed for 'flextable' in dyn.load(file, DLLpath = DLLpath, ...):
-90
-*  unable to load shared object '/Users/runner/runners/2.169.0/work/_temp/Library/systemfonts/libs/systemfonts.so':
-91
-*   dlopen(/Users/runner/runners/2.169.0/work/_temp/Library/systemfonts/libs/systemfonts.so, 6): Library not loaded: /opt/X11/lib/libfreetype.6.dylib</code></pre>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ardata-fr.github.io/flextable-book/" class="external-link">flextable</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
-<span class="va">mtcars</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">.</span>, <span class="va">cyl</span>, <span class="va">am</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span><span class="va">.</span>, avg <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/flextable.html" class="external-link">flextable</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span>
-  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/bg.html" class="external-link">bg</a></span><span class="op">(</span><span class="va">.</span>, bg <span class="op">=</span> <span class="st">'#c7deff'</span>, part <span class="op">=</span> <span class="st">'header'</span><span class="op">)</span></code></pre></div>
-<p>There are many other packages to output well-formatted tables from R objects, like: {stargazer}, {table1}, {tables}, {formattable}, {htmlTable}, {huxtable}, {kableExtra}, {pixiedust}, {tangram}, {texreg}, {ztable}, etc.</p>
+<p>The {flextable} R package allows for fine customization of the
+formatted table using a pipeline-compatible approach:</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ardata-fr.github.io/flextable-book/" class="external-link">flextable</a></span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## </span></span>
+<span><span class="co">## Attaching package: 'flextable'</span></span></code></pre>
+<pre><code><span><span class="co">## The following object is masked from 'package:xtable':</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">##     align</span></span></code></pre>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## </span></span>
+<span><span class="co">## Attaching package: 'dplyr'</span></span></code></pre>
+<pre><code><span><span class="co">## The following objects are masked from 'package:stats':</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">##     filter, lag</span></span></code></pre>
+<pre><code><span><span class="co">## The following objects are masked from 'package:base':</span></span>
+<span><span class="co">## </span></span>
+<span><span class="co">##     intersect, setdiff, setequal, union</span></span></code></pre>
+<div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">mtcars</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">.</span>, <span class="va">cyl</span>, <span class="va">am</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span><span class="va">.</span>, avg <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/mean.html" class="external-link">mean</a></span><span class="op">(</span><span class="va">mpg</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/flextable.html" class="external-link">flextable</a></span><span class="op">(</span><span class="va">.</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://davidgohel.github.io/flextable/reference/bg.html" class="external-link">bg</a></span><span class="op">(</span><span class="va">.</span>, bg <span class="op">=</span> <span class="st">'#c7deff'</span>, part <span class="op">=</span> <span class="st">'header'</span><span class="op">)</span></span></code></pre></div>
+<pre><code><span><span class="co">## `summarise()` has grouped output by 'cyl'. You can override using the `.groups`</span></span>
+<span><span class="co">## argument.</span></span></code></pre>
+<div class="tabwid">
+<style>.cl-fdce2f4c{}.cl-fdc375fc{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-fdcaea30{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-fdcafd90{width:0.75in;background-color:rgba(199, 222, 255, 1.00);vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fdcafd9a{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-fdcafd9b{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style>
+<table data-quarto-disable-processing="true" class="table cl-fdce2f4c">
+<thead><tr style="overflow-wrap:break-word;">
+<th class="cl-fdcafd90"><p class="cl-fdcaea30"><span class="cl-fdc375fc">cyl</span></p></th>
+<th class="cl-fdcafd90"><p class="cl-fdcaea30"><span class="cl-fdc375fc">am</span></p></th>
+<th class="cl-fdcafd90"><p class="cl-fdcaea30"><span class="cl-fdc375fc">avg</span></p></th>
+</tr></thead>
+<tbody>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">4</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">0</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">22.90000</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">4</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">1</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">28.07500</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">6</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">0</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">19.12500</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">6</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">1</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">20.56667</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">8</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">0</span></p></td>
+<td class="cl-fdcafd9a"><p class="cl-fdcaea30"><span class="cl-fdc375fc">15.05000</span></p></td>
+</tr>
+<tr style="overflow-wrap:break-word;">
+<td class="cl-fdcafd9b"><p class="cl-fdcaea30"><span class="cl-fdc375fc">8</span></p></td>
+<td class="cl-fdcafd9b"><p class="cl-fdcaea30"><span class="cl-fdc375fc">1</span></p></td>
+<td class="cl-fdcafd9b"><p class="cl-fdcaea30"><span class="cl-fdc375fc">15.40000</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>There are many other packages to output well-formatted tables from R
+objects, like: {stargazer}, {table1}, {tables}, {formattable},
+{htmlTable}, {huxtable}, {kableExtra}, {pixiedust}, {tangram}, {texreg},
+{ztable}, etc.</p>
 </div>
 <div class="section level2">
 <h2 id="table-numbers-and-references">Table numbers and references<a class="anchor" aria-label="anchor" href="#table-numbers-and-references"></a>
 </h2>
-<p>Standard Pandoc does not allow to number tables and figures, nor to refer to them in text, like it is usual to do in the scientific litterature. If the Markdown document is converted into LaTeX (to produce a PDF, or Beamer presentation, for instance), one can add LaTeX tags to do so. However, these tags will not work obviously with HTML outputs. The {bookdown} format extends the Markdown syntax to allow numbered tables and cross-references with <code>@ref(label)</code> tags, see <a href="https://bookdown.org/yihui/bookdown/cross-references.html" class="external-link">here</a>. In {blogdown}, providing you generate your tables with <code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">knitr::kable()</a></code>, and you indicate a <code>caption =</code> argument.</p>
+<p>Standard Pandoc does not allow to number tables and figures, nor to
+refer to them in text, like it is usual to do in the scientific
+litterature. If the Markdown document is converted into LaTeX (to
+produce a PDF, or Beamer presentation, for instance), one can add LaTeX
+tags to do so. However, these tags will not work obviously with HTML
+outputs. The {bookdown} format extends the Markdown syntax to allow
+numbered tables and cross-references with <code>@ref(label)</code> tags,
+see <a href="https://bookdown.org/yihui/bookdown/cross-references.html" class="external-link">here</a>.
+In {blogdown}, providing you generate your tables with
+<code><a href="https://rdrr.io/pkg/knitr/man/kable.html" class="external-link">knitr::kable()</a></code>, and you indicate a <code>caption =</code>
+argument.</p>
 <table class="table">
-<caption>The first few lines of the <code>iris</code> data set.</caption>
+<caption>The first few lines of the <code>iris</code> data
+set.</caption>
 <thead><tr class="header">
 <th align="right">Sepal.Length</th>
 <th align="right">Sepal.Width</th>
@@ -767,7 +864,16 @@ HISPANIC
 </tr>
 </tbody>
 </table>
-<p>Now, you can refer to this table in the text in {blogdown} using a link like this <code>[this Table](#tab:table-iris)</code>, where <code>table-iris</code> is the name of the chunk that generated the table. In {blogdown}, it gives this (see <a href="#tab:table-iris">this Table</a>), but in {pkgdown}, it does <strong>not</strong> work. The {svSweave} R package can generate numbers for tables, figures and equations, and it allows for cross-referencing them in the text <strong>using pure R code</strong>. Thus, it works with <strong>all</strong> R Markdown documents, see the <a href="https://www.sciviews.org/svSweave/" class="external-link">svSweave documentation</a>.</p>
+<p>Now, you can refer to this table in the text in {blogdown} using a
+link like this <code>[this Table](#tab:table-iris)</code>, where
+<code>table-iris</code> is the name of the chunk that generated the
+table. In {blogdown}, it gives this (see <a href="#tab:table-iris">this
+Table</a>), but in {pkgdown}, it does <strong>not</strong> work. The
+{svSweave} R package can generate numbers for tables, figures and
+equations, and it allows for cross-referencing them in the text
+<strong>using pure R code</strong>. Thus, it works with
+<strong>all</strong> R Markdown documents, see the <a href="https://www.sciviews.org/svSweave/" class="external-link">svSweave
+documentation</a>.</p>
 </div>
   </div>
 

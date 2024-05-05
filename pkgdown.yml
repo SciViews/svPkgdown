@@ -1,15 +1,14 @@
-pandoc: 2.7.3
-pkgdown: 2.0.3
+pandoc: 3.1.11
+pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
-  svPkgdown: svPkgdown.html
   bibliography: test/bibliography.html
   chunks: test/chunks.html
   markdown: test/markdown.html
-  presentation_github: test/presentations/presentation_github.html
   rendering: test/rendering.html
+  svPkgdown: svPkgdown.html
   tables: test/tables.html
-last_built: 2022-05-10T11:13Z
+last_built: 2024-05-05T13:03Z
 urls:
   reference: https://www.sciviews.org/svPkgdown/reference
   article: https://www.sciviews.org/svPkgdown/articles
