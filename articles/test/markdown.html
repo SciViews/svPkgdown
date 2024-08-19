@@ -22,9 +22,6 @@
 <!--<link rel="stylesheet" href="../../style.css?nocache=123">--><!-- bootstrat v4.1.1, required CSS from more recent version --><link rel="stylesheet" href="../../bootstrap.more.css?nocache=123">
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Markdown formattings">
-<meta property="og:description" content="svPkgdown">
-<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
-<meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,7 +32,7 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
@@ -81,7 +78,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -108,7 +105,7 @@
         <li>
   <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul>
@@ -124,7 +121,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
@@ -135,7 +132,7 @@ Grosjean( <a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciv
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/markdown.Rmd" class="external-link"><code>vignettes/test/markdown.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/main/vignettes/test/markdown.Rmd" class="external-link"><code>vignettes/test/markdown.Rmd</code></a></small>
       <div class="hidden name"><code>markdown.Rmd</code></div>
 
     </div>
@@ -494,25 +491,24 @@ included in the list element!</p></li>
 <h3 id="equations">Equations<a class="anchor" aria-label="anchor" href="#equations"></a>
 </h3>
 <ul>
-<li><p>Inline equations like <span class="math inline">\(\frac{1}{n}
-\sum_{i=1}^{n} x_{i} + \beta\)</span>, or <span class="math inline">\(f(\alpha, \beta) \propto
-x^{\alpha-1}(1-x)^{\beta-1}\)</span>.</p></li>
+<li><p>Inline equations like
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">\frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta</annotation></semantics></math>,
+or
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>α</mi><mo>,</mo><mi>β</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>∝</mo><msup><mi>x</mi><mrow><mi>α</mi><mo>−</mo><mn>1</mn></mrow></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>β</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">f(\alpha, \beta) \propto x^{\alpha-1}(1-x)^{\beta-1}</annotation></semantics></math>.</p></li>
 <li><p>Display equation</p></li>
 </ul>
-<p><span class="math display">\[ \frac{1}{n} \sum_{i=1}^{n} x_{i} +
-\beta \]</span></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mi>β</mi></mrow><annotation encoding="application/x-tex"> \frac{1}{n} \sum_{i=1}^{n} x_{i} + \beta </annotation></semantics></math></p>
 <p>Here is a more complex example spanning on several lines:</p>
-<p><span class="math display">\[ \begin{aligned}
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><mover><mi>x</mi><mo accent="true">̇</mo></mover></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mi>σ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mover><mi>y</mi><mo accent="true">̇</mo></mover></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mi>ρ</mi><mi>x</mi><mo>−</mo><mi>y</mi><mo>−</mo><mi>x</mi><mi>z</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mover><mi>z</mi><mo accent="true">̇</mo></mover></mtd><mtd columnalign="left" style="text-align: left"><mo>=</mo><mo>−</mo><mi>β</mi><mi>z</mi><mo>+</mo><mi>x</mi><mi>y</mi></mtd></mtr></mtable><annotation encoding="application/x-tex"> \begin{aligned}
 \dot{x} &amp; = \sigma(y-x) \\
 \dot{y} &amp; = \rho x - y - xz \\
 \dot{z} &amp; = -\beta z + xy
-\end{aligned}\]</span></p>
+\end{aligned}</annotation></semantics></math></p>
 <p>With {pkgdown} and standard Pandoc, it is not easy to get numbered
 display equations and cross-references to these equations. Here is an
 example:</p>
-<p><span class="math display">\[x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-\label{my-equation} \tag{1}\]</span></p>
-<p>… and you can reference Eq. <span class="math inline">\(\ref{my-equation}\)</span> like this.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">x=\frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \label{my-equation} \tag{1}</annotation></semantics></math></p>
+<p>… and you can reference Eq. <span class="math inline">$\ref{my-equation}$</span> like this.</p>
 <p>If you feel difficult to write LaTeX equations, there are inline
 LateX equation editors like <a href="http://www.sciweavers.org/free-online-latex-equation-editor" class="external-link">this
 one</a>, and you don’t need to install anything on your computer to used
@@ -550,9 +546,7 @@ inside the link, unfortunately.<a href="#fnref4" class="footnote-back">↩︎</a
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
@@ -682,10 +676,10 @@ inside the link, unfortunately.<a href="#fnref4" class="footnote-back">↩︎</a
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>

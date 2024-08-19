@@ -1,57 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/404.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/TODO.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/svPkgdown.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/test/bibliography.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/test/chunks.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/test/markdown.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/test/rendering.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/articles/test/tables.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/reference/svPkgdown-package.html</loc>
-  </url>
-  <url>
-    <loc>https://www.sciviews.org/svPkgdown/reference/test.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://www.sciviews.org/svPkgdown/404.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/LICENSE-text.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/LICENSE.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/TODO.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/index.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/svPkgdown.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/test/bibliography.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/test/chunks.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/test/markdown.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/test/rendering.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/articles/test/tables.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/authors.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/index.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/news/index.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/reference/index.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/reference/svPkgdown-package.html</loc></url>
+<url><loc>https://www.sciviews.org/svPkgdown/reference/test.html</loc></url>
 </urlset>
+

@@ -22,9 +22,6 @@
 <!--<link rel="stylesheet" href="../../style.css?nocache=123">--><!-- bootstrat v4.1.1, required CSS from more recent version --><link rel="stylesheet" href="../../bootstrap.more.css?nocache=123">
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Output Rendering">
-<meta property="og:description" content="svPkgdown">
-<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
-<meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,7 +32,7 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
@@ -81,7 +78,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -108,7 +105,7 @@
         <li>
   <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul>
@@ -124,7 +121,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><link href="rendering_files/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 <script src="rendering_files/htmlwidgets-1.6.4/htmlwidgets.js"></script><link href="rendering_files/leaflet-1.3.1/leaflet.css" rel="stylesheet">
@@ -136,7 +133,7 @@
       <h1 data-toc-skip>Output Rendering</h1>
             
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/rendering.Rmd" class="external-link"><code>vignettes/test/rendering.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/main/vignettes/test/rendering.Rmd" class="external-link"><code>vignettes/test/rendering.Rmd</code></a></small>
       <div class="hidden name"><code>rendering.Rmd</code></div>
 
     </div>
@@ -273,7 +270,7 @@ Some R code
 <td align="left">Brightness</td>
 <td align="left">Total brightness, total reflectance, spectral
 intensity</td>
-<td align="center"><span class="math display">\[y = x^2\]</span></td>
+<td align="center"><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y = x^2</annotation></semantics></math></td>
 <td align="center">test</td>
 </tr></tbody>
 </table>
@@ -282,9 +279,9 @@ intensity</td>
 <div class="section level2">
 <h2 id="mathjax">Mathjax<a class="anchor" aria-label="anchor" href="#mathjax"></a>
 </h2>
-<p><span class="math display">\[f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}}
-e^{-\frac{(x-\mu^2)}{2\sigma^2}}\]</span></p>
-<p>Inline equations: <span class="math inline">\(y=x^2\)</span></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac displaystyle="true"><mn>1</mn><msqrt><mrow><mn>2</mn><mi>π</mi><msup><mi>σ</mi><mn>2</mn></msup></mrow></msqrt></mfrac><msup><mi>e</mi><mrow><mo>−</mo><mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>−</mo><msup><mi>μ</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>2</mn><msup><mi>σ</mi><mn>2</mn></msup></mrow></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">f(x) = \dfrac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu^2)}{2\sigma^2}}</annotation></semantics></math></p>
+<p>Inline equations:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y=x^2</annotation></semantics></math></p>
 <hr>
 </div>
 <div class="section level2">
@@ -299,21 +296,21 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}\]</span></p>
 <h2 id="crayon">Crayon<a class="anchor" aria-label="anchor" href="#crayon"></a>
 </h2>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">red</a></span><span class="op">(</span><span class="st">"This is red"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="http://r-lib.github.io/crayon/reference/crayon.html" class="external-link">red</a></span><span class="op">(</span><span class="st">"This is red"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #BB0000;">This is red</span></span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">blue</a></span><span class="op">(</span><span class="st">"This is blue\n"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="http://r-lib.github.io/crayon/reference/crayon.html" class="external-link">blue</a></span><span class="op">(</span><span class="st">"This is blue\n"</span><span class="op">)</span>, <span class="st">"\n"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #0000BB;">This is blue</span></span></span>
 <span><span class="co"><span style="color: #0000BB;">#&gt; </span></span></span>
 <span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">message</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">green</a></span><span class="op">(</span><span class="st">"This is green"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/message.html" class="external-link">message</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="http://r-lib.github.io/crayon/reference/crayon.html" class="external-link">green</a></span><span class="op">(</span><span class="st">"This is green"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #00BB00;">This is green</span></span></span>
 <span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/warning.html" class="external-link">warning</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">bold</a></span><span class="op">(</span><span class="st">"This is bold"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/warning.html" class="external-link">warning</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="http://r-lib.github.io/crayon/reference/crayon.html" class="external-link">bold</a></span><span class="op">(</span><span class="st">"This is bold"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Warning: <span style="font-weight: bold;">This is bold</span></span></span></code></pre></div>
 <p>Some text</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/crayon/man/crayon.html" class="external-link">italic</a></span><span class="op">(</span><span class="st">"This is italic"</span><span class="op">)</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/stop.html" class="external-link">stop</a></span><span class="op">(</span><span class="fu">crayon</span><span class="fu">::</span><span class="fu"><a href="http://r-lib.github.io/crayon/reference/crayon.html" class="external-link">italic</a></span><span class="op">(</span><span class="st">"This is italic"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Error in eval(expr, envir, enclos): <span style="font-style: italic;">This is italic</span></span></span></code></pre></div>
 <p>Some more text</p>
 </div>
@@ -321,9 +318,7 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}\]</span></p>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
@@ -453,10 +448,10 @@ e^{-\frac{(x-\mu^2)}{2\sigma^2}}\]</span></p>
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>

@@ -22,9 +22,6 @@
 <!--<link rel="stylesheet" href="../../style.css?nocache=123">--><!-- bootstrat v4.1.1, required CSS from more recent version --><link rel="stylesheet" href="../../bootstrap.more.css?nocache=123">
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Bibliography citations">
-<meta property="og:description" content="svPkgdown">
-<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
-<meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,7 +32,7 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
@@ -81,7 +78,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -108,7 +105,7 @@
         <li>
   <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul>
@@ -124,7 +121,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><div class="row">
   <div class="col-md-9 contents">
@@ -135,7 +132,7 @@ Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciv
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/bibliography.Rmd" class="external-link"><code>vignettes/test/bibliography.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/main/vignettes/test/bibliography.Rmd" class="external-link"><code>vignettes/test/bibliography.Rmd</code></a></small>
       <div class="hidden name"><code>bibliography.Rmd</code></div>
 
     </div>
@@ -227,10 +224,10 @@ compile the document is discussed here <a href="http://blog.martinfenner.org/201
 recite the same items by DOI, but one can cite like this <span class="citation">(<a href="#ref-Abrams_2012">Abrams et al.
 2012</a>)</span>, which should be the same as <span class="citation">(<a href="#ref-Abrams_2012">Abrams et al. 2012</a>)</span>. Finally, one can
 also cite R bibentry objects directly with the {knitcitations} tags,
-like <span class="citation">(<a href="#ref-Xie_2014">Xie 2014</a>, <a href="#ref-Xie_2015">2015</a>; <a href="#ref-Xie_2024"><strong>Xie_2024?</strong></a>)</span>. All these
-approaches are combinable with traditional Pandoc citations, providing
-the citations are already included in the <code>.bib</code> file, of
-course.</p>
+like <span class="citation">(<a href="#ref-Xie_2014">Xie 2014</a>, <a href="#ref-Xie_2015">2015</a>, <a href="#ref-Xie_2024">2024</a>)</span>.
+All these approaches are combinable with traditional Pandoc citations,
+providing the citations are already included in the <code>.bib</code>
+file, of course.</p>
 <p>Finally, don’t forget to generate the complete <code>.bib</code> file
 by appending the following last R chunk into your document in order to
 add the {knitcitations} entries in your <code>.bib</code> document (this
@@ -277,15 +274,17 @@ Xie Y (2015) <a href="https://yihui.org/knitr/" class="external-link">Dynamic do
 <span>R</span> and knitr</a>, 2nd edn. Chapman; Hall/CRC, Boca Raton,
 Florida
 </div>
+<div id="ref-Xie_2024" class="csl-entry">
+Xie Y (2024) <a href="https://yihui.org/knitr/" class="external-link">Knitr: A general-purpose
+package for dynamic report generation in r</a>
+</div>
 </div>
 </div>
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
@@ -415,10 +414,10 @@ Florida
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>

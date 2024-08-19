@@ -22,9 +22,6 @@
 <!--<link rel="stylesheet" href="../../style.css?nocache=123">--><!-- bootstrat v4.1.1, required CSS from more recent version --><link rel="stylesheet" href="../../bootstrap.more.css?nocache=123">
 <link href="../../style.css?nocache=123" rel="stylesheet">
 <!-- end of addition for svPkgdown --><meta property="og:title" content="Tables">
-<meta property="og:description" content="svPkgdown">
-<meta property="og:image" content="https://www.sciviews.org/svPkgdown/logo.png">
-<meta name="twitter:card" content="summary">
 <!-- Mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" async integrity="sha256-nlrDrBTHxJJlDDX22AS33xYI1OJHnGMDhiYMSe2U0e0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/config/TeX-AMS-MML_HTMLorMML.js" async integrity="sha256-4zys9A4hMQmtq2EUL+JRoXc0NZi8jVJMzb8onewOaSQ=" crossorigin="anonymous"></script><!-- Global site tag (gtag.js) - Google Analytics --><!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-462421-8"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -35,7 +32,7 @@
 </script>-->
 </head>
 <body data-spy="scroll" data-target="#toc">
-    
+
 
     <div class="container template-article">
       <header><!-- preloader start --><div class="preloader">
@@ -81,7 +78,7 @@
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Articles
-     
+
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
@@ -108,7 +105,7 @@
         <li>
   <a href="https://github.com/SciViews/svPkgdown/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
-     
+
   </a>
 </li>
       </ul>
@@ -124,7 +121,7 @@
 </div>
 <!--/.navbar -->
 
-      
+
 
       </header><link href="tables_files/tabwid-1.1.3/tabwid.css" rel="stylesheet">
 <script src="tables_files/tabwid-1.1.3/tabwid.js"></script><div class="row">
@@ -136,7 +133,7 @@ Grosjean (<a href="mailto:phgrosjean@sciviews.org" class="email">phgrosjean@sciv
             
             <h4 data-toc-skip class="date">2020-04-16</h4>
       
-      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/HEAD/vignettes/test/tables.Rmd" class="external-link"><code>vignettes/test/tables.Rmd</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/SciViews/svPkgdown/blob/main/vignettes/test/tables.Rmd" class="external-link"><code>vignettes/test/tables.Rmd</code></a></small>
       <div class="hidden name"><code>tables.Rmd</code></div>
 
     </div>
@@ -420,8 +417,8 @@ and indicate <code>results='asis'</code> in the chunk header):</p>
 <span><span class="co"># Choose 'one of these!'html' or 'latex' automatically</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>xtable.type <span class="op">=</span> <span class="kw">if</span> <span class="op">(</span><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/output_type.html" class="external-link">is_html_output</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span> <span class="st">"html"</span> <span class="kw">else</span> <span class="st">"latex"</span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="va">tli.table</span>, floating <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span> <span class="co"># or add type = "html"|"latex")</span></span></code></pre></div>
-<!-- html table generated in R 4.4.0 by xtable 1.8-4 package -->
-<!-- Sun May  5 14:03:52 2024 -->
+<!-- html table generated in R 4.4.1 by xtable 1.8-4 package -->
+<!-- Mon Aug 19 13:31:06 2024 -->
 <table border="1" class="table">
 <tr>
 <th>
@@ -749,43 +746,43 @@ formatted table using a pipeline-compatible approach:</p>
 <pre><code><span><span class="co">## `summarise()` has grouped output by 'cyl'. You can override using the `.groups`</span></span>
 <span><span class="co">## argument.</span></span></code></pre>
 <div class="tabwid">
-<style>.cl-4e0019d2{}.cl-4df58850{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-4dfcd8b2{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-4dfceb04{width:0.75in;background-color:rgba(199, 222, 255, 1.00);vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4dfceb0e{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4dfceb0f{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style>
-<table data-quarto-disable-processing="true" class="table cl-4e0019d2">
+<style>.cl-4a1646b2{}.cl-4a043d64{font-family:'DejaVu Sans';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-4a069820{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-4a06aa22{width:0.75in;background-color:rgba(199, 222, 255, 1.00);vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 1.5pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4a06aa2c{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-4a06aa2d{width:0.75in;background-color:transparent;vertical-align: middle;border-bottom: 1.5pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}</style>
+<table data-quarto-disable-processing="true" class="table cl-4a1646b2">
 <thead><tr style="overflow-wrap:break-word;">
-<th class="cl-4dfceb04"><p class="cl-4dfcd8b2"><span class="cl-4df58850">cyl</span></p></th>
-<th class="cl-4dfceb04"><p class="cl-4dfcd8b2"><span class="cl-4df58850">am</span></p></th>
-<th class="cl-4dfceb04"><p class="cl-4dfcd8b2"><span class="cl-4df58850">avg</span></p></th>
+<th class="cl-4a06aa22"><p class="cl-4a069820"><span class="cl-4a043d64">cyl</span></p></th>
+<th class="cl-4a06aa22"><p class="cl-4a069820"><span class="cl-4a043d64">am</span></p></th>
+<th class="cl-4a06aa22"><p class="cl-4a069820"><span class="cl-4a043d64">avg</span></p></th>
 </tr></thead>
 <tbody>
 <tr style="overflow-wrap:break-word;">
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">4</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">0</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">22.90000</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">4</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">0</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">22.90000</span></p></td>
 </tr>
 <tr style="overflow-wrap:break-word;">
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">4</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">1</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">28.07500</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">4</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">1</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">28.07500</span></p></td>
 </tr>
 <tr style="overflow-wrap:break-word;">
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">6</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">0</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">19.12500</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">6</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">0</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">19.12500</span></p></td>
 </tr>
 <tr style="overflow-wrap:break-word;">
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">6</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">1</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">20.56667</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">6</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">1</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">20.56667</span></p></td>
 </tr>
 <tr style="overflow-wrap:break-word;">
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">8</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">0</span></p></td>
-<td class="cl-4dfceb0e"><p class="cl-4dfcd8b2"><span class="cl-4df58850">15.05000</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">8</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">0</span></p></td>
+<td class="cl-4a06aa2c"><p class="cl-4a069820"><span class="cl-4a043d64">15.05000</span></p></td>
 </tr>
 <tr style="overflow-wrap:break-word;">
-<td class="cl-4dfceb0f"><p class="cl-4dfcd8b2"><span class="cl-4df58850">8</span></p></td>
-<td class="cl-4dfceb0f"><p class="cl-4dfcd8b2"><span class="cl-4df58850">1</span></p></td>
-<td class="cl-4dfceb0f"><p class="cl-4dfcd8b2"><span class="cl-4df58850">15.40000</span></p></td>
+<td class="cl-4a06aa2d"><p class="cl-4a069820"><span class="cl-4a043d64">8</span></p></td>
+<td class="cl-4a06aa2d"><p class="cl-4a069820"><span class="cl-4a043d64">1</span></p></td>
+<td class="cl-4a06aa2d"><p class="cl-4a069820"><span class="cl-4a043d64">15.40000</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -879,9 +876,7 @@ documentation</a>.</p>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
 
-        <nav id="toc" data-toggle="toc"><h2 data-toc-skip>Contents</h2>
-    </nav>
-</div>
+      </div>
 
 </div>
 
@@ -1011,10 +1006,10 @@ documentation</a>.</p>
       </footer>
 </div>
 
-  
 
 
-  
+
+
 
   </body>
 </html>
