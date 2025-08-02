@@ -1,12 +1,12 @@
 ---
-title: "svPkgdown - A pkgdown template for SciViews packages"
+title: "A 'pkgdown' template for 'SciViews::R' packages"
 author: "Philippe Grosjean (phgrosjean@sciviews.org)"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
     fig_caption: yes
 vignette: >
-  %\VignetteIndexEntry{svPkgdown - A pkgdown template for SciViews packages}
+  %\VignetteIndexEntry{A 'pkgdown' template for 'SciViews::R' packages}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -15,8 +15,6 @@ vignette: >
 knitr::opts_chunk$set( collapse = TRUE, comment = "#>")
 library(svPkgdown)
 ```
-
-# A template for {pkgdown} SciViews sites
 
 > This {pkgdown} template is designed specifically for the [SciViews](https://www.sciviews.org) web site. It hard encodes several links (in the header and footer, among other). So, do **not** reuse it elsewhere unmodified!
 

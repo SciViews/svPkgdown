@@ -1,12 +1,13 @@
 Package: svPkgdown
 Type: Package
 Version: 1.0.1
-Title: 'pkgdown' Template for SciViews Packages
+Title: 'pkgdown' Template for 'SciViews::R' Packages
 Description: This is a private template to style pkgdown sub-sites in
   https://www.sciviews.org. Please don't use it for another purpose.
-Authors@R: c(person("Philippe", "Grosjean", role = c("aut", "cre"),
-  email = "phgrosjean@sciviews.org",
-  comment = c(ORCID = "0000-0002-2694-9471")))
+Authors@R: c(
+  person("Philippe", "Grosjean", role = c("aut", "cre"),
+    email = "phgrosjean@sciviews.org",
+    comment = c(ORCID = "0000-0002-2694-9471")))
 Maintainer: Philippe Grosjean <phgrosjean@sciviews.org>
 Depends: R (>= 4.2.0)
 Suggests: 
@@ -27,10 +28,10 @@ Suggests:
     spelling (>= 2.2.1),
     testthat (>= 3.0.0)
 License: MIT + file LICENSE
-URL: https://github.com/SciViews/svPkgdown, https://www.sciviews.org/svPkgdown/
+URL: https://github.com/SciViews/svPkgdown, https://www.sciviews.org/svPkgdown/, https://sciviews.r-universe.dev/svPkgdown
 BugReports: https://github.com/SciViews/svPkgdown/issues
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 VignetteBuilder: knitr
 Encoding: UTF-8
 Language: en-US

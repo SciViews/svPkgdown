@@ -4,17 +4,17 @@
 \name{svPkgdown-package}
 \alias{svPkgdown}
 \alias{svPkgdown-package}
-\title{svPkgdown: 'pkgdown' Template for SciViews Packages}
+\title{'pkgdown' Template for 'SciViews::R' Packages}
 \description{
-\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
-
-This is a private template to style pkgdown sub-sites in https://www.sciviews.org. Please don't use it for another purpose.
+This package is used to produce the documentation of R packages on
+https://www.sciviews.org. Please, do not use it unmodified for other purposes.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/SciViews/svPkgdown}
   \item \url{https://www.sciviews.org/svPkgdown/}
+  \item \url{https://sciviews.r-universe.dev/svPkgdown}
   \item Report bugs at \url{https://github.com/SciViews/svPkgdown/issues}
 }
 
@@ -23,4 +23,3 @@ Useful links:
 \strong{Maintainer}: Philippe Grosjean \email{phgrosjean@sciviews.org} (\href{https://orcid.org/0000-0002-2694-9471}{ORCID})
 
 }
-\keyword{internal}
