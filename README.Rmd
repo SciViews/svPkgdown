@@ -9,7 +9,7 @@ knitr::opts_chunk$set(collapse = TRUE, comment = "#>",
   fig.path = "man/figures/README-", out.width = "100%")
 ```
 
-# 'pkgdown' Template for 'SciViews::R' Packages <a href="https://www.sciviews.org/svPkgdown"><img src="man/figures/logo.png" align="right" height="138"/></a>
+# 'SciViews::R' - 'pkgdown' Template <a href="https://www.sciviews.org/svPkgdown"><img src="man/figures/logo.png" align="right" height="138"/></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/SciViews/svPkgdown/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SciViews/svPkgdown/actions/workflows/R-CMD-check.yaml)

@@ -1,12 +1,12 @@
 ---
-title: "A 'pkgdown' template for 'SciViews::R' packages"
+title: "'SciViews::R' - 'pkgdown' Template"
 author: "Philippe Grosjean (phgrosjean@sciviews.org)"
 date: "`r Sys.Date()`"
 output:
   rmarkdown::html_vignette:
     fig_caption: yes
 vignette: >
-  %\VignetteIndexEntry{A 'pkgdown' template for 'SciViews::R' packages}
+  %\VignetteIndexEntry{'SciViews::R' - 'pkgdown' Template}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

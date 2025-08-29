@@ -1,7 +1,7 @@
 Package: svPkgdown
 Type: Package
 Version: 1.0.1
-Title: 'pkgdown' Template for 'SciViews::R' Packages
+Title: 'SciViews::R' - 'pkgdown' Template
 Description: This is a private template to style pkgdown sub-sites in
   https://www.sciviews.org. Please don't use it for another purpose.
 Authors@R: c(
